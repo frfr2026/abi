@@ -1,0 +1,151 @@
+<!--META
+{
+  "file": "meta-loadout-optimizer.html",
+  "title": "Optimiseur de loadout ABI — checklists Normal/Lockdown/Forbidden | NEXUS",
+  "description": "Optimiseur de loadout Arena Breakout Infinite : checklists par mode (caps T4/T5), builds optimisés Reddit (Normal 450k, budget), règles value/slot, consummables et erreurs à éviter.",
+  "keywords": "loadout optimizer ABI, checklist kit Arena Breakout, build normal 450k, préparer raid kit",
+  "og_image": "img/hero/hero-meta-loadout.jpg",
+  "ambiance": "meta",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Méta","meta-loadout-optimizer.html"],["Optimiseur loadout","meta-loadout-optimizer.html"]],
+  "faq": [
+    ["Par quel mode commencer le checklist ?","Par le mode : vérifie d'abord le cap (Normal = T4 max, Lockdown = T5 max + valeur 900k, Forbidden = libre). Un kit qui viole le cap perd de la valeur sans gagner de puissance — c'est l'erreur n°1 post-patch."],
+    ["Quel est le meilleur build Normal optimisé ?","Le « main build » reddit (~450-500k) : KSS2 Tac (seul T4 casque avec masque T4) · Z038 headset · TM1 T4 rig + T4 titane · Med Field 28 slots · AK-12 (recul facile, munitions 170-300) · consummables : 1 fumée non négociable, 2 force boosters, 3 LP, 4 chirurgies, 5 medkits, dîner, 1 mag 60, 90-120 munitions violettes. Budget : SH12 (25-30k, headset intégré) + AK-74N léger."],
+    ["Quelles erreurs éviter ?","Pistolet inutile en débutant (investis dans l'arme principale) · munitions sous le violet (« anything less than purple is useless ») · trop de chargeurs (2 max + réserve en container) · rig hors de prix · headset bas de gamme (Com1 = pire que rien selon certains) · ne pas pre-painkill · rester après un kill (30-40 s de fenêtre)."],
+    ["Comment gérer la container dans le checklist ?","Munitions lâches +2e chargeur + meds précieux dedans — « l'ammo est la partie la plus chère de ton kit ». Règle value/slot : remplis proprement (≥5k Normal, ≥10k Lockdown) plutôt que d'ajouter 10 min de risque."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-meta-loadout.jpg')" role="img" aria-label="Flat-lay d'équipement opérateur"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="14"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Méta › <span class="text-gold">Optimiseur loadout</span></p>
+    <span class="badge badge-s7">MÉTA · Outil</span>
+    <h1 class="hero-title" style="margin-top:14px">Optimiseur<br><span class="accent">de loadout</span></h1>
+    <p class="hero-sub">Le checklist de pré-raid : cap respecté, consummables justes, container optimale — en 60 secondes avant le queue.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">3</span><span class="c-label">Profils de mode</span></div>
+      <div class="hero-counter"><span class="counter">450k</span><span class="c-label">Build Normal main</span></div>
+      <div class="hero-counter"><span class="counter">60s</span><span class="c-label">Checklist rapide</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#checklist">Checklist 60 secondes</a>
+      <a href="#normal">Profil Normal</a>
+      <a href="#lockdown">Profil Lockdown</a>
+      <a href="#forbidden">Profil Forbidden</a>
+      <a href="#consum">Consummables</a>
+      <a href="#erreurs">Erreurs à éviter</a>
+    </aside>
+
+    <article class="guide-content">
+      <h2 id="checklist">Checklist 60 secondes (avant chaque queue)</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>#</th><th>Contrôle</th><th>Test</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><strong>Cap du mode</strong></td><td>Munitions ≤ T4 (N) / ≤ T5 (L) / libre (F) · armure ≤ cap · valeur ≤ 900k (L)</td></tr>
+            <tr><td>2</td><td><strong>Arme = scénario</strong></td><td>Voir <a href="meta-tier-list-globale.html">tier list par scénario</a> — carte + mode</td></tr>
+            <tr><td>3</td><td><strong>Top-load</strong></td><td>5 premières balles chères, réserve T3/T4 derrière</td></tr>
+            <tr><td>4</td><td><strong>Médical 500+</strong></td><td>1 medkit principal · OPM ×2-4 · chirurgie · ×2 analgésiques</td></tr>
+            <tr><td>5</td><td><strong>Fumée + nades</strong></td><td>1 fumée minimum (« non-négociable ») + MK2 selon carte</td></tr>
+            <tr><td>6</td><td><strong>Container</strong></td><td>Ammo lâche + 2e chargeur + meds précieux dedans</td></tr>
+            <tr><td>7</td><td><strong>Value/slot du sac</strong></td><td>Vise ≥5k (N) / ≥10k+ (L) par slot — remplir <em>propre</em></td></tr>
+            <tr><td>8</td><td><strong>Kit de mort prêt</strong></td><td>Ton prochain kit économique est déjà assemblé (anti-tilt)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="widget-mount" data-widget="loadout-builder"></div>
+
+      <h2 id="normal">Profil Normal — le main build (~450-500k)</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Slot</th><th>Choix</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td>Casque</td><td><strong>KSS2 Tac (T4)</strong></td><td>Seul T4 utilisant un masque T4</td></tr>
+            <tr><td>Headset</td><td>Z038</td><td>Bon équilibre, souvent cheap chez Deke</td></tr>
+            <tr><td>Armure</td><td>TM1 T4 rig + T4 titane</td><td>Solide, réparation coûteuse mais « worth it »</td></tr>
+            <tr><td>Sac</td><td>Med Field (28 slots)</td><td>Low profile — slots = money</td></tr>
+            <tr><td>Arme</td><td><strong>AK-12</strong></td><td>Recul facile, munitions 170-300 — le roi du Normal</td></tr>
+            <tr><td>Consommables</td><td>1 fumée · 2 force · 3 LP · 4 chirurgies · 5 medkits · dîner · mag 60 · 90-120 violettes</td><td>Voir liste</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Variante budget :</strong> SH12 (T3, 25-30k quasi-neuf, headset intégré) · aucune armure (« seul le T4 vaut le coup en Normal ») · BH rig · AK-74N léger · même consummables réduits. Investissement 50k → extraction minimum ~140k.</p>
+
+      <h2 id="lockdown">Profil Lockdown — sous le cap 900k</h2>
+      <ul>
+        <li>⚖️ <strong>Valeur totale ≤ 900 000</strong> — compte armure + arme + casque (le cap S7 te force à arbitrer).</li>
+        <li>🔫 Armes : AK-12 / A545 / AK-15SC / PCC-9 Full-Auto selon la carte (cf. tier list).</li>
+        <li>🛡️ T5 max : armored rig meta (M4 Defender…) — voir <a href="equipement-tier-list.html">tier équipement</a>.</li>
+        <li>💊 Médical complet (profil endgame si budget) : ST0 First Aid + 100D + 4 OPM + ST0 Surgery + EX ×2.</li>
+        <li>🔑 Clés de tes routes seulement — ROI vérifié (<a href="items-cles.html">clés</a>).</li>
+      </ul>
+
+      <h2 id="forbidden">Profil Forbidden — sans plafond, avec discipline</h2>
+      <ul>
+        <li>T6 + M61/M995/PPBS : la pénétration déterministe (durabilité) fait le reste — <a href="saison7-balance-changes.html">balance</a>.</li>
+        <li>Battleforged tags = 70k/pièce en drop — ramasse-les (<a href="cosmetiques-dog-tags.html">tags</a>).</li>
+        <li>Bankroll exigé : interdiction de forcer si &lt; 3 kits solides disponibles (règle des 3-4 morts — <a href="guide-economie.html">économie</a>).</li>
+        <li>Le U191 full mag + DVC12 + T6 (recette communautaire TV Forbidden) est un mode d'emploi, pas un dogme.</li>
+      </ul>
+
+      <h2 id="consum">La matrice consummables</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Item</th><th>Budget</th><th>Standard</th><th>Endgame</th></tr></thead>
+          <tbody>
+            <tr><td>Medkits</td><td>5 (petits)</td><td>100D + 3 OPM</td><td>ST0 FA + 100D + 4 OPM</td></tr>
+            <tr><td>Chirurgie</td><td>4×1 slot</td><td>ST0 Surgery</td><td>ST0 Surgery + réserve</td></tr>
+            <tr><td>Analgésiques</td><td>2 LP</td><td>2 EX</td><td>2 EX + boosters</td></tr>
+            <tr><td>Fumée</td><td>1</td><td>1-2</td><td>2</td></tr>
+            <tr><td>Boosters</td><td>—</td><td>2 force</td><td>Force + endurance + regen</td></tr>
+            <tr><td>Munitions (total)</td><td>90-120 violette</td><td>2 mags + 120 loose</td><td>+ top-load T5, réserve container</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <figure>
+        <img src="../img/fig/meta-loadout-optimizer.jpg" alt="Consommables de raid" loading="lazy" width="1200" height="675">
+        <figcaption>« Ammo is the most important gear. Period. » — investis dans les balles avant le reste.</figcaption>
+      </figure>
+
+      <h2 id="erreurs">Les 10 erreurs qui coûtent des kits</h2>
+      <ol>
+        <li>Violenter le cap de mode (T5 en Normal = valeur brûlée).</li>
+        <li>Munitions sous violette en PvP (« useless » selon la communauté).</li>
+        <li>Pistolet en kit débutant — coupe-le, mets ça dans l'arme principale.</li>
+        <li>Trop de chargeurs : 2 max (1 en gun + 1), réserve en container.</li>
+        <li>Fumée oubliée — « it can save your life ».</li>
+        <li>Pas de pre-painkill avant zone chaude.</li>
+        <li>Re-peek du même angle après un kill (fenêtre 30-40 s — <a href="meta-strategies-s7.html">stratégies</a>).</li>
+        <li>Rig à 60k pour un kit à 100k (ratio inversé).</li>
+        <li>Headset bas de gamme ou absent — l'audio &gt; le casque joli.</li>
+        <li>Stash qui gonfle : vends tags, attachments non-méta, nourriture, meds faibles (règle value/slot).</li>
+      </ol>
+
+      <h2 id="faq">FAQ optimiseur</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Normal ou Lockdown pour grinder ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>« Normals &gt; Lockdown for consistency » (communautaire) : le cap rend les kits prévisibles et les extractions régulières. Monte en Lockdown quand ton taux d'extraction Normal dépasse 50 % et que ta bankroll absorbe les pertes.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Le build 450k est-il un budget ou un standard ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>C'est le « optimisé » — au-dessus du budget (SH12/AK-74N ~150k), en dessous du endgame. La zone confort pour un joueur régulier en Normal. Ajuste l'arme au scénario, garde le reste de la structure.</p></div></div></div>
+
+      <p class="source-note"> <strong>Voir aussi :</strong> <a href="meta-builds-roles.html">rôles de squad & builds</a> ·<strong>Sources —</strong> reddit Best Optimized Builds for Normals (16/12/2025) · reddit loadout newcomer threads · data-armors/ammo/items.json · caps S7 patch notes. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Méta maîtrisé</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Étape suivante : la communauté — YouTube, wikis, GitHub, ressources officielles.</p>
+    <a class="btn btn-primary" href="communaute-ressources.html">Communauté →</a>
+    <a class="btn btn-ghost" href="meta-tier-list-globale.html">Tier list</a>
+  </div>
+</section>

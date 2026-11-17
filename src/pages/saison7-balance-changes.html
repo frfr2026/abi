@@ -1,0 +1,144 @@
+<!--META
+{
+  "file": "saison7-balance-changes.html",
+  "title": "Balance Saison 7 ABI — tous les nerfs & buffs de combat | NEXUS",
+  "description": "Tous les changements d'équilibrage de la Saison 7 Utopia : fin du RNG T5/T6, headshots renforcés, ricochet supprimé, plafonds par mode, portées augmentées, torche -7 ergo, buffs arme par arme.",
+  "keywords": "balance patch S7, nerf buff Arena Breakout, RNG pénétration supprimé, plafonds munitions, headshot buff",
+  "og_image": "img/hero/hero-saison7-balance-changes.jpg",
+  "ambiance": "saison7",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Saison 7","saison7-balance-changes.html"],["Balance changes","saison7-balance-changes.html"]],
+  "faq": [
+    ["Quel est le plus grand changement de la S7 ?","La suppression du RNG de pénétration T5/T6 : l'armure n'est plus traversée « par chance » — il faut désormais user sa durabilité sous un seuil. Conséquence directe : réparer avant chaque raid est devenu un réflexe compétitif, et l'achat d'armure se juge à sa réparabilité."],
+    ["Quels sont les plafonds par mode ?","Normal : munitions ≤ T4 ET équipement ≤ T4. Lockdown : munitions ≤ T5 (équipement max T5, valeur max 900 000 Koen). Forbidden : aucune limite. Emporter du T5 en Normal est désormais du gâchis : vérifie ton loadout avant le queue."],
+    ["Les headshots sont-ils vraiment plus forts ?","Oui — doublement : les dégâts de tête ont été renforcés ET le ricochet des casques/masques a été supprimé. Un impact de tête fait ce que la pénétration dit : plus de rebond chanceux, pour ou contre toi. La précision est le premier stat du jeu en S7."],
+    ["Quelles armes ont été buffées ?","FAL (Kit Recul : V 40→45, H 22→27), AN-94 (recul des 2 premiers coups du burst), ACE31 (V 52→48, H 28→27), AK-74N (perf recul), MCX (portée effective), M110 (recul), VSS (recul), UMP45 (cadence 600→650), P90 via SS190 (pen 41→42, armor dmg 18→19), correction des bugs de portée des canons Vector. Les lampes torche perdent 7 points d'ergonomie."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-saison7-balance-changes.jpg')" role="img" aria-label="Salle de calibration et de mesure"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Saison 7 › <span class="text-gold">Balance changes</span></p>
+    <span class="badge badge-s7">Saison 7 · Équilibrage</span>
+    <h1 class="hero-title" style="margin-top:14px">Balance<br><span class="accent">S7 au complet</span></h1>
+    <p class="hero-sub">La fin du hasard, la victoire de la précision : chaque nerf, chaque buff, chaque plafond du patch Utopia.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">T5/T6</span><span class="c-label">RNG supprimé</span></div>
+      <div class="hero-counter"><span class="counter">T4/T5</span><span class="c-label">Caps Normal/Lock</span></div>
+      <div class="hero-counter"><span class="counter">−7</span><span class="c-label">Ergo torche</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#core">Les 3 changements systèmes</a>
+      <a href="#caps">Plafonds par mode</a>
+      <a href="#armes">Buffs & nerfs d'armes</a>
+      <a href="#munitions">Munitions & armures</a>
+      <a href="#impact">Qui gagne, qui perd ?</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+      <h2 id="core">Les 3 changements systèmes</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Avant S7</th><th>Après S7</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>🎲 Pénétration T5/T6 <strong>aléatoire</strong> — un T5 pouvait rater « par chance »</td>
+              <td>⚙️ <strong>Déterministe</strong> : il faut réduire la durabilité de l'armure sous un seuil avant pénétration fiable</td>
+            </tr>
+            <tr>
+              <td>🪖 Ricochet des casques/masques — rebonds chanceux</td>
+              <td>🎯 <strong>Ricochet supprimé</strong> + <strong>headshots renforcés</strong> — impacts prévisibles</td>
+            </tr>
+            <tr>
+              <td>📏 Portées effectives variables</td>
+              <td>📏 <strong>Portées augmentées</strong> sur de nombreuses armes — duels longs resserrés</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout s7"><p class="co-title">🧠 La nouvelle doctrine</p>
+        Avant : espérer que le T5 passe. Maintenant : <strong>user l'armure (durabilité)</strong>, <strong>viser la tête (déterminisme)</strong>, <strong>réparer avant le raid</strong>. Le skill remplace la loterie — voir <a href="equipement-armures.html">armures</a>.</div>
+
+      <h2 id="caps">Plafonds par mode — chargement obligatoire</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Mode</th><th>Munitions</th><th>Équipement</th><th>Valeur max</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Normal</strong></td><td>≤ Tier 4</td><td>≤ Tier 4</td><td>—</td></tr>
+            <tr><td><strong>Lockdown</strong></td><td>≤ Tier 5</td><td>max T5</td><td><strong>900 000 Koen</strong></td></tr>
+            <tr><td><strong>Forbidden</strong></td><td>libre</td><td>libre</td><td>libre</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Effets collatéraux : le T6 n'existe qu'en Forbidden · le « T5-carry » en Normal est bridé · les kits Lockdown se plafonnent naturellement à 900k de valeur — la méta du « 150-250k bien placés » (AK-15SC) trouve son terrain.</p>
+
+      <h2 id="armes">Buffs & nerfs — arme par arme</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Arme / pièce</th><th>Changement</th><th>Lecture</th></tr></thead>
+          <tbody>
+            <tr><td><strong>FAL</strong> + Kit Recul</td><td>V 40→45 · H 22→27</td><td>Le grand gagnant : full-auto 7.62 stable</td></tr>
+            <tr><td><strong>AN-94</strong></td><td>Recul des 2 premiers coups du burst réduit</td><td>Burst encore plus meurtrier</td></tr>
+            <tr><td><strong>ACE31</strong></td><td>V 52→48 · H 28→27</td><td>Le budget 7.62 devient vraiment jouable</td></tr>
+            <tr><td><strong>AK-74N</strong></td><td>Perf recul améliorée</td><td>Confirmé meilleur entry Lockdown</td></tr>
+            <tr><td><strong>MCX</strong></td><td>Portée effective augmentée</td><td>Compacte qui gagne en polyvalence</td></tr>
+            <tr><td><strong>M110</strong></td><td>Recul diminué (+ Kit Double Détente)</td><td>La DMR du méta mid</td></tr>
+            <tr><td><strong>VSS</strong></td><td>Recul diminué</td><td>L'assassin reconfirmé</td></tr>
+            <tr><td><strong>UMP45</strong></td><td>Cadence 600→650</td><td>Le budget CQB monte d'un cran</td></tr>
+            <tr><td><strong>P90 (SS190)</strong></td><td>Pen 41→42 · armor dmg 18→19</td><td>La reine S renforcée</td></tr>
+            <tr><td><strong>Vector</strong></td><td>Bugs de portée des canons corrigés</td><td>Stats réellement appliquées enfin</td></tr>
+            <tr><td><strong>H416</strong></td><td>Recul horizontal mid/late rafale ajusté (patch)</td><td>Toujours S, légèrement touché</td></tr>
+            <tr><td>🔦 <strong>Lampe torche</strong></td><td><strong>Ergonomie −7</strong></td><td>Le spam « flashlight always on » est mort</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="munitions">Munitions & armures — les conséquences</h2>
+      <ul>
+        <li>📉 <strong>Casques/masques T5-T6 : perte de durabilité accélérée</strong> — le haut de gamme vieillit vite, répare systématiquement.</li>
+        <li>🔧 <strong>Durabilité = nouvelle jauge de pénétration</strong> — une armure à 30 % de sa jauge n'est plus le même mur qu'au spawn.</li>
+        <li>💰 <strong>Matériaux :</strong> aramide (2,4 % de perte) et polyéthylène (3,3 %) dominent la réparabilité ; céramique (11,7 %) se dégrade vite — arbitrage protection/longévité assumé (voir <a href="equipement-armures.html">matériaux</a>).</li>
+        <li>⚖️ Munitions de plafond : en Normal ton M61 T5 ne sert à rien — M80/BP T4 à la place.</li>
+      </ul>
+
+      <h2 id="impact">Qui gagne, qui perd ?</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>✅ Gagnants</th><th>❌ Perdants</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Sharpseurs (headshot déterministe) · FAL/PCC-9/M110 (kits) · A545 (nouvelle option S) · playstyle positionnel (portées ↑) · réparateurs méticuleux · leg-meta SMG</td>
+              <td>« Luck pen » playstyle · porteurs de torche permanente · T5-carry en Normal · joueurs qui ne réparent pas · céramiques non entretenues · blindés qui comptaient sur le ricochet</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="faq">FAQ balance S7</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Dois-je changer mes habitudes de kit ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Trois ajustements : vérifier le plafond du mode avant le queue, réparer avant chaque raid, et remplacer le « hope the pen procs » par de la durabilité ciblée. Le reste de ton gameplay survit — lequel se récompense davantage.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Le headshot buff rend-il les casques inutiles ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Non — l'inverse : sans ricochet chanceux, un casque bien couvert (visière, durabilité) fait toute la différence entre un impact absorbé et un kill. La tête nue est devenue encore plus chère à exposer.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Quelles armes monter en priorité après le patch ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>FAL + Kit Recul (méta mid longue), PCC-9 Full-Auto (CQB value), AK-74N (budget Lockdown), M110 Double Détente (sharp). Les builds détaillés sont dans <a href="armes-builds.html">builds</a>.</p></div></div></div>
+
+      <p class="source-note"><strong>Sources —</strong> patch notes officiels S7 MoreFun/Steam · arenabreakout-infinite.com/updates/s7-utopia · timesaver.gg · idcgames · reddit tips 2.0 (chart matériaux) · data-armors.json. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Passe au mode infection</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Infected Zone : le PvPvE de la saison.</p>
+    <a class="btn btn-primary" href="saison7-zombie-infected-zone.html">Infected Zone →</a>
+    <a class="btn btn-ghost" href="saison7-utopia.html">Vue d'ensemble</a>
+  </div>
+</section>

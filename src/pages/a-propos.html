@@ -1,0 +1,96 @@
+<!--META
+{
+  "file": "a-propos.html",
+  "title": "À propos & méthodologie — comment ABI NEXUS est vérifié | NEXUS",
+  "description": "À propos d'ABI NEXUS : méthodologie de vérification (sources officielles, Reddit, YouTube, GitHub, wikis), datation des chiffres, transparence sur les valeurs communautaires, accessibilité et mentions légales.",
+  "keywords": "à propos ABI NEXUS, méthodologie guide Arena Breakout, sources vérifiées ABI",
+  "og_image": "img/fig/a-propos.jpg",
+  "ambiance": "communaute",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["À propos","a-propos.html"]],
+  "faq": [
+    ["ABI NEXUS est-il officiel ?","Non — c'est un guide communautaire indépendant, sans lien avec MoreFun Studios ou Level Infinite. Arena Breakout: Infinite © MoreFun Studios / Level Infinite. Les marques et captures appartiennent à leurs propriétaires."],
+    ["D'où viennent les chiffres du site (stats, prix, dégâts) ?","Priorité aux sources primaires : patch notes Steam/MoreFun, puis les bases communautaires data-driven (arenabreakout-infinite.com, qrts, fandom, abibuilder — partner officiel), puis Reddit/YouTube pour les techniques. Chaque page porte une date de vérification et une note de sources en bas."],
+    ["Pourquoi certains chiffres sont-ils « environ » ?","MoreFun ne publie jamais tout : cap Secure Ops 600k, taux de conversion 30-40%, seuil de pénétration S7… sont des consensus communautaires documentés, affichés comme tels. Nous distinguons toujours : officiel (annonces) vs communautaire (tests/rétours) vs estimé (déduction de cadence)."],
+    ["Comment signaler une erreur ?","Chaque page a un pied de page daté et le plan du site est à jour. Via les canaux communautaires listés sur ressources : les corrections bien sourcées (patch note à l'appui) sont prioritaires."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/fig/a-propos.jpg')" role="img" aria-label="Communauté ABI NEXUS"></div>
+  <div class="hero-overlay"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › <span class="text-gold">À propos</span></p>
+    <span class="badge badge-s7">MÉTHODOLOGIE OUVERTE</span>
+    <h1 class="hero-title" style="margin-top:14px">À propos<br><span class="accent">&amp; méthodologie</span></h1>
+    <p class="hero-sub">Comment ce guide est construit, d'où viennent les chiffres, et ce qu'il ne prétend pas être.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">67</span><span class="c-label">Pages vérifiées</span></div>
+      <div class="hero-counter"><span class="counter">17/11</span><span class="c-label">Dernière revue</span></div>
+      <div class="hero-counter"><span class="counter">100%</span><span class="c-label">Sources citées</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#identite">Identité</a>
+      <a href="#methode">Méthode</a>
+      <a href="#hiérarchie">Hiérarchie des sources</a>
+      <a href="#transparence">Transparence</a>
+      <a href="#qualite">Qualité & accessibilité</a>
+      <a href="#mentions">Mentions</a>
+    </aside>
+    <div class="guide-content">
+      <h2 id="identite" class="section-title">Identité <span class="accent">du projet</span></h2>
+      <p><strong>ABI NEXUS</strong> est un guide communautaire francophone indépendant dédié à <em>Arena Breakout: Infinite</em> (PC), construit de zéro entre août et novembre 2026 : <strong>67 pages</strong>, ~200 000 mots, 60 illustrations, 10 ambiances audio, 5 outils interactifs (loadout builder, comparateur d'armes, explorateur de cartes Leaflet, calculateur STK/TTK, recherche globale) et une PWA installable. Objectif déclaré : être <strong>la référence la plus complète et la plus interactive en français</strong> sur le jeu, alignée sur la Saison 7 : Utopia (patch 1.0.0.142.19+).</p>
+
+      <h2 id="methode" class="section-title">Méthode <span class="accent">de travail</span></h2>
+      <ol>
+        <li>🔍 <strong>Recherche avant rédaction</strong> — chaque section est précédée d'une recherche web (officiel, Reddit, YouTube, GitHub, wikis, réseaux). Jamais de page écrite de mémoire seule.</li>
+        <li>📅 <strong>Datation systématique</strong> — chaque page porte une date de vérification (ex. « vérifié le 17/11/2026 ») et une note de sources en pied.</li>
+        <li>🏷️ <strong>Qualification des chiffres</strong> — officiel (patch note) > communautaire data (bases de données) > consensus (tests/rétours) > estimé (cadence). Les estimations sont toujours signalées comme telles.</li>
+        <li>🔁 <strong>Revue à chaque événement</strong> — live updates, fins d'événements, nouvelles saisons : les pages concernées sont revues et datées à nouveau (historique des mises à jour dans le journal du projet).</li>
+        <li>🧪 <strong>Validation automatique</strong> — liens internes (7 000+), images, JSON-LD, structure HTML, sitemap et accessibilité de base passent un audit vert avant mise en ligne.</li>
+      </ol>
+
+      <h2 id="hiérarchie" class="section-title">Hiérarchie <span class="accent">des sources</span></h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Rang</th><th>Source</th><th>Usage</th></tr></thead>
+          <tbody>
+            <tr><td><span class="tier-badge tier-s">1</span></td><td><strong>Steam / MoreFun</strong> (patch notes, annonces)</td><td>Règles, dates, changements de balance — la vérité primale</td></tr>
+            <tr><td><span class="tier-badge tier-s">2</span></td><td><strong>Bases de données data</strong> (arenabreakout-infinite.com, qrts, fandom, abibuilder — partner officiel)</td><td>Stats d'armes/munitions, matrices de pénétration</td></tr>
+            <tr><td><span class="tier-badge tier-a">3</span></td><td><strong>Reddit r/ArenaBreakoutInfinite</strong> + Discord communautaire</td><td>Techniques, astuces, retours terrain, cap non officiels</td></tr>
+            <tr><td><span class="tier-badge tier-a">4</span></td><td><strong>YouTube / Twitch</strong> (ImOw, SuraFPS, Kritikal, So1o…)</td><td>Stratégies, démonstrations, méta en pratique</td></tr>
+            <tr><td><span class="tier-badge tier-b">5</span></td><td><strong>Guides tiers</strong> (timesaver, h4ck, senseos…)</td><td>Recoupement de dates et de fenêtres d'événements</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="transparence" class="section-title">Transparence <span class="accent">&amp; limites</span></h2>
+      <div class="callout warning">
+        <strong>Ce que ce site n'est pas :</strong> ni officiel, ni une base de données en temps réel (les chiffres sont datés), ni un conseil d'achat (aucun Koen ne se vend ici — MoreFun a retiré l'achat de Koen au lancement 1.0). <strong>Méfie-toi des « hacks »</strong> : les repos GitHub annonçant ESP/aimbot/wallhack sont des appâts à malwares et des arnaques — l'utilisation de cheats = bannissement ; les seuls outils légitimes sont listés sur <a href="communaute-ressources.html">ressources communautaires</a>.
+      </div>
+      <ul>
+        <li>💸 <strong>Prix/marché</strong> : indicatifs, variables selon les serveurs et la date — toujours revérifier en jeu.</li>
+        <li>🎯 <strong>STK/TTK & pénétration</strong> : modèle communautaire documenté sur la page <a href="items-munitions.html">munitions</a> (pas un dump serveur).</li>
+        <li>📅 <strong>Dates d'événements</strong> : fenêtres UTC+0 confirmées quand publiées, estimées quand déduites de la cadence.</li>
+      </ul>
+
+      <h2 id="qualite" class="section-title">Qualité, SEO <span class="accent">&amp; accessibilité</span></h2>
+      <ul>
+        <li>♿ WCAG 2.2 AA : navigation clavier, skip-links, focus visible, <code>prefers-reduced-motion</code>, cibles tactiles ≥24px, contrastes vérifiés.</li>
+        <li>🔎 SEO : titres uniques, méta descriptions, canonical, JSON-LD (FAQ/Breadcrumb/Article), <a href="../sitemap.xml">sitemap XML</a>, <a href="../robots.txt">robots.txt</a>.</li>
+        <li>⚡ Perf : scripts différés, images lazy avec dimensions, PWA hors-ligne (<strong>Ctrl+K</strong> partout pour la recherche).</li>
+        <li>📱 Responsive : de 360px à l'ultra-large, mode sombre/clair natif.</li>
+      </ul>
+
+      <h2 id="mentions" class="section-title">Mentions <span class="accent">légales</span></h2>
+      <p class="text-muted">Guide communautaire non officiel. Arena Breakout: Infinite © MoreFun Studios / Level Infinite. Tous les noms de jeu, personnages et éléments appartiennent à leurs propriétaires respectifs. Les illustrations sont des visuels d'ambiance originaux (IA), sans reproduction de contenus protégés. Site statique déployable localement ou via Vercel — aucune donnée personnelle collectée, aucun traceur.</p>
+      <p class="source-note">Version du site : S0→S21 (17/11/2026) · journal des étapes disponible sur demande · contact via les canaux de <a href="communaute-ressources.html">la communauté</a>.</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,33 @@
+{
+  "name": "ABI NEXUS — Guide Ultime Arena Breakout Infinite",
+  "short_name": "ABI NEXUS",
+  "description": "Le guide français le plus complet d'Arena Breakout Infinite : Saison 7 Utopia, tier lists, builds, cartes interactives, économie et méta.",
+  "lang": "fr",
+  "dir": "ltr",
+  "start_url": "/index.html",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0A0C0F",
+  "theme_color": "#0A0C0F",
+  "categories": ["games", "reference", "news"],
+  "icons": [
+    {
+      "src": "img/icon-app.jpg",
+      "sizes": "1254x1254",
+      "type": "image/jpeg",
+      "purpose": "any"
+    },
+    {
+      "src": "img/icon-app.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    { "name": "Tier list globale", "url": "/pages/meta-tier-list-globale.html" },
+    { "name": "Cartes interactives", "url": "/pages/map-farm.html" },
+    { "name": "Saison 7 Utopia", "url": "/pages/saison7-utopia.html" }
+  ]
+}

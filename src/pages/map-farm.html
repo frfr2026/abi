@@ -1,0 +1,142 @@
+<!--META
+{
+  "file": "map-farm.html",
+  "title": "Carte Farm ABI — exfils, routes de loot & boss Ajax | NEXUS",
+  "description": "Guide complet de la carte Farm d'Arena Breakout Infinite : 12 points d'extraction (fixes, conditionnels, payants), hotspots Motel/Stables/Grain Center, safes chronométrés et routes par spawn.",
+  "keywords": "carte Farm Arena Breakout, Farm extractions, Motel safe, Grain Trade Center, boss Ajax",
+  "og_image": "img/maps/map-farm.jpg",
+  "ambiance": "maps",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Cartes","map-farm.html"],["Farm","map-farm.html"]],
+  "faq": [
+    ["Quels sont les exfils de Farm ?","4 fixes — Outpost (ouest), Highway (est), Boulder Wall, Path to Restricted Area (nord-est) ; 2 à chance — Artificial Lake (tuer Ajax), Path to Northridge (50 %) ; 2 conditionnels — Hunter's Path (sans sac, après 10 min) et Southern Blockade (payant, après 10 min, prix affiché en raid). Ouvre ta carte au spawn : les exfils donnés dépendent généralement du côté opposé à ton spawn."],
+    ["Où est le meilleur loot sur Farm ?","Motel (haut risque, multiples coffres et salles clés), Stables (armes/armor + safe chronométré au 2ᵉ étage), Grain Trade Center (munitions, pièces, matières d'artisanat — economy runs répétables). Les 4 safes gratuits chronométrés : Stables 2F, Small Hall (nord), un bus de la Loading Area, un fourgon sous le pont de l'autoroute."],
+    ["Comment farm efficacement en débutant ?","Spawn ouest → Grain Trade Center d'abord (Barn Office + ordinateurs), puis route sud via Cemetery/S. Loading Area, Motel seulement si c'est calme. Spawn nord/centre → safe chronométré de Small Hall puis sort avant l'affluence. Dès que le sac vaut plus que ton kit, extrais — règle n°1 du <a href=\"guide-economie.html\">guide économie</a>."],
+    ["Le boss de Farm où ?","Ajax se trouve près d'Artificial Lake — l'exfil Artificial Lake demande de l'éliminer (conditionnel). Les exfils payants : Southern Blockade (sources divergent sur le prix — 2 000 à 30 000 Koen selon les données communautaires, lis l'invite en raid)."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/maps/hero-map-farm.jpg')" role="img" aria-label="Vue de la carte Farm"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Cartes › <span class="text-gold">Farm</span></p>
+    <span class="badge badge-gold">Carte · Départant</span>
+    <h1 class="hero-title" style="margin-top:14px">Farm<br><span class="accent">la terre d'accueil</span></h1>
+    <p class="hero-sub">12 extractions, 211 marqueurs, un boss : la carte d'apprentissage où se construit ta première bankroll.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">12</span><span class="c-label">Extractions</span></div>
+      <div class="hero-counter"><span class="counter">4</span><span class="c-label">Safes gratuits</span></div>
+      <div class="hero-counter"><span class="counter">20 min</span><span class="c-label">Raids courts</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#apercu">Aperçu & zones</a>
+      <a href="#exfils">Les 12 extractions</a>
+      <a href="#loot">Hotspots de loot</a>
+      <a href="#safes">Safes gratuits</a>
+      <a href="#routes">Routes par spawn</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+            <div class="callout tip" style="margin-top:16px">
+        <p class="co-title">🗺️ Cartes interactives de référence (communauté)</p>
+        Planifie tes routes avec les outils live : <a href="https://maps.tcno.co/abi" target="_blank" rel="noopener">maps.tcno.co/abi</a> ·
+        <a href="https://abibuilder.com/maps" target="_blank" rel="noopener">abibuilder.com/maps</a> ·
+        <a href="https://arena-breakout-infinite.fandom.com/wiki/Special:AllMaps" target="_blank" rel="noopener">fandom — toutes les cartes</a> ·
+        <a href="https://arenabreakout-infinite.com/fr/maps/" target="_blank" rel="noopener">arenabreakout-infinite.com — cartes interactives</a>.
+        <span class="text-muted">(Spawns, exfils et clés vérifiés en direct — les calques de cette page sont un instantané du 17/11/2026.)</span>
+      </div>
+      <h2 id="apercu">Aperçu & zones</h2>
+      <p>Farm est le <strong>secteur agricole au nord de Kamona</strong> : lignes de vue ouvertes entre des compounds fixes, raids courts (~20 min en Normal), idéal pour les premières heures et les économies rapides. La carte se lit en trois bandes :</p>
+      <ul>
+        <li><strong>Ouest :</strong> Grain Trade Center (industriel), Farmhouse, Cemetery.</li>
+        <li><strong>Centre :</strong> Stables, Recycling Station, <strong>Motel</strong>, S. Loading Area, Small Hall.</li>
+        <li><strong>Est :</strong> Open Storage, Wheatfield Hut, Loading Area, Main Warehouse, <strong>Villa</strong>, SE Village.</li>
+      </ul>
+      <div class="callout tip"><p class="co-title">🗺️ Règle des exfils</p>
+        Ouvre ta carte <strong>au début de chaque raid</strong> : la liste d'exfils affichée est la seule source fiable (les extractions sont en partie aléatoires). En général, tes sorties sont <strong>du côté opposé à ton spawn</strong> — trace la route avant de looter.</div>
+
+      <h2 id="exfils">Les 12 points d'extraction</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Exfil</th><th>Type</th><th>Condition</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Outpost</strong></td><td>Fixe</td><td>— (ouest, près de la Sentry Tower)</td></tr>
+            <tr><td><strong>Highway</strong></td><td>Fixe</td><td>— (est)</td></tr>
+            <tr><td><strong>Boulder Wall</strong></td><td>Fixe</td><td>—</td></tr>
+            <tr><td><strong>Path to Restricted Area</strong></td><td>Fixe</td><td>— (nord-est)</td></tr>
+            <tr><td>Path to Northridge</td><td>À chance</td><td>Disponibilité ~50 %</td></tr>
+            <tr><td>Artificial Lake</td><td>Conditionnel</td><td><strong>Éliminer Ajax</strong> pour appeler la sortie</td></tr>
+            <tr><td>Hunter's Path</td><td>Conditionnel</td><td><strong>Sans sac à dos</strong> · après 10 min (astuce : porte un sac roulé dans le rig)</td></tr>
+            <tr><td>Southern Blockade</td><td>Conditionnel / payant</td><td>Après 10 min · paiement en raid (sources : 2 000 à 30 000 Koen)</td></tr>
+            <tr><td>Recycling Station Sentry Tower</td><td>Conditionnel</td><td>Tâches de mission</td></tr>
+            <tr><td>Loading Area Sentry Tower</td><td>Conditionnel</td><td>Tâches de mission</td></tr>
+            <tr><td>Wheatfield Hut</td><td>Conditionnel</td><td>Selon disponibilité</td></tr>
+            <tr><td>Farmhouse / S. Loading Area</td><td>Cartes récentes</td><td>Listés sur les cartes communautaires récentes</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="loot">Hotspots de loot — risque vs rendement</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Zone</th><th>Contenu</th><th>Risque</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Motel</strong></td><td>« Top-tier loot & PvP hub » — armes, armor, salles clés (Motel 201…), 3-4 med cases</td><td><span class="tier-badge tier-d">Très haut</span></td></tr>
+            <tr><td><strong>Stables</strong></td><td>Armes & armor, clear rapide · safe chronométré 2ᵉ étage (audible de loin)</td><td><span class="tier-badge tier-c">Haut</span></td></tr>
+            <tr><td><strong>Grain Trade Center</strong></td><td>Munitions premium (boîtes sur passerelle), pièces d'armes, crafting, Barn Office, safe</td><td><span class="tier-badge tier-b">Moyen</span></td></tr>
+            <tr><td><strong>Villa</strong></td><td>Master Bedroom (clé ~1kk), loot secondaire — alternative quand le centre est chaud</td><td><span class="tier-badge tier-b">Moyen</span></td></tr>
+            <tr><td><strong>Small Hall / Open Storage</strong></td><td>Safes chronométrés, petits coffres Lockdown+</td><td><span class="tier-badge tier-b">Moyen</span></td></tr>
+            <tr><td>Village / champs</td><td>Loot bas de gamme, fuite rapide</td><td><span class="tier-badge tier-a">Faible</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="safes">Les 4 safes gratuits chronométrés</h2>
+      <ol>
+        <li><strong>Stables, 2ᵉ étage</strong> — bippant, audible de loin : tout le lobby l'entend. Arrive vite ou attends les amberesurs.</li>
+        <li><strong>Small Hall</strong> (zone nord, ajout S2) — timing raid court idéal.</li>
+        <li><strong>Loading Area — dans un bus</strong>.</li>
+        <li><strong>Sous le pont de l'autoroute</strong> — fourgon, ouverture instantanée (marqué Lockdown dans les données communautaires).</li>
+      </ol>
+      <div class="callout warning"><p class="co-title">⏱️ Bruit = traque</p>
+        Un safe chronométré qui bipe = un signal radio pour tout le lobby. Lire le comportement des autres joueurs autour des safes est la moitié du skill sur Farm.</div>
+
+      <h2 id="routes">Routes par spawn</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Spawn</th><th>Route conseillée</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Ouest</strong></td><td>Grain Trade Center (Barn Office, ordinateurs) → route sud Cemetery → S. Loading Area → Motel si calme → exfil ouest</td></tr>
+            <tr><td><strong>Nord / Centre</strong></td><td>Safe de Small Hall → sort avant l'affluence → petits safes d'Open Storage → exfil opposé</td></tr>
+            <tr><td><strong>Sud</strong></td><td>Villa → Wheatfield Hut → Stables (crouch réduit le bruit de 60 %) → exfil sud</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Boss :</strong> <strong>Ajax</strong> + garde autour d'<strong>Artificial Lake</strong> — le loot en vaut la peine, et c'est la clé de l'exfil Artificial Lake.</p>
+
+      <h2 id="faq">FAQ Farm</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Motel ou Grain Center pour débuter ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Grain Trade Center — loot utilitaire fiable, risque moyen, et des runs économiques répétables. Le Motel est un goal PvP : n'y va que si tu as un kit qui peut le défendre et que le raid est calme.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Combien de temps dure un raid ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>~20 minutes en Normal — la carte la plus courte du jeu. Beaucoup d'exfils conditionnels ouvrent à 10 min : planifie la moitié du raid comme une sortie, pas comme un bonus.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Hunter's Path sans sac — ça vaut ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Excellente sortie d'urgence : tu gardes ton rig plein et tu laisses le sac (ou tu portes un sac roulé dépliable dans le rig). Utilise-la quand tes exfils principaux sont surveillés.</p></div></div></div>
+      <p class="source-note"><strong>Sources —</strong> arenabreakout-infinite.com Farm map (12 exfils, 211 marqueurs) · timesaver Farm guide S7 (22/10/2026) · buffbuff Farm loot routes · charlieintel all extractions. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">La vallée des snipers</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Valley : côtes, radars et lignes de vue mortelles.</p>
+    <a class="btn btn-primary" href="map-valley.html">Valley →</a>
+    <a class="btn btn-ghost" href="map-northridge.html">Northridge</a>
+  </div>
+</section>

@@ -1,0 +1,124 @@
+<!--META
+{
+  "file": "modes-secure-ops.html",
+  "title": "Secure Ops ABI — mode sans perte de gear, cap 600k | NEXUS",
+  "description": "Secure Ops dans Arena Breakout Infinite expliqué : tu gardes ton équipement à la mort (sauf munitions/soins utilisés), cap 600k de valeur, conversion Koen ~30-40%, meilleures astuces et meilleurs loadouts S7.",
+  "keywords": "Secure Ops Arena Breakout, mode sans perte équipement ABI, cap 600k secure ops, secure ops Koen farming",
+  "og_image": "img/hero/hero-secure-ops.jpg",
+  "ambiance": "guides",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Guides","guide-debutant.html"],["Secure Ops","modes-secure-ops.html"]],
+  "faq": [
+    ["Qu'est-ce que le Secure Ops exactement ?","Le mode d'extraction à faible risque d'ABI : si tu échoues à t'extraire, tu ne perds AUCUN équipement porté (le seul coût : munitions, soins et consommables utilisés en raid). Si tu t'extraits, tout le loot devient des Koen convertis (~30-40% de la valeur affichée, selon les retours joueurs). Idéal pour apprendre les cartes, tester des armes et faire des missions de saison sans gear fear."],
+    ["Quel est le cap d'équipement en Secure Ops ?","Les joueurs rapportent un plafond de 600 000 Koen de valeur d'équipement en S7 (400k dans les versions antérieures — vérifie la fiche du mode en jeu). Seul ce que tu PORTES compte (pas le sac), l'armure abîmée compte bien moins, et le jeu bloque le contournement par le sac à dos. Une équipe de 4 peut théoriquement cumuler ~1,2M de kits en se répartissant les pièces."],
+    ["Combien rapporte un raid Secure Ops ?","Environ 30-40% de la valeur affichée du loot (retours 20%-50%). Les armures très abîmées sont surévaluées par le jeu : privilégie les armes, attachements et objets de valeur, et laisse les plates à moins de la moitié de durabilité. Objectif réaliste : 300-600k/semaine en jouant tranquillement (sources communautaires)."],
+    ["Secure Ops ou Tactical Ops pour gagner des Koen ?","Tactical Ops (Normal/Lockdown/Forbidden) rapporte bien plus : le loot sort à 100% dans ton stash. Secure Ops est un filet de sécurité pour progresser, apprendre et accomplir les missions de saison — pas la meilleure farming method. Bon combo : Secure Ops pour apprendre une nouvelle carte avant de la jouer en Lockdown."],
+    ["L'armure doit-elle être neuve pour le mode ?","Non. La règle « armure neuve obligatoire » qui circule sur reddit (13/11/2026) n'est qu'une SUGGESTION communautaire : aucune patch note ne l'a appliquée. L'armure usée fonctionne toujours en Saison 7 — et elle coûte moins cher au compteur du cap 600k."],
+    ["Y a-t-il une assurance équipement payante ?","Non — ABI n'a aucune assurance payante : impossible de payer une prime avant le raid pour récupérer son arme en cas de mort. Les seuls filets : le mode Secure Ops (kit conservé si échec d'extraction) et la container sécurisée du stash."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-secure-ops.jpg')" role="img" aria-label="Opérateur préparant son équipement dans un safehouse"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="14"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Guides › <span class="text-gold">Secure Ops</span></p>
+    <span class="badge badge-s7">MODE ANTI-GEAR-FEAR · S7</span>
+    <h1 class="hero-title" style="margin-top:14px">Secure Ops<br><span class="accent">sans perte de gear</span></h1>
+    <p class="hero-sub">Le mode où tu gardes ton équipement même mort — cap, conversion Koen, astuces et loadouts.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">600k</span><span class="c-label">Cap équipement (S7)</span></div>
+      <div class="hero-counter"><span class="counter">30-40%</span><span class="c-label">Conversion Koen</span></div>
+      <div class="hero-counter"><span class="counter">0</span><span class="c-label">Gear perdu à la mort</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#regles">Règles du mode</a>
+      <a href="#cap">Cap 600k</a>
+      <a href="#conversion">Conversion Koen</a>
+      <a href="#loadout">Loadouts</a>
+      <a href="#vs">vs autres modes</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+    <div class="guide-content">
+      <div class="callout s7">
+        <strong>TL;DR :</strong> tu <strong>gardes tout ton gear porté même en cas d'échec d'extraction</strong> — seules les munitions/soins/consommables utilisés sont perdus. La loot convertie en Koen à ~<strong>30-40%</strong> de sa valeur. Cap d'équipement <strong>600k</strong> (valeur portée). Mode idéal : <strong>apprendre, tester, missions de saison</strong> — pas pour devenir riche.
+      </div>
+
+      <h2 id="regles" class="section-title">Les règles <span class="accent">du mode</span></h2>
+      <ul>
+        <li>🛡️ <strong>Équipement préservé :</strong> échec d'extraction = ton gear porté reste intact (arme, armure, casque, rig — même durabilité). Formulation officielle MoreFun : « you won't lose any gear when you fail to extract ».</li>
+        <li>💸 <strong>Ce que tu perds quand même :</strong> les munitions tirées, les soins consommés, les lancés utilisés. Chaque raid a donc un coût réel, même « safe ».</li>
+        <li>💰 <strong>Extraction = conversion :</strong> tout le loot ramassé est automatiquement converti en Koen (envoyé par mail) — tu ne rapportes pas d'objets physiques.</li>
+        <li>🚫 <strong>Pas de casque de sécurité gratuit :</strong> c'est un filet, pas un mode sans conséquence : les IA et les joueurs te tuent toujours (le PvP reste actif selon les fiches de mode).</li>
+        <li>🎯 <strong>Usage recommandé (communauté) :</strong> apprendre les spawns/routes d'une nouvelle carte, tester une arme que tu viens de modder, enchaîner les missions de saison, et faire des « lobby wipes » tranquilles avant de frapper les salles verrouillées.</li>
+      </ul>
+
+      <h2 id="cap" class="section-title">Le cap <span class="accent">600 000 Koen</span></h2>
+      <p>L'écran <strong>Equipment Value</strong> de ton loadout plafonne à <strong>600k</strong> selon les retours S7 (400k dans les versions antérieures — le chiffre exact n'est jamais publié par MoreFun, vérifie la fiche du mode en jeu) :</p>
+      <ul>
+        <li>⚖️ <strong>Seul le gear PORTÉ compte</strong> — le sac à dos est ignoré, et le jeu bloque le contournement en interdisant d'emporter armure/casque dans le sac.</li>
+        <li>🔧 <strong>La durabilité baisse la valeur</strong> : une armure T6 à 10-20 durabilité coûte une fraction de son prix neuf — c'est LE levier des joueurs qui affichent du T6 sous le cap.</li>
+        <li>🤝 <strong>Répartition en squad</strong> (retours Steam/Reddit) : chaque membre porte une pièce chère puis se la passe après le spawn — l'équipe de 4 cumule ~1,2M de kits. ⚠️ contourner le cap autrement que par le loot in-raid est considéré comme un exploit selon les mods communautaires.</li>
+        <li>📦 <strong>Astuce chargeur :</strong> ne monte pas le chargeur étendu sur l'arme — mets-le dans le gilet et recharge au spawn : tu gagnes 10-50k de valeur sous le cap (astuce reddit).</li>
+      </ul>
+
+      <h2 id="conversion" class="section-title">Conversion <span class="accent">Koen</span></h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Loot affiché</th><th>Koen reçu (retours)</th><th>Taux</th></tr></thead>
+          <tbody>
+            <tr><td>1 000 000</td><td>~450 000</td><td><span class="tier-badge tier-a">45%</span></td></tr>
+            <tr><td>1 250 000</td><td>~250 000</td><td><span class="tier-badge tier-b">20%</span></td></tr>
+            <tr><td>6 000 000+</td><td>~1 500 000</td><td><span class="tier-badge tier-b">~25%</span></td></tr>
+            <tr><td>4 000 000</td><td>~2 000 000</td><td><span class="tier-badge tier-s">~50%</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="source-note">La fourchette large vient d'un artefact : <strong>l'estimation in-raid surévalue les armures abîmées</strong> (une T6 à 5 durabilité affiche 200k mais vaut ~30k ; à 0/100 elle ne rapporte rien). D'où les règles :</p>
+      <div class="callout tip">
+        <strong>Maximise la conversion :</strong> <strong>1.</strong> prends armes + attachements + objets de valeur (proches de leur vrai prix) · <strong>2.</strong> laisse les plates sous ~50% de durabilité · <strong>3.</strong> vise les Universal Key Cards (bon drop rate en Secure Ops) et <strong>utilise-les dans le même raid</strong> (les clés non utilisées ne rapportent pas) · <strong>4.</strong> ne planifie jamais ton budget de Koen là-dessus — pour le vrai income, voir <a href="guide-economie.html">économie</a> et <a href="items-koen-economy.html">Koen</a>.
+      </div>
+
+      <h2 id="loadout" class="section-title">Loadouts <span class="accent">recommandés</span></h2>
+      <div class="grid-3">
+        <div class="card"><h3>💰 Budget (400k)</h3><p class="text-muted">SMG économique (PCC-9/MPX) + T4. Parfait pour enchaîner sans stress. Objectif : missions + 300-600k/semaine de conversion.</p></div>
+        <div class="card"><h3>⚔️ Cap serré (600k)</h3><p class="text-muted">Arme méta (A545/H416) + T5 porté, armure à durabilité contrôlée pour tenir sous le cap. Pour tester des builds avant le Lockdown.</p></div>
+        <div class="card"><h3>🎓 Apprentissage</h3><p class="text-muted">Kit jetable + carte neuve : spawns, routes d'exfil, salles verrouillées. Zéro gear fear = cerveau disponible pour apprendre.</p></div>
+      </div>
+      <p>Pour le détail des caps par mode Tactical (Normal T4 / Lockdown T5 + 900k) : <a href="equipement-tier-list.html">tier list équipement</a> · <a href="meta-loadout-optimizer.html">loadout optimizer</a>.</p>
+
+      <h2 id="vs" class="section-title">Secure Ops <span class="accent">vs les autres modes</span></h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Mode</th><th>Perdu à la mort</th><th>Gain d'extraction</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Secure Ops</strong></td><td>Munitions/soins utilisés — <strong>gear porté intact</strong></td><td>Loot → Koen ~30-40%</td></tr>
+            <tr><td>Tactical Ops (N/L/F)</td><td>Tout hors case de sécurité</td><td>Loot 100% au stash (cap T4/T5 selon mode)</td></tr>
+            <tr><td>Covert Ops</td><td>Rien de ton stash (kit aléatoire)</td><td>Loot extrait</td></tr>
+            <tr><td>Supplies Drops</td><td>Frais d'entrée</td><td>Coffre personnel envoyé par mail</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="source-note">Bonus : il n'existe <strong>aucune assurance payante</strong> dans ABI (vérifié 14/11/2026) — Secure Ops est le vrai filet anti-perte du jeu.</p>
+
+      <section class="section" id="faq" style="padding-top:0">
+        <h2 class="section-title">Questions <span class="accent">fréquentes</span></h2>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Le loot vert converti est-il garanti ?</button><div class="faq-a"><p>Oui — conversion automatique à l'extraction, envoyée par mail in-game. Pas de choix d'objet à garder : tout se vend, d'où l'importance de ne remporter que du loot à forte valeur affichée <em>et</em> réelle.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Peut-on faire du PvP en Secure Ops ?</button><div class="faq-a"><p>Oui — les autres opérateurs sont là. L'avantage : tu peux take des duels « free » pour apprendre sans risquer ton kit. Reste prudent : tes consommables coûtent quand même.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Pourquoi mon T6 affiche 900k+ sous le cap ?</button><div class="faq-a"><p>Tu portes probablement de l'armure à durabilité haute. Passe à des pièces plus usées (réduites en valeur), démonte le chargeur étendu, ou vérifie que rien n'est porté « en double ». Le compteur ne calcule que le porté.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Quelle différence avec Covert Ops ?</button><div class="faq-a"><p>Covert Ops : kit aléatoire gratuit, zéro risque stash. Secure Ops : <em>ton propre</em> kit protégé, tu choisis ce que tu portes (dans la limite du cap). Voir aussi <a href="guide-debutant.html">guide débutant</a> et <a href="guide-extraction.html">extraction</a>.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">L'armure doit-elle être neuve ?</button><div class="faq-a"><p>Non. La règle « armure neuve obligatoire » qui circule sur reddit (13/11/2026) n'est qu'une <strong>suggestion communautaire</strong> : aucune patch note ne l'a appliquée. L'armure usée fonctionne toujours en Saison 7 — et elle coûte moins cher au compteur du cap 600k.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Y a-t-il une assurance équipement payante ?</button><div class="faq-a"><p>Non — <strong>ABI n'a aucune assurance payante</strong> : impossible de payer une prime avant le raid pour récupérer son arme en cas de mort. Les seuls filets : ce mode (kit conservé si échec d'extraction) et la <a href="guide-debutant.html#faq">container sécurisée</a> du stash.</p></div></div>
+      </section>
+
+      <p class="source-note">Sources : MoreFun/Steam announcements (règles officielles) · timesaver.gg Secure Ops expliqué (16/11/2026, cap 600k + taux 30-40%) · reddit r/ArenaBreakoutInfinite (cap, pooling, chargeur) · Steam achievement guide (40% conversion, 600k) · overgear/veloxgame — vérifié le 17/11/2026.</p>
+    </div>
+  </div>
+</section>

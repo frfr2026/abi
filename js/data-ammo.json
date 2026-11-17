@@ -1,0 +1,90 @@
+{
+  "meta": {
+    "game": "Arena Breakout Infinite",
+    "season": "Saison 7 : Utopia",
+    "updated": "2026-11-17",
+    "total_ammo": 70,
+    "draft": true,
+    "note": "Valeurs clés vérifiées sur patch notes S7 quand 'verified:true'. Enrichir les dégâts/pénétrations exactes en S9 (pages munitions)."
+  },
+  "s7_ammo_changes": [
+    "5.7×28mm SS190 : pénétration 41→42, dégâts armure 18→19",
+    "Caps par mode : Normal = T4 max, Lockdown = T5 max, Forbidden sans plafond",
+    "Pénétration T5/T6 : plus de RNG, désormais déclenchée sous seuil de durabilité de l'armure"
+  ],
+  "tiers": [
+    { "tier": 3, "rarity": "blue", "label": "T3 — Milieu de gamme", "use": "Éco-runs, cibles peu blindées" },
+    { "tier": 4, "rarity": "purple", "label": "T4 — Standard Lockdown", "use": "Le cheval de bataille de la plupart des joueurs (BP, BS, SS109…)" },
+    { "tier": 5, "rarity": "gold", "label": "T5 — Haut de gamme", "use": "Lockdown (max) / Forbidden" },
+    { "tier": 6, "rarity": "red", "label": "T6 — Légendaire", "use": "Forbidden uniquement (interdit Normal/Lockdown en S7)" }
+  ],
+  "ammo": [
+    {
+      "id": "7n39", "name": "7N39", "caliber": "5.45×39mm", "tier": 5,
+      "penetration": "élevée", "flesh_damage": "moyenne",
+      "use": "Munition premium du H416/AK-12/A545 (rangs T5)", "verified": false
+    },
+    {
+      "id": "ppbs", "name": "PPBS", "caliber": "5.45×39mm", "tier": 6,
+      "penetration": "maximale", "flesh_damage": "moyenne",
+      "use": "A545/H416 en Forbidden", "verified": false
+    },
+    {
+      "id": "bs", "name": "BS", "caliber": "5.45×39mm", "tier": 4,
+      "penetration": "bonne", "flesh_damage": "moyenne",
+      "use": "Best value Lockdown — recommandée pour l'A545", "verified": false
+    },
+    {
+      "id": "bp-762", "name": "BP", "caliber": "7.62×39mm", "tier": 4,
+      "penetration": "bonne", "flesh_damage": "élevée",
+      "use": "Standard du AK-15SC/AEK — dégâts 7.62 solides", "verified": false
+    },
+    {
+      "id": "ps-762", "name": "PS", "caliber": "7.62×39mm", "tier": 3,
+      "penetration": "correcte", "flesh_damage": "élevée",
+      "use": "Budget AK-15SC", "verified": false
+    },
+    {
+      "id": "ap-762", "name": "AP", "caliber": "7.62×39mm", "tier": 5,
+      "penetration": "très élevée", "flesh_damage": "moyenne",
+      "use": "Lockdown haut de gamme / Forbidden", "verified": false
+    },
+    {
+      "id": "ss190", "name": "SS190", "caliber": "5.7×28mm", "tier": 4,
+      "penetration": 42, "armor_damage": 19,
+      "use": "P90 — buffée en S7 (pen 41→42, armor dmg 18→19)", "verified": true,
+      "source": "patch notes S7"
+    },
+    {
+      "id": "m61", "name": "M61", "caliber": "7.62×51mm", "tier": 5,
+      "penetration": "très élevée", "flesh_damage": "élevée",
+      "use": "M110, FAL, MK14, M24 — munition DMR/SR premium", "verified": false
+    },
+    {
+      "id": "m80", "name": "M80", "caliber": "7.62×51mm", "tier": 4,
+      "penetration": "bonne", "flesh_damage": "élevée",
+      "use": "Alternative budget 7.62×51", "verified": false
+    },
+    {
+      "id": "ap63", "name": "AP 6.3", "caliber": "9×19mm", "tier": 5,
+      "penetration": "élevée (pour une 9mm)", "flesh_damage": "moyenne",
+      "use": "MPX/PCC-9 — meilleure pénétration 9mm", "verified": false
+    },
+    {
+      "id": "pbp", "name": "PBP", "caliber": "9×19mm", "tier": 4,
+      "penetration": "correcte", "flesh_damage": "moyenne",
+      "use": "SMG budget Lockdown", "verified": false
+    },
+    {
+      "id": "slug-ap", "name": "AP Slugs", "caliber": "12 gauge", "tier": 5,
+      "penetration": "très élevée", "flesh_damage": "massive",
+      "use": "M870 en Normal — une balle = menace sérieuse", "verified": false
+    }
+  ],
+  "top_load_tips": [
+    "Top-load : les 5 premières balles du chargeur = les plus chères (les suivantes en T3/T4) — technique reddit validée",
+    "Conserver T4 en stock : couvre Normal + la majorité des raids Lockdown (cap S7)",
+    "T6 à réserver aux raids Forbidden sans plafond",
+    "Ctrl+glisser pour séparer les piles de munitions en raid"
+  ]
+}

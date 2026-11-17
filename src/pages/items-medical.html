@@ -1,0 +1,135 @@
+<!--META
+{
+  "file": "items-medical.html",
+  "title": "Médical ABI — medkits, chirurgies, analgésiques : le guide | NEXUS",
+  "description": "Les 49 objets médicaux d'Arena Breakout Infinite : système de santé 440 PV, rangements des medkits (100D, ST0, E3), chirurgies (TMK/ST0), bandages OPM et analgésiques.",
+  "keywords": "médical Arena Breakout, 100D medkit, ST0 surgery, analgésique ABI, guide healing",
+  "og_image": "img/fig/items-medical.jpg",
+  "ambiance": "items",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Objets","items-medical.html"],["Médical","items-medical.html"]],
+  "faq": [
+    ["Quel est le meilleur medkit ?","Le 100D Battlefield Medkit : 35 PV/s, aucune pénalité d'hydratation, 2 slots — « prime choice for any setup » (rangements communautaires). En budget : E3 Military. Pour les raids longs : ST0 First Aid Set (4 slots, puissance ×4)."],
+    ["Quelle chirurgie prendre ?","ST0 Battlefield Surgery Kit en tête (zéro perte de PV de membre, +20 PV rendus, 4 slots). Le meilleur rapport usage/taille : TMK (8 usages, 20 % de pénalité contre 40 % du Standard Military pour ~3k de moins). Évite le Standard si le TMK est accessible — même les vétérans le regrettent."],
+    ["Qu'est-ce que le « pre-painkill » ?","Prendre un analgésique AVANT un engagement probable : la douleur (vision floue, malus) n'arrive pas au pire moment. Le EX Painkiller domine (longue durée, activation rapide), le Liquid Painkiller est l'option économique de spam."],
+    ["Quel setup médical par budget ?","Budget : 1× E3 + 2× OPM + Standard Surgery + 2× Liquid. Balanced : 100D + 3 OPM + ST0 Surgery + 2 EX + Regen Booster. Endgame : ST0 First Aid + 100D + 4 OPM + ST0 Surgery + 2 EX + boosters force/endurance. Objectif communautaire : ~500 de capacité de soin par raid + soins de saignement."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/fig/items-medical.jpg')" role="img" aria-label="Trousseau de premiers secours tactique"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="14"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Objets › <span class="text-gold">Médical</span></p>
+    <span class="badge badge-s7">Objets · Saison 7</span>
+    <h1 class="hero-title" style="margin-top:14px">Médical<br><span class="accent">440 PV à soigner</span></h1>
+    <p class="hero-sub">4 systèmes de blessure, 49 objets : le guide pour ne jamais mourir d'un saignement oublié.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">49</span><span class="c-label">Objets médicaux</span></div>
+      <div class="hero-counter"><span class="counter">440</span><span class="c-label">PV totaux</span></div>
+      <div class="hero-counter"><span class="counter">~9 min</span><span class="c-label">Lecture</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#systeme">Les 4 blessures</a>
+      <a href="#medkits">Medkits classés</a>
+      <a href="#chirurgie">Chirurgies & bandages</a>
+      <a href="#analg">Analgésiques</a>
+      <a href="#loadouts">Setup par budget</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+      <h2 id="systeme">Le système — 4 blessures, 4 réponses</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Problème</th><th>Symptôme</th><th>Objet</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Saignement (Wound)</strong></td><td>Perte de PV continue</td><td><strong>Bandages</strong> (Quick / Field / OPM)</td></tr>
+            <tr><td><strong>Blessure (Injury)</strong></td><td>Une zone a perdu des PV</td><td><strong>Medkit / First Aid</strong></td></tr>
+            <tr><td><strong>Fracture (Break)</strong></td><td>Zone à 0 PV — jambe = lent, bras = visée en l'air</td><td><strong>Kit de chirurgie</strong></td></tr>
+            <tr><td><strong>Douleur (Pain)</strong></td><td>Vision floue, malus</td><td><strong>Analgésiques</strong></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout tip"><p class="co-title">💊 La tactique du pre-painkill</p>
+        « Prendre l'analgésique <em>avant</em> que le fight arrive » — la douleur ne t'atteint pas au pire moment. Réflexe à ancrer avant chaque peek risqué (guide communautaire).</div>
+
+      <h2 id="medkits">Medkits classés (rangings communauté)</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>#</th><th>Medkit</th><th>Profil</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><strong>100D Battlefield Medkit</strong></td><td>35 PV/s · <strong>zéro coût hydratation</strong> · 2 slots — le roi</td></tr>
+            <tr><td>2</td><td><strong>ST0 First Aid Set</strong></td><td>Puissance ×4 le 100D, +10 PV/s — 4 slots pour raids longs</td></tr>
+            <tr><td>3</td><td>E3 Military Medkit</td><td>Le budget solide</td></tr>
+            <tr><td>4-5</td><td>Standard First Aid · TMK Field</td><td>Les classiques de rig</td></tr>
+            <tr><td>6-7</td><td>926 Rapid (220 dur, hydratation −22) · Simple Pack</td><td>Situations basses — 926 surévalué selon reddit (2× Standard mieux)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="chirurgie">Chirurgies & bandages</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Objet</th><th>Spécificité</th><th>Verdict</th></tr></thead>
+          <tbody>
+            <tr><td><img class="item-ico" src="../img/items/st0-battlefield-surgery.jpg" alt="" width="64" height="64" loading="lazy"><strong>ST0 Battlefield Surgery</strong></td><td>~zéro perte PV membre · +20 PV · 4 slots · 12 usages</td><td><span class="tier-badge tier-s">S</span> Le meilleur absolu</td></tr>
+            <tr><td><img class="item-ico" src="../img/items/tmk-military-surgery.jpg" alt="" width="64" height="64" loading="lazy"><strong>TMK Military Surgery</strong></td><td>8 usages · 20 % pénalité · 3 slots · ~3k de plus que le Standard</td><td><span class="tier-badge tier-a">A</span> « Best all-around » — prends-le au Standard</td></tr>
+            <tr><td>Standard Military Surgery</td><td>8 usages · <strong>40 % de pénalité</strong> · 4 slots</td><td><span class="tier-badge tier-c">C</span> Universel mais underperformant</td></tr>
+            <tr><td><img class="item-ico" src="../img/items/opm-bandage.jpg" alt="" width="64" height="64" loading="lazy"><strong>OPM Bandage</strong></td><td><strong>4 fermetures</strong> de saignement</td><td><span class="tier-badge tier-s">S</span> Le bandage standard des loadouts</td></tr>
+            <tr><td>Field / Quick Bandage</td><td>1 usage</td><td>Remplissage de rig budget</td></tr>
+            <tr><td><img class="item-ico" src="../img/items/g-96-nebulizer.jpg" alt="" width="64" height="64" loading="lazy">G-96 Nebulizer</td><td>Poumons / gaz</td><td>Niche (grenades gaz peu jouées)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="analg">Analgésiques</h2>
+      <ul>
+        <li><strong>EX Painkiller</strong> — n°1 : 300 s de sédation, activation rapide (1×1, 0.28 kg).</li>
+        <li><strong>Liquid Painkiller</strong> — 270 s, ultraléger (0.01 kg) : l'option « toujours dans la poche ».</li>
+        <li>AP (210 s) · Fast-Acting (180 s) · Anti-Inflam (60 s, hydratation douce) — remplaçants selon dispo.</li>
+        <li><strong>Attention :</strong> la plupart coûtent de l'hydratation (−6 à −10) — boissons à prévoir sur raid long.</li>
+      </ul>
+
+      <figure>
+        <img src="../img/fig/items-medical-2.jpg" alt="Préparation du kit avant raid" loading="lazy" width="1200" height="675">
+        <figcaption>Checklist avant queue : medkit rempli, OPM ×2+, chirurgie, ×2 analgésiques — objectif ~500 PV de soin.</figcaption>
+      </figure>
+
+      <h2 id="loadouts">Setup médical par budget</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Budget</th><th>Contenu</th></tr></thead>
+          <tbody>
+            <tr><td>💰 <strong>Scavenger (kit ~100k)</strong></td><td>1× E3 · 2× OPM · Standard Surgery · 2× Liquid</td></tr>
+            <tr><td>⚖️ <strong>Balanced (~300k)</strong></td><td>100D · 3× OPM · ST0 Surgery · 2× EX · Regen Booster</td></tr>
+            <tr><td>👑 <strong>Endgame (600k+)</strong></td><td>ST0 First Aid · 100D · 4× OPM · ST0 Surgery · 2× EX · Boosters Force/Endurance</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Règle du « 500+ healing » : capacité totale de soin ≥ 500 PV par raid + couverture saignement — c'est le seuil de survivabilité communautaire en Lockdown.</p>
+
+      <h2 id="faq">FAQ médical</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Où mettre les meds — rig ou sac ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Le kit principal et les OPM dans les emplacements de rig dédiés (accès instantané), la chirurgie et la réserve dans le sac. Les rigs à slots médic dédiés changent la vitesse de soin sous le feu.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Soigner ou extraire d'abord ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Saignement actif = extraire d'abord impossible (tu meurs en marchant) : OPM en mouvement si le déplacement est sûr, sinon couvre-toi. Analyse complète dans le <a href="guide-extraction.html">guide d'extraction</a>.</p></div></div></div>
+
+      <p class="source-note"><strong>Sources —</strong> overgear gear guide (medicine table) · gameskinny healing ranked · topuplive medical loadouts · fandom beginner guide (LaClown-ua) · data-items.json. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">117 serrures</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Les clés d'ABI : valeurs, salles et rentabilité.</p>
+    <a class="btn btn-primary" href="items-cles.html">Clés →</a>
+    <a class="btn btn-ghost" href="items-valeur.html">Objets de valeur</a>
+  </div>
+</section>

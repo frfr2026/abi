@@ -1,0 +1,154 @@
+<!--META
+{
+  "file": "meta-strategies-s7.html",
+  "title": "Stratégies S7 ABI — peeks, sons, grenades, positionnement | NEXUS",
+  "description": "Le manuel des stratégies de la Saison 7 : right-hand peek, peeker's advantage, couches sonores, grenades (MK2/M67/molotov), repositionnement 30-40s, pre-painkill et tips Endless.",
+  "keywords": "stratégies Arena Breakout, tips S7 ABI, right hand peek, sound cues, repositionnement, prefire",
+  "og_image": "img/hero/hero-meta-strategies.jpg",
+  "ambiance": "meta",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Méta","meta-strategies-s7.html"],["Stratégies S7","meta-strategies-s7.html"]],
+  "faq": [
+    ["Quel est le conseil n°1 pour progresser en PvP ?","La combinaison crosshair placement + right-hand peek : garde ta visée poche/tête en permanence (95 % des joueurs visent le sol) et ne peek jamais à gauche — le peek droit expose 5-10 % de ton corps contre 25 %+ à gauche. Seul ces deux réflexes font passer un joueur moyen au-dessus de 40-50 % d'extractions."],
+    ["Comment écouter comme un pro ?","Trois couches : (1) les sons d'information — ADS-in = ne swing pas, ADS-out = il a perdu son arm stamina, swing ; ouvrir un sac ou looter = swing immédiatement ; (2) les distances — crouch silencieux (sauf GS2), slow ~5-10m, marche 15-20m, sprint 30m+ ; (3) les habitudes — la majorité du combat se joue dans les 5-10 premières minutes."],
+    ["Quelles grenades emporter ?","MK2 (ananas) : mèche courte = best in fight (armure + membres). M67 (bleeder) : mèche longue = sky-nades verticales + saignements sévères. Fumées : couper une ligne de sniper, bloquer un third-party, loot en sécurité. Gaz : denial + injury pulmonaire (et faux smoke). Cuisson derrière la couverture, pas dans l'ouverture."],
+    ["C'est quoi le pre-painkill et le reposition 30-40s ?","Pre-painkill : analgésique avant zone chaude — jamais de jambe noire en plein open. Reposition : après un kill, tu as 30-40 secondes avant que le killcam révèle ta position à ses coéquipiers — bouge systématiquement, ne re-peek jamais le même angle deux fois sans changer quelque chose."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-meta-strategies.jpg')" role="img" aria-label="Équipe en déplacement tactique"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="18"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Méta › <span class="text-gold">Stratégies S7</span></p>
+    <span class="badge badge-s7">MÉTA · Techniques</span>
+    <h1 class="hero-title" style="margin-top:14px">Stratégies<br><span class="accent">Saison 7</span></h1>
+    <p class="hero-sub">Du peek droit au pre-painkill : le manuel des réflexes qui séparent 35 % d'extractions de 55 %.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">5-10%</span><span class="c-label">Expo peek droit</span></div>
+      <div class="hero-counter"><span class="counter">30-40s</span><span class="c-label">Fenêtre reposition</span></div>
+      <div class="hero-counter"><span class="counter">40-50%</span><span class="c-label">Cible d'extraction</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#fondamentaux">Les fondamentaux</a>
+      <a href="#peeks">Peeks & avantages</a>
+      <a href="#sons">Le jeu du son</a>
+      <a href="#grenades">Grenades</a>
+      <a href="#combat">Manœuvres de combat</a>
+      <a href="#endless">Spécific Endless</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+      <h2 id="fondamentaux">Les fondamentaux (avant tout le reste)</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>#</th><th>Règle</th><th>Effet</th></tr></thead>
+          <tbody>
+            <tr><td>1</td><td><strong>Crosshair poche/tête permanente</strong> + point blanc « Focal Point »</td><td>Kills gratuits — « 95 % des joueurs visent le sol »</td></tr>
+            <tr><td>2</td><td><strong>Lean en HOLD</strong> (pas toggle)</td><td>Jiggle-peeks rapides</td></tr>
+            <tr><td>3</td><td><strong>Visibilité &gt; graphismes</strong> (settings Basic/Low)</td><td>Les pixels clairs = vivre plus longtemps</td></tr>
+            <tr><td>4</td><td><strong>Objectif : 40-50 % d'extractions</strong></td><td>Sous 40 % = il y a du travail (benchmark communautaire)</td></tr>
+            <tr><td>5</td><td>Sensibilité : une seule, <strong>engage-toi</strong> (bias : basse, 400 DPI)</td><td>Muscle memory stable</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="peeks">Peeks & avantages — la géométrie du duel</h2>
+      <ul>
+        <li>🗡️ <strong>Right-hand peek &gt; left-hand peek</strong> : 5-10 % du corps exposé vs 25 %+ — « ne donne jamais de HP gratuitement ». Si tu es coincé à gauche : sprint-jump vers un nouvel angle ou rotation complète.</li>
+        <li>🚪 <strong>Peeker's advantage</strong> : <strong>ne colle pas au coin</strong> — recule d'un pas avant de peek : tu vois son flanc avant que ton apparition n'apparaisse sur son écran.</li>
+        <li>🔄 <strong>Jiggle pour l'info, swing + prefire ensuite</strong> : info gratuite, puis exécution là où il tenait.</li>
+        <li>🎯 <strong>Ne re-peek jamais le même angle</strong> sans changer quelque chose (util, large, niveau, timing).</li>
+      </ul>
+
+      <h2 id="sons">Le jeu du son — trois couches</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Couche</th><th>Indices</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Sons d'information</strong></td>
+              <td>ADS-in = <em>ne swing pas</em> · ADS-out = arm stamina lâche → <strong>swing</strong> · ouvrir un sac / looter = <strong>swing</strong> (kills gratuits)</td>
+            </tr>
+            <tr>
+              <td><strong>Distances de bruit</strong></td>
+              <td>Crouch slow = silencieux (sauf adverse GS2) · slow ~5-10m · marche 15-20m · <strong>sprint 30m+</strong></td>
+            </tr>
+            <tr>
+              <td><strong>Timing</strong></td>
+              <td>L'action des 5-10 premières minutes = spawn-to-fight — les routes de contact se jouent tôt</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout tip"><p class="co-title">🎧 Rappel audio S7</p>
+        Les Core Masteries <strong>Acoustic Earpads</strong> ajoutent +10-15 m de portée — le perk d'information le plus universel (voir <a href="saison7-zombie-research.html">Research</a>). Écoute aussi les <em>gestes</em> : le crouch-walk adverse se perd dans le bruit de fond, le slow-walk ne l'est pas.</div>
+
+      <h2 id="grenades">Grenades — l'arsenal raisonné</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Type</th><th>Usage</th><th>Note</th></tr></thead>
+          <tbody>
+            <tr><td>💥 <strong>MK2 (ananas)</strong></td><td>Combat rapproché : armure + membres</td><td>Mèche la plus courte — « use these »</td></tr>
+            <tr><td>🩸 <strong>M67 (bleeder)</strong></td><td>Sky-nades verticales + saignements sévères</td><td>Mèche longue — lob en cloche</td></tr>
+            <tr><td>💨 <strong>Fumée</strong></td><td>Couper DMR/sniper, bloquer third-party, tourner, looter en open</td><td>Beaucoup de fumée adverse = pense thermique, repositionne</td></tr>
+            <tr><td>☣️ <strong>Gaz</strong></td><td>Area denial + injury pulmonaire · dure plus qu'une fumée</td><td>Peut jouer faux smoke</td></tr>
+            <tr><td>🔥 <strong>Molotov</strong></td><td>Deny revive, block choke, <strong>disperser les zombies</strong></td><td>Essential Endless (voir plus bas)</td></tr>
+            <tr><td>😵 Flash</td><td>Moyen — pop lent, effet court</td><td>Niche selon la situation</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Cuisson derrière couverture</strong> : le bras sort du coin, le corps reste safe — combine avec un jiggle pour le timing. Tu as beaucoup de balles ? <strong>Pre-fire</strong> : « beaucoup meurent avec des munitions restantes ».</p>
+
+      <h2 id="combat">Manœuvres de combat</h2>
+      <ol>
+        <li><strong>Changer de niveau</strong> : jiggle debout → info → crouch + prefire — son réticule était où était ta tête il y a 1 s.</li>
+        <li><strong>Bait de shots</strong> : montre le canon seul et recule · sprint dans un mur puis peek — il swing sur ton « fuite ».</li>
+        <li><strong>Reposition 30-40 s</strong> : après kill/tirs, l'ennemi aura ton position via killcam — bouge, sweep large, réinsère-toi par un autre angle.</li>
+        <li><strong>Leg meta en solo</strong> : jambes à nu = tout le monde à égalité, munitions bon marché — apprends l'embuscade et la rotation avant le headshot rush.</li>
+        <li><strong>Pre-painkill</strong> avant zone chaude · <strong>jambe brisée = ne cours ni ne saute</strong> (tu peux mourir du choc).</li>
+        <li><strong>Stack d'actions</strong> : pendant le loot d'un rig, décharge tes chargeurs en parallèle — la stash tetris se joue en raid.</li>
+      </ol>
+
+      <figure>
+        <img src="../img/maps/crop-strategies.jpg" alt="Corridors de l'Armory" loading="lazy" width="1200" height="675">
+        <figcaption>Armory en carré : tiens les coins, pas les milles de côtés — « peek un coin, exposé au coin d'arrière ».</figcaption>
+      </figure>
+
+      <h2 id="endless">Spécific Endless — les 8 règles zombies</h2>
+      <ul>
+        <li>🧯 <strong>Molotov aux pieds</strong> quand tu ressuscites ou uploades — les zombies fuient le feu.</li>
+        <li>☠️ <strong>Priorité aux Acid Reapers</strong> (one-shot à partir du niveau 4) — Breachers/Phobos menacent, les Reapers tuent.</li>
+        <li>🧨 <strong>Combo phéromone + MK2/molotov</strong> pour vider les hordes d'un coup.</li>
+        <li>🎯 <strong>Shotguns roi</strong> (dégâts de base × cibles multiples) — pas de SMG/carabine (faim à balles, cadence inutile).</li>
+        <li>🚗 <strong>Cheese voiture</strong> : grimpe sur un véhicule — les tanks bloquent en animation hop-on/off.</li>
+        <li>🏃 <strong>Toujours bouger</strong> · <strong>reste groupé</strong> · grenade pour libérer un coéquipier attrapé.</li>
+        <li>📦 Missions fixes : pré-complete les étapes (fuel, parking, terminal medical) avant d'activer.</li>
+        <li>💊 Stam + regen stims avant missions difficiles · 3 phéromones par refresh vendor, gratuites.</li>
+      </ul>
+
+      <h2 id="faq">FAQ stratégies</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Quel ordre pour progresser en PvP ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>1) Crosshair placement · 2) right peek · 3) reposition après chaque engagement · 4) sound cues (ADS/sac) · 5) util (grenades + pre-painkill). L'arme arrive en dernier dans la liste des priorités communautaire — la décision d'abord, le gun ensuite.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Comment s'entraîner efficacement ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Tir illimité + dummy T5-6 en jeu (gratuit), Secure Ops/TDM/Arsenal pour le movement, Aimlabs (flick/precision) si tu veux pousser l'aim. Puis cible d'extraction : 40-50 %, mesuré chaque semaine.</p></div></div></div>
+
+      <p class="source-note"><strong>Sources —</strong> reddit Ultimate Tips 2.0/3.0 (06/10/2025, 10/03/2026) · reddit PvP pro tips · mmotank solo PvP · ABIGuideS7 Endless tips (20/09/2026) · reddit movement threads. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Ton kit, optimisé</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Optimiseur de loadout : budget, cap de mode, value/slot.</p>
+    <a class="btn btn-primary" href="meta-loadout-optimizer.html">Optimiseur →</a>
+    <a class="btn btn-ghost" href="meta-builds-roles.html">Rôles</a>
+  </div>
+</section>

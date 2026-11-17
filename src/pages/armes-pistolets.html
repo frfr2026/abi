@@ -1,0 +1,125 @@
+<!--META
+{
+  "file": "armes-pistolets.html",
+  "title": "Pistolets ABI — Desert Eagle, G18, M1911 : tiers & usages | NEXUS",
+  "description": "Tous les pistolets d'Arena Breakout Infinite : Deagle meilleur pistolet, Gold Deagle, G18 full-auto, F57 T5, M1911 budget, Beretta furtif. Stats, munitions et rôles.",
+  "keywords": "pistolet Arena Breakout, Desert Eagle ABI, Glock 18, M1911, F57, secondaire",
+  "og_image": "img/fig/armes-pistolets.jpg",
+  "ambiance": "armes",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Armes","armes-pistolets.html"],["Pistolets","armes-pistolets.html"]],
+  "faq": [
+    ["Quel est le meilleur pistolet d'ABI ?","La Desert Eagle : « le meilleur pistolet du jeu » selon les tier lists — un ou deux coups de .44 bien placés descendant un opérateur. La Gold Deagle améliore encore les stats (recul V 66 vs 40, ergo 88 vs 65). Pour le full-auto, le G18 (Glock 18) est le roi du panique CQB."],
+    ["Pistolet avec quelle munition ?","Deagle → .44 JSP/gold pour maximiser les dégâts des impacts rares. M1911 → .45 AP (les munitions cheap ne pénètrent que le T1). F57 → munitions T5 (les plus puissantes de la classe). G18 → Dum-Dum pour le leg-meta en rafale."],
+    ["Un pistolet est-il utile contre les joueurs ?","Oui en secondaire de sniper/DMR (retour de feu immédiat) et en fin de chargeur pendant un rush. Contre du T4+ à distance, non — là, c'est ton arme principale qui doit parler. Le Beretta silencieux est le classique des missions rapides contre l'IA."],
+    ["Quel pistolet pour speedrunner les missions ?","Le Beretta : silencieux et monture optique pas chers, chargeurs 17 coups, munitions PST (~20 Koen) qui traversent les T2 des IA. La Deagle fait le même travail plus vite mais coûte chaque tir plus cher et ne se silencie pas."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/fig/armes-pistolets.jpg')" role="img" aria-label="Pistolets tactiques en présentation sombre"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="14"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Armes › <span class="text-gold">Pistolets</span></p>
+    <span class="badge badge-s7">Armes · Saison 7 Utopia</span>
+    <h1 class="hero-title" style="margin-top:14px">Pistolets<br><span class="accent">second life</span></h1>
+    <p class="hero-sub">Deagle, G18, F57, M1911, Beretta — le classement, les munitions et les rôles de chaque sidearm.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">.44</span><span class="c-label">Calibre Deagle</span></div>
+      <div class="hero-counter"><span class="counter">17</span><span class="c-label">Coups Beretta</span></div>
+      <div class="hero-counter"><span class="counter">~8 min</span><span class="c-label">Lecture</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#tiers">Classement</a>
+      <a href="#deagle">La famille Deagle</a>
+      <a href="#auto">Full-auto & spécialistes</a>
+      <a href="#budget">Les budgets</a>
+      <a href="#munitions">Munitions & rôles</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+      <h2 id="tiers">Classement des pistolets (méta S7)</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Tier</th><th>Pistolets</th><th>Verdict</th></tr></thead>
+          <tbody>
+            <tr><td><span class="tier-badge tier-s">S</span></td><td><img class="item-ico" src="../img/items/g18.jpg" alt="" width="64" height="64" loading="lazy">Deagle · Gold Deagle · G18 (contexte CQB)</td><td>Un ou deux coups bien placés = kill ; le G18 full-auto rule le panique CQB</td></tr>
+            <tr><td><span class="tier-badge tier-a">A</span></td><td><img class="item-ico" src="../img/items/m9a3.jpg" alt="" width="64" height="64" loading="lazy"><img class="item-ico" src="../img/items/f57.jpg" alt="" width="64" height="64" loading="lazy">F57 · Beretta</td><td>F57 : munitions T5 de la classe · Beretta : ratio coût/utilité imbattable</td></tr>
+            <tr><td><span class="tier-badge tier-b">B</span></td><td><img class="item-ico" src="../img/items/mp9.jpg" alt="" width="64" height="64" loading="lazy"><img class="item-ico" src="../img/items/m1911.jpg" alt="" width="64" height="64" loading="lazy">M1911 · MP9/Micro Uzi</td><td>Jouables avec les bonnes munitions (.45 AP) — capacity limitée</td></tr>
+            <tr><td><span class="tier-badge tier-c">C</span></td><td><img class="item-ico" src="../img/items/m9a3.jpg" alt="" width="64" height="64" loading="lazy"><img class="item-ico" src="../img/items/t05.jpg" alt="" width="64" height="64" loading="lazy">M9A3 · CZ 52 · T54 · T05 · M300</td><td>« Pretty much useless » contre les joueurs blindés — PvE seulement</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="deagle">La famille Deagle</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Stat</th><th>Deagle</th><th>Gold Deagle</th></tr></thead>
+          <tbody>
+            <tr><td>Recul V / H</td><td>40 / 24</td><td><strong>66 / 35</strong></td></tr>
+            <tr><td>Ergonomie</td><td>65</td><td><strong>88</strong></td></tr>
+            <tr><td>Vitesse / Cadence</td><td>470 m/s / 300 rpm</td><td>470 m/s / 300 rpm</td></tr>
+            <tr><td>Portée / Précision</td><td>31 / 30</td><td>31 / 30</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>« The best pistol in the game » (thegamer) — la version Gold, obtenue par loot, améliore radicalement le contrôle. Contraintes communes : pas de silencieux, recul sec à gérer, et le prix des munitions de qualité. <strong>Usage :</strong> fin de duel, headshot de sortie, secondaire de sniper qui punit.</p>
+
+      <h2 id="auto">Full-auto & spécialistes</h2>
+      <h3>G18 (Glock 18) — le panique button</h3>
+      <p>Ful-auto dans la poche : idéal quand un rush te surprend à sec sur ton chargeur principal. Munitions <strong>Dum-Dum</strong> → leg-meta naturelle à très courte distance. Dégâts faibles par balle : la rafale fait le travail.</p>
+      <h3>F57 — le T5 de poche</h3>
+      <p>Capable de tirer des munitions de niveau T5 (SS190/F57) : le pistolet le plus crédible contre du blindage léger-moyen. Un spécialiste de finition qui ignore les limites des .45 cheap.</p>
+      <h3>MP9 / Micro Uzi — l'agitation</h3>
+      <p>Cadence de SMG dans un format pistolet — amusant et mortel en pièces, mais les accessoires et munitions chers effacent l'économie.</p>
+
+      <h2 id="budget">Les budgets & le furtif</h2>
+      <h3>M1911 — le classique</h3>
+      <p>54/26 en recul, ergo 77, 350 rpm. Les munitions cheap ne pénètrent que le T1 : monte en <strong>.45 AP</strong> pour le PvP. Chargeur limité — le silencieux en fait un bon secondaire discret.</p>
+      <h3>Beretta — l'outil de mission</h3>
+      <p>Le consensus des speedruns PvE : silencieux + monture optique pas chers, <strong>17 coups</strong>, PST à ~20 Koen traversant les T2 des IA. Pour les missions de contacts rapides, c'est l'arme la plus rentable du jeu.</p>
+
+      <div class="callout warning"><p class="co-title">⚖️ Règle des plafonds S7</p>
+        En Normal, ton pistolet T5 est bridé comme ton fusil — mais contrairement à lui, il ne te coûte presque rien à porter. Pense <strong>secondaire = assurance</strong>, pas = arme principale de secours.</div>
+
+      <h2 id="munitions">Munitions & rôles en un tableau</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Rôle</th><th>Pistolet</th><th>Munition</th></tr></thead>
+          <tbody>
+            <tr><td>Headshot de finition</td><td>Deagle / Gold</td><td>.44 JSP / gold</td></tr>
+            <tr><td>Rush & panique CQB</td><td><img class="item-ico" src="../img/items/g18.jpg" alt="" width="64" height="64" loading="lazy">G18</td><td>Dum-Dum (jambes)</td></tr>
+            <tr><td>Contre blindage (secondaire)</td><td><img class="item-ico" src="../img/items/f57.jpg" alt="" width="64" height="64" loading="lazy">F57</td><td>F57 T5</td></tr>
+            <tr><td>Speedrun PvE furtif</td><td><img class="item-ico" src="../img/items/m9a3.jpg" alt="" width="64" height="64" loading="lazy">Beretta</td><td>PST (cheap) / AP</td></tr>
+            <tr><td>Budget généraliste</td><td><img class="item-ico" src="../img/items/m1911.jpg" alt="" width="64" height="64" loading="lazy">M1911</td><td>.45 AP</td></tr>
+            <tr><td>Éviter en PvP</td><td><img class="item-ico" src="../img/items/t05.jpg" alt="" width="64" height="64" loading="lazy">CZ52, T54, T05, M300</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="faq">FAQ pistolets</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Quel pistolet en secondaire de sniper ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Deagle si tu vises les duels de sortie (headshot), Beretta/M1911 silencieux si tu veux rester discret pendant le flanc. Évite les pleins chargeurs de trop — ton secondaire sert aux situations où le reload de l'arme principale n'est pas possible.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">La Gold Deagle se loot-elle ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Oui — c'est un objet de loot rare (et objet de valeur). Ses stats nettement supérieures (ergo 88, recul 66/35) en font une arme de collection viable : beaucoup la gardent comme secondaire prestige.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Pistolet contre les IA en Infected Zone ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Économise tes munitions de fusil : un pistolet avec des rounds adéquats gère les zombies isolés (tête nue = toujours mort). Garde toutefois une issue de secours — les hordes ne pardonnent pas un chargeur vide.</p></div></div></div>
+
+      <p class="source-note"><strong>Sources —</strong> thegamer tier list 2026 · fandom wiki (stats Deagle/M1911) · steam discussions (meta Beretta/Deagle/F57) · zilliongamer S7. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">La saison change tout</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Les nouveautés d'armement de la Saison 7 Utopia.</p>
+    <a class="btn btn-primary" href="armes-nouveautes-s7.html">Nouveautés S7 →</a>
+    <a class="btn btn-ghost" href="armes-carbine.html">Carabines</a>
+  </div>
+</section>

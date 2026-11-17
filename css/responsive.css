@@ -1,0 +1,147 @@
+/* ═══════════════════════════════════════════════════════════
+   ABI NEXUS — responsive.css
+   Mobile-first : 640px (mobile+) · 960px (tablette) ·
+   1280px (desktop) · 1600px (ultrawide)
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Mobile (< 640px) ── */
+@media (max-width: 639px) {
+  :root {
+    --nav-height: 60px;
+    --space-3xl: 3.5rem;
+  }
+
+  /* Navigation : menu hamburger */
+  .hamburger { display: flex; }
+  .nav-links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0; right: 0;
+    height: calc(100vh - var(--nav-height));
+    background: rgba(10, 12, 15, 0.97);
+    backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--space-lg);
+    gap: 4px;
+    transform: translateX(100%);
+    transition: transform var(--t-medium) var(--ease-out);
+    overflow-y: auto;
+    z-index: var(--z-mega);
+  }
+  .nav-links.open { transform: none; }
+  .nav-item { height: auto; flex-direction: column; align-items: stretch; }
+  .nav-link { padding: 14px 12px; font-size: 1.05rem; justify-content: space-between; }
+  .mega-menu {
+    position: static;
+    transform: none;
+    min-width: 0;
+    grid-template-columns: 1fr;
+    opacity: 1; visibility: visible; pointer-events: auto;
+    box-shadow: none;
+    background: var(--color-bg-tertiary);
+    display: none;
+    border: none;
+    border-left: 2px solid var(--color-accent-gold);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin: 0 0 8px 12px;
+    padding: 10px;
+  }
+  .nav-item.open .mega-menu { display: grid; }
+  .nav-search { display: none; }
+  .nav-search-mobile { display: flex !important; margin: 10px 0; min-width: 0; }
+
+  /* Grilles → 1 colonne */
+  .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+  .counter-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* Hero */
+  .hero { min-height: 86vh; }
+  .hero-counters { gap: var(--space-lg); }
+  .hero-counter .counter { font-size: 1.5rem; }
+  .hero-cta .btn { width: 100%; }
+
+  /* Sections */
+  .section-head { flex-direction: column; align-items: flex-start; }
+
+  /* Footer */
+  .footer-grid { grid-template-columns: 1fr; gap: var(--space-lg); }
+
+  /* Tables : scroll horizontal */
+  .data-table { font-size: 0.8rem; min-width: 560px; }
+
+  /* Tier rows */
+  .tier-row { grid-template-columns: 48px 1fr; grid-template-rows: auto auto; }
+  .tier-row .tr-thumb { display: none; }
+  .tier-row .tr-cat { grid-column: 2; }
+
+  /* Audio player */
+  .audio-player .ap-info { display: none; }
+  .audio-player input[type="range"] { width: 60px; }
+
+  /* Stat rows */
+  .stat-row { grid-template-columns: 96px 1fr 40px; }
+
+  /* TOC : masqué ou en bas */
+  .toc { position: static; max-height: none; margin-bottom: var(--space-xl); }
+
+  /* Outils interactifs */
+  .compare-grid { grid-template-columns: 1fr !important; }
+  .loadout-slots { grid-template-columns: 1fr !important; }
+}
+
+/* ── Layout guide : 1 colonne sous 960px (TOC au-dessus) ── */
+@media (max-width: 959px) {
+  .guide-layout { grid-template-columns: 1fr; }
+  .guide-layout .toc { position: static; max-height: none; }
+}
+
+/* ── Tablette (640px – 959px) ── */
+@media (min-width: 640px) and (max-width: 959px) {
+  .grid-3 { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  .nav-search { min-width: 150px; }
+  .nav-search kbd { display: none; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
+  .mega-menu { min-width: 460px; }
+}
+
+/* ── Desktop (960px – 1279px) ── */
+@media (min-width: 960px) and (max-width: 1279px) {
+  .nav-link { padding: 8px 9px; font-size: 0.88rem; }
+  .nav-search { min-width: 170px; }
+  .grid-4 { grid-template-columns: repeat(3, 1fr); }
+}
+
+/* ── Desktop large (≥ 1280px) ── */
+@media (min-width: 1280px) {
+  .nav-links { gap: 6px; }
+}
+
+/* ── Ultrawide (≥ 1600px) ── */
+@media (min-width: 1600px) {
+  :root { --container-max: 1440px; }
+  .hero-title { max-width: 1100px; }
+}
+
+/* ── Paysage mobile ── */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero { min-height: 130vh; }
+  .hero-content { padding-top: calc(var(--nav-height) + 12px); }
+}
+
+/* ── Impression ── */
+@media print {
+  .nav, .audio-player, .reading-progress, .search-modal, .footer-social { display: none !important; }
+  body { background: #fff; color: #000; }
+  .hero { min-height: auto; }
+}
+
+/* ── Utilitaires responsive ── */
+.hide-mobile { display: initial; }
+.show-mobile { display: none; }
+@media (max-width: 639px) {
+  .hide-mobile { display: none !important; }
+  .show-mobile { display: initial; }
+}
+.nav-search-mobile { display: none; }

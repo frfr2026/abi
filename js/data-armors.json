@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "game": "Arena Breakout Infinite",
+    "season": "Saison 7 : Utopia",
+    "updated": "2026-11-17",
+    "total_armors": 45,
+    "total_helmets": 51,
+    "total_rigs": 57,
+    "total_backpacks": 28,
+    "total_headsets": 9,
+    "draft": true,
+    "note": "Données de départ — enrichissement pendant l'état S6 (pages équipement) avec recherche web systématique."
+  },
+  "s7_changes": [
+    "RNG de pénétration T5/T6 SUPPRIMÉ : il faut désormais réduire la durabilité de l'armure sous un seuil avant pénétration fiable",
+    "Ricochet des casques et masques SUPPRIMÉ (headshots plus fiables)",
+    "Durabilité des casques/masques T5 et T6 : taux de perte de durabilité AUGMENTÉ",
+    "Caps d'équipement par mode : Normal = T4 max ; Lockdown = T5 max (valeur max 900 000 Koens)",
+    "Lampe tactique nerfée : ergonomie -7"
+  ],
+  "materials_guide": {
+    "note": "Prioriser Acier trempé (Hardened Steel) et Titane pour la protection et la réparabilité (tips reddit S7).",
+    "priority": ["Titanium", "Hardened Steel", "Ceramic", "Composite"]
+  },
+  "tier_archetypes": [
+    { "tier": 1, "label": "T1 — Léger", "protection": "Psiens de base, scavs", "mobility_penalty": "faible", "budget_use": "Eco-runs, Farm" },
+    { "tier": 2, "label": "T2 — Standard", "protection": "Munitions bas de gamme", "mobility_penalty": "faible", "budget_use": "Débutants" },
+    { "tier": 3, "label": "T3 — Renforcé", "protection": "Contre T3-T4 partiel", "mobility_penalty": "modéré", "budget_use": "Normal / Lockdown début" },
+    { "tier": 4, "label": "T4 — Lourd", "protection": "Standard Lockdown (max autorisé)", "mobility_penalty": "modéré", "budget_use": "Lockdown" },
+    { "tier": 5, "label": "T5 — Elite", "protection": "Max autorisé en Lockdown", "mobility_penalty": "élevé", "budget_use": "Lockdown haut de gamme / Forbidden" },
+    { "tier": 6, "label": "T6 — Légendaire", "protection": "Réservé Forbidden+ (caps S7)", "mobility_penalty": "très élevé", "budget_use": "Forbidden / compétition" }
+  ],
+  "armors": [
+    {
+      "id": "bt101",
+      "name": "BT101",
+      "tier": 6,
+      "material": "Ceramic / composite avancé",
+      "zones": ["torso", "stomach", "arms"],
+      "durability": 95,
+      "speed_penalty": 6,
+      "ergo_penalty": 8,
+      "weight_kg": 9.5,
+      "price_koen": 550000,
+      "meta_tier": "S",
+      "note": "Meilleure armure du jeu selon les sources (S7 : pénétration désormais déterministe via durabilité)",
+      "verified": false
+    },
+    {
+      "id": "926-composite",
+      "name": "926 Composite",
+      "tier": 5,
+      "material": "Composite",
+      "zones": ["torso", "stomach"],
+      "durability": 80,
+      "speed_penalty": 4,
+      "ergo_penalty": 6,
+      "weight_kg": 7.2,
+      "price_koen": 320000,
+      "meta_tier": "S",
+      "note": "Top set recommandé par la communauté (avec BT6 et BT101)",
+      "verified": false
+    },
+    {
+      "id": "bt6",
+      "name": "BT6",
+      "tier": 6,
+      "material": "Titane",
+      "zones": ["torso"],
+      "durability": 88,
+      "speed_penalty": 5,
+      "ergo_penalty": 7,
+      "weight_kg": 8.4,
+      "price_koen": 480000,
+      "meta_tier": "S",
+      "note": "Alternative T6 au BT101, citée dans les meilleurs sets",
+      "verified": false
+    }
+  ],
+  "helmets": [
+    {
+      "id": "sh12",
+      "name": "SH12",
+      "tier": 4,
+      "ricochet": "élevé (avant S7 — ricochet supprimé en S7)",
+      "hearing": "intégrée (bonne perception)",
+      "price_koen": 15000,
+      "meta_tier": "A",
+      "note": "Valeur exceptionnelle ~15k : protection correcte + hearing intégrée (tips reddit). En S7 le ricochet n'existe plus — la durabilité devient le facteur clé.",
+      "verified": false
+    },
+    {
+      "id": "commander",
+      "name": "Commander",
+      "tier": 5,
+      "hearing": "excellente (recommandé intérieur : TV/Armory)",
+      "price_koen": 90000,
+      "meta_tier": "S",
+      "note": "Headset intégré haut de gamme pour combat intérieur (audio bassy clair)",
+      "verified": false
+    },
+    {
+      "id": "gs2",
+      "name": "GS2",
+      "tier": 5,
+      "hearing": "excellente (recommandé extérieur : Valley/Northridge)",
+      "price_koen": 85000,
+      "meta_tier": "S",
+      "note": "Amplifie hautes fréquences (pas dans l'herbe, tirs lointains)",
+      "verified": false
+    }
+  ],
+  "headsets_note": "9 casques audio au total dans le jeu — détailler la catégorie complète pendant S6.",
+  "rigs_note": "57 rigs — retenir les rigs qui portent plus de slots qu'ils n'en occupent (ex. rig 9 slots -> 14 slots internes) : à documenter en S6.",
+  "secure_containers": [
+    { "size": "1×2", "source": "défaut" },
+    { "size": "2×2", "source": "progression" },
+    { "size": "2×3", "source": "progression" },
+    { "size": "3×3", "source": "Récompense de mission de saison (dure toute la saison)" }
+  ]
+}

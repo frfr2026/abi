@@ -1,0 +1,290 @@
+<!--META
+{
+  "file": "guide-debutant.html",
+  "title": "Guide du Débutant Complet — Arena Breakout Infinite | ABI NEXUS",
+  "description": "Survivre ses premières raids dans Arena Breakout Infinite : concept, modes, loadout budget, carte Farm, santé, économie, 10 conseils et FAQ. Mis à jour Saison 7.",
+  "keywords": "Arena Breakout Infinite guide débutant, ABI première raid, loadout budget, Farm, extraction shooter tutoriel",
+  "og_image": "img/fig/guide-debutant.jpg",
+  "ambiance": "guides",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Guides","guide-debutant.html"],["Guide débutant","guide-debutant.html"]],
+  "faq": [
+    ["Quelle est la meilleure carte pour débuter dans Arena Breakout Infinite ?","Farm : layout simple, spawns de scavs prévisibles, raid de 20 minutes et loot honnête. Passe à Valley ensuite, puis TV Station autour du niveau 15 et Northridge autour du niveau 25."],
+    ["Quel loadout acheter en tant que débutant ?","Un loadout complet sous 50 000 Koens : arme fiable et peu chère (AK-74N ou M4A1 de base), munitions T3-T4, armure T3, petit sac, medkit + pansements + kit de chirurgie. Deux kits budget doivent toujours attendre dans le stockage."],
+    ["Faut-il viser la tête ou le corps au début ?","La tête : un headshot avec une munition pénétrante tue instantanément la plupart des casques. En Saison 7 le ricochet des casques a été supprimé, les headshots sont donc plus fiables que jamais. Entraîne-toi en Covert Ops avant le PvP."],
+    ["Quelle est la meilleure arme pour un débutant ?","L'AK-74N avec munitions PP/BP : contrôle de recul correct, prix dérisoire (~40 000 Koens tout le kit), et les munitions T3-T3+ perforent l'armure T3 des raids Normaux."],
+    ["Comment gagner ses premiers Koens ?","Le combo débutant : les courses Covert Ops (rien à risquer), les runs « Impostor » (kit gratuit, reset quotidien), les missions de contact, et la vente de tout ce que tu n'utilises pas — en empilant les ventes par 5 pour rentabiliser tes emplacements de vente hebdomadaires."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction du guide">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-guide-debutant.jpg')" role="img" aria-label="Escouade de recrues préparant sa première raid"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Guides › <span class="text-gold">Guide débutant</span></p>
+    <span class="badge badge-gold">Guide · Débutant</span>
+    <h1 class="hero-title" style="margin-top:14px">Guide du débutant<br><span class="accent">complet</span></h1>
+    <p class="hero-sub">Survivre, looter, s'exfiltrer : les bases répétées par les vétérans de Reddit, expliquées simplement. Zéro jargon laissé sans explication.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">~20 min</span><span class="c-label">Lecture</span></div>
+      <div class="hero-counter"><span class="counter">10</span><span class="c-label">Conseils clés</span></div>
+      <div class="hero-counter"><span class="counter">Niv. 1+</span><span class="c-label">Public visé</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#concept">Le concept extraction shooter</a>
+      <a href="#modes">Les modes de jeu</a>
+      <a href="#boucle">L'ordre d'or avant chaque raid</a>
+      <a href="#loadout">Construire son loadout</a>
+      <a href="#premiere">Ta première raid, pas à pas</a>
+      <a href="#cartes">Choisir sa carte</a>
+      <a href="#combat">Santé & bases du combat</a>
+      <a href="#munitions">Les munitions &gt; les armes</a>
+      <a href="#economie">Premiers Koens</a>
+      <a href="#erreurs">Les 10 erreurs classiques</a>
+      <a href="#conseils">10 conseils pour survivre</a>
+      <a href="#progression">Progression recommandée</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+
+      <h2 id="concept">Le concept : un extraction shooter, c'est quoi ?</h2>
+      <p><strong>Arena Breakout Infinite (ABI)</strong> est un « tactical extraction shooter » : tu entres dans une zone avec ton équipement, tu cherches du butin, tu combats des joueurs et des IA, et tu dois <strong>te rendre à un point d'extraction pour garder ce que tu as trouvé</strong>. Si tu meurs, tu perds tout ce que tu portais (hors container sécurisée). C'est la boucle <strong>Search → Combat → Extract</strong> — chercher, combattre, s'exfiltrer.</p>
+      <div class="callout tip">
+        <p class="co-title">🧠 La règle mentale du débutant</p>
+        Avant chaque raid, donne-lui <strong>UN objectif principal</strong> : « apprendre 2 extractions sur Farm », « finir une mission de contact », « récupérer des médicaments en Covert Ops ». L'objectif fait = raid réussie, même avec peu de loot. Cela évite la spirale « encore un container… » qui se termine mort.
+      </div>
+
+      <h2 id="modes">Les modes de jeu : par où commencer ?</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Mode</th><th>Principe</th><th>Risque</th><th>Usage débutant</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Tactical Ops</strong></td><td>La raid classique avec ton propre équipement</td><td>Moyen en Normal, élevé en Lockdown/Forbidden</td><td>Apprendre la vraie boucle avec un kit jetable</td></tr>
+            <tr><td><strong>Covert Ops</strong></td><td>Tu joues un scav : équipement prédéfini gratuit, zéro risque</td><td>Très faible</td><td>★★★ Apprendre cartes, extractions et loot sans rien perdre</td></tr>
+            <tr><td><strong>Secure Ops</strong></td><td>Mode bienveillant : l'essentiel de ton équipement est conservé à la mort</td><td>Faible</td><td>Apprendre les fights avec protection</td></tr>
+            <tr><td><strong>No Man's Land</strong></td><td>PvE solo/escouade avec ticket, aucun joueur hostile</td><td>Nul (PvP)</td><td>Farmer des Koens sereinement (variante Zombies en S7)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout">
+        <p class="co-title">💡 Conseil communauté</p>
+        Passe tes <strong>5 premières heures en Covert Ops</strong> (topuplive) : mêmes cartes, mêmes loots, mêmes IA — mais aucun joueur humain pour te dépouiller. Tu apprends les extractions, les spawns et les emplacements de butin en risque zéro.
+      </div>
+
+      <h2 id="boucle">L'ordre d'or avant chaque raid</h2>
+      <p>La communauté a codifié une séquence d'entrée qui évite 80 % des erreurs de lobby :</p>
+      <ol>
+        <li><strong>Stockage</strong> — vérifie ce que tu as réellement (armes, meds, place).</li>
+        <li><strong>Missions</strong> — prends-en au moins une : XP et Koens gratuits, raids avec un but.</li>
+        <li><strong>Contacts</strong> — regarde les offres limitées de Deke et les barters rentables.</li>
+        <li><strong>Loadout</strong> — équipe-toi (checklist ci-dessous).</li>
+        <li><strong>Match</strong> — choisis carte, difficulté, météo — et lance-toi.</li>
+      </ol>
+
+      <h2 id="loadout">Construire son loadout (checklist pré-raid)</h2>
+      <p>Un loadout <strong>complet</strong>, pas une arme jolie : meurtre dans 2 minutes = la fameuse « donation » de kit.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Slot</th><th>Travail minimum</th><th>Check débutant</th></tr></thead>
+          <tbody>
+            <tr><td>Arme principale</td><td>Fiable, adaptée à la portée de la carte</td><td>Teste-la au stand de tir avant de payer la raid</td></tr>
+            <tr><td>Chargeurs</td><td>Recharges immédiates dans le rig</td><td>Vérifie compatibilité chargeur/munitions</td></tr>
+            <tr><td>Armure + casque</td><td>Réduire le risque de mort subite</td><td>Regarde <strong>durabilité et zones couvertes</strong>, pas seulement le tier</td></tr>
+            <tr><td>Casque audio</td><td>Information avant visuel</td><td>Obligatoire : le son est ton radar</td></tr>
+            <tr><td>Medkit</td><td>Soigner les pertes de PV</td><td>Épargnes restantes suffisantes ?</td></tr>
+            <tr><td>Pansements</td><td>Stopper les saignements</td><td>Dans le rig, pas enterré sous le loot</td></tr>
+            <tr><td>Kit chirurgical</td><td>Réparer les membres black-out</td><td>Savoir : 3-5 s d'animation = t'es couvert</td></tr>
+            <tr><td>Analgésiques</td><td>Bouger malgré une jambe cassée</td><td>Achat d'urgence : ça rachète du temps, pas de la vie</td></tr>
+            <tr><td>Nourriture/eau</td><td>Éviter fin de raid affamé/déshydraté</td><td>Surtout après médicaments et longues routes</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <figure>
+        <img src="../img/ui/content-guide-debutant.jpg" alt="Opérateur débutant fouillant un coffre de ravitaillement" loading="lazy" width="1200" height="675">
+        <figcaption>Chaque conteneur ouvert est une leçon : veste, tiroir, boîte à outils, coffre — apprends où est le butin.</figcaption>
+      </figure>
+
+      <h3>Le loadout « Zero to Hero » (budget ~10–15k)</h3>
+      <ul>
+        <li><strong>Arme :</strong> SMG pas chère (MPF45) ou M4A1 de départ — ou M870 + point rouge + <span class="tooltip" data-tip="Slugs à pénétration d'armure : une balle = menace sérieuse en Normal">AP slugs</span> pour un build de débutant redoutable.</li>
+        <li><strong>Munitions :</strong> T3 minimum (7.62 PS, 5.56 M193) — voir section munitions.</li>
+        <li><strong>Protection :</strong> rig blindé T3 léger, casque basique ou aucun.</li>
+        <li><strong>Meds :</strong> medkit de base + 2 pansements + attelle.</li>
+        <li><strong>Sac :</strong> optionnel — souvent tu en trouves en raid.</li>
+        <li><strong>Total : ~8 000 à 14 000 Koens</strong> — tu peux mourir sans souffrir.</li>
+      </ul>
+      <div class="callout warning">
+        <p class="co-title">⚠️ Règle des deux kits</p>
+        Garde <strong>toujours 2 kits budget</strong> dans ton stockage. Le kit « beau » ne sort que quand ton taux d'extraction dépasse ~40 %. En attendant, il reste au chaud.
+      </div>
+
+      <h2 id="premiere">Ta première raid, pas à pas</h2>
+      <ol>
+        <li><strong>Choisis Farm en Normal, de jour.</strong> Carte simple, timer court (20 min), hotspot éloigné.</li>
+        <li><strong>Équipe un kit budget</strong> — sans assurance (trop cher pour du jetable).</li>
+        <li><strong>Apparais, trouve ta couverture</strong> — ouvre la carte immédiatement (touche <strong>M</strong> dès l'écran de chargement pour voir où tu spawns).</li>
+        <li><strong>Bouge silencieusement</strong> : marche, ne sprinte pas. Le sprint s'entend à 30 m+.</li>
+        <li><strong>Reste sur les bords</strong> — évite le centre (Motel, compounds principaux) la première semaine.</li>
+        <li><strong>Loot « sûr » :</strong> vestes, tiroirs, boîtes à outils, sacs médicaux, coffres d'armes dans les zones calmes.</li>
+        <li><strong>Identifie ton extraction</strong> dès que ton sac a de la valeur. Ne traîne pas.</li>
+        <li><strong>Approche prudemment</strong> : portes ouvertes, corps, loot abandonné = passage récent. Entre, sors, ne reste pas.</li>
+      </ol>
+      <div class="callout danger">
+        <p class="co-title">🚨 Le réflexe anti-gourmandise</p>
+        Tu as 1-2 millions de valeur dans le sac ? <strong>C'est parti pour l'extraction.</strong> Entendre un coup de feu loin ne veut pas dire « encore un kill ». La plus grande perte de Koens du jeu n'est pas une mauvaise arme — c'est l'avidité de fin de raid.
+      </div>
+
+      <h2 id="cartes">Choisir sa carte : la progression recommandée</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Carte</th><th>Difficulté</th><th>Quand y aller</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Farm</strong></td><td>★★☆</td><td><strong>Maintenant</strong> — layout simple, spawns prévisibles, raid 20 min</td></tr>
+            <tr><td><strong>Valley</strong></td><td>★★☆</td><td>Dès que Farm est rassasié — bonnes quêtes, portées mixtes</td></tr>
+            <tr><td><strong>TV Station</strong></td><td>★★★</td><td>Vers le niveau 15 — CQB impitoyable, loot énorme</td></tr>
+            <tr><td><strong>Northridge</strong></td><td>★★★</td><td>Vers le niveau 25 — grosse carte, snipers, villas premium</td></tr>
+            <tr><td><strong>Armory / Airport</strong></td><td>★★★</td><td>Late-game — top loot, top mort</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Memorise <strong>2 extractions proches de ton spawn</strong> par carte avant d'y aller : lire les noms d'exfil en plein raid = se faire tuer.</p>
+
+      <h2 id="combat">Santé & bases du combat</h2>
+      <h3>Les 4 états à gérer</h3>
+      <ul>
+        <li><strong>Saignement</strong> → pansement (sinon tu meurs lentement).</li>
+        <li><strong>Membre black-out</strong> (jambe, bras…) → kit chirurgical <strong>derrière un couvert</strong>, 3-5 secondes d'animation.</li>
+        <li><strong>PV bas</strong> → medkit.</li>
+        <li><strong>Immobilisé par la douleur</strong> → analgésique <strong>avant</strong> l'engagement (le fameux « painkiller préventif »).</li>
+      </ul>
+      <h3>Tirer correctement</h3>
+      <ul>
+        <li><strong>Vise la tête.</strong> En S7 : ricochet casques supprimé = ton headshot est récompensé à chaque fois.</li>
+        <li><strong>Repositionne après chaque tir</strong> : le flash et le bruit ton positionnent. Ne peek jamais deux fois le même angle.</li>
+        <li><strong>Peek droit &gt; peek gauche</strong> : le peek droit expose ~5-10 % du corps, le gauche ~25 %.</li>
+        <li><strong>Le son est ton radar</strong> : écoute 30-40 % du temps. Sans casque audio, tu joues à l'aveugle.</li>
+      </ul>
+
+      <h2 id="munitions">Les munitions comptent plus que les armes</h2>
+      <p>« Un AK stock en munitions T3 bat un M4 moddé en munitions T1. » La <strong>pénétration d'armure détermine la vitesse de kill</strong> — investis dans les balles avant les accessoires.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Budget</th><th>Munitions recommandées</th><th>Usage</th></tr></thead>
+          <tbody>
+            <tr><td>Écolo</td><td>7.62 PS · 5.56 M193 · 5.45 PP</td><td>Normals, cibles en armure T3 max</td></tr>
+            <tr><td>Standard</td><td>BP (7.62) · BS (5.45) · SS109 (5.56) — T4</td><td>Le cheval de bataille Lockdown (cap T4/T5 en S7)</td></tr>
+            <tr><td>Haut de gamme</td><td>AP · 7N39 · M61 — T5</td><td>Lockdown/Forbidden selon les caps S7</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>En <strong>Saison 7</strong>, les caps par mode simplifient les choix : <strong>Normal = T4 max, Lockdown = T5 max</strong>. Inutile d'acheter du T6 pour du Normal — c'est interdit, point.</p>
+
+      <h2 id="economie">Tes premiers Koens</h2>
+      <ul>
+        <li><strong>Covert Ops & courses Impostor :</strong> kit gratuit, tu ne peux rien perdre — la machine à cash débutant.</li>
+        <li><strong>Vends tout ce que tu n'utilises pas</strong> : munitions inutiles, mods non meta, casques encombrants. L'espace de stockage vaut plus que les 10 % de frais.</li>
+        <li><strong>Empile les ventes par 5</strong> sur le marché : un emplacement de vente = une vente — rentabilise-le.</li>
+        <li><strong>Deke</strong> : vérifie ses offres limitées à chaque refresh — des flips à 150k+ sont rapportés par la communauté.</li>
+        <li><strong>Missions</strong> : toujours au moins une active. XP + Koens + réputation contact (qui réduit tes commissions).</li>
+        <li><strong>Container sécurisée</strong> : stash dedans les trésors (stims, STL/STTO, rouges) — une mort n'efface pas tout.</li>
+      </ul>
+
+      <h2 id="erreurs">Les 10 erreurs des débutants (à éviter absolument)</h2>
+      <ol>
+        <li>Sortir son <strong>seul beau kit</strong> dès les premières raids.</li>
+        <li><strong>Sprinter partout</strong> — tout le monde t'entend arriver.</li>
+        <li><strong>Tirer sur chaque bruit</strong> — souvent un scav, parfois un allié… et toujours ton positionnement révélé.</li>
+        <li>Ne pas <strong>apprendre les extractions avant</strong> la raid.</li>
+        <li><strong>Soigner en plein champ</strong> — 3-5 s d'animation = cible gratuite.</li>
+        <li>Ignorer <strong>les missions de faction</strong> (XP et argent faciles).</li>
+        <li>Traverser <strong>le centre de la carte</strong> par paresse.</li>
+        <li>Chercher <strong>chaque loot de fin de raid</strong> alors que le sac est plein.</li>
+        <li>Spender <strong>tout son cash dans une arme</strong> sans meds ni munitions de réserve.</li>
+        <li>Jouer <strong>sans casque audio</strong> ou avec le son coupé.</li>
+      </ol>
+
+      <h2 id="conseils">10 conseils pour survivre sa première semaine</h2>
+      <ol>
+        <li><strong>5 heures en Covert Ops</strong> avant de te sentir à l'aise en Tactical.</li>
+        <li><strong>Un objectif par raid</strong> — le loot suit, la panique non.</li>
+        <li><strong>Reste sous 50k de loadout</strong> jusqu'à un taux d'extraction ~40 %.</li>
+        <li><strong>Achète de la munition avant des mods.</strong> Toujours.</li>
+        <li><strong>Mémorise 2 extractions</strong> par carte, proches de ton spawn.</li>
+        <li><strong>Bouge sur les bords</strong>, écoute 30-40 % du temps.</li>
+        <li><strong>Soigne uniquement derrière un couvert.</strong></li>
+        <li><strong>Quitter avec un bon sac</strong> est une victoire — pas une fuite.</li>
+        <li><strong>Jours uniquement</strong> le premier mois (meilleure visibilité, IA prévisibles).</li>
+        <li><strong>Clique sur les pastilles rouges</strong> du menu principal : le jeu distribue des cadeaux gratuits partout.</li>
+      </ol>
+
+      <div class="callout s7" style="margin-top:18px">
+        <strong>Astuces communauté (reddit, vérifiées nov. 2026) :</strong>
+        <strong>1.</strong> Appuie sur <strong>M pendant l'écran de chargement</strong> pour voir ton spawn sur la carte avant d'apparaître — 5 secondes pour planifier la route.
+        <strong>2.</strong> Les <strong>coffres de récupération</strong> (près des zones chaudes) ajoutent ~6 emplacements « case » gratuits : vide ton sac dedans avant un push.
+        <strong>3.</strong> <strong>Couteau les scavs</strong> quand c'est possible — un scav abattu au couteau ne prévient pas les autres joueurs (ni ne brûle ta munition).
+        <strong>4.</strong> <strong>Painkiller liquide avant un engagement</strong> : jambes noires + pas de hurlement qui te localise. Voir <a href="items-medical.html">médical</a>.
+      </div>
+
+      <h2 id="progression">Progression recommandée (niveau 1 → 30+)</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Palier</th><th>Objectifs</th><th>Focus</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Niv. 1–10</strong></td><td>Ouvrir Joel (niv.1), Evita (niv.1), Deke (niv.3)</td><td>Farm + Covert Ops, missions de contact, 2 kits budget</td></tr>
+            <tr><td><strong>Niv. 8+</strong></td><td>Débloquer le Zombie Endless (S7)</td><td>Apprendre les 6 mutants sans risque (Airport)</td></tr>
+            <tr><td><strong>Niv. 10–20</strong></td><td>Vladlen (niv.6), Thomas (niv.9), Randall (niv.12)</td><td>Valley, premiers Lockdown, maîtriser 2 cartes</td></tr>
+            <tr><td><strong>Niv. 15</strong></td><td>TV Station</td><td>CQB, audio, gamesense</td></tr>
+            <tr><td><strong>Niv. 25–30</strong></td><td>Northridge, Lockdown confortable</td><td>Battle Pass, mastery points (niv.19 : +3 pts)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout s7">
+        <p class="co-title">🧟 Bonus Saison 7</p>
+        Aucun wipe de stockage au lancement d'Utopia : tes Koens, armes et progressions sont conservés — seuls le rang de saison et le Battle Pass redémarrent. Profite-en pour construire ta base tranquillement.
+      </div>
+
+      <h2 id="faq">FAQ débutants</h2>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quelle est la meilleure carte pour débuter ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p><strong>Farm.</strong> Layout simple, spawns prévisibles, raid de 20 minutes, loot honnête. Puis Valley, TV Station (niv. 15), Northridge (niv. 25).</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Combien coûte un bon loadout de débutant ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p><strong>30 000 à 50 000 Koens</strong> pour un kit complet efficace (arme + T3/T4 + armure T3 + meds). Le haut de gamme commence vers 100k, le full-gear à 300k+. Ne sors jamais plus cher que ce que tu peux perdre sans geindre.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Combien de temps avant d'être à l'aise ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Les 20-30 premières raids tu meures beaucoup — c'est normal. Vers <strong>50 heures</strong>, tu survivs à la majorité de tes Normales. Les joueurs corrects visent 40-60 % d'extraction (référence communauté).</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Faut-il acheter du T5/T6 pour progresser ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Non. Les <strong>caps S7</strong> limitent le Normal au T4 et le Lockdown au T5. Du T4 bien placé en Normal est optimal — garde ton cash pour les munitions et les upgrades de stockage.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Comment ne pas perdre tout en mourant ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>La <strong>container sécurisée</strong> (1×2 → 3×3 selon progression) conserve une partie du butin : stash-y STL/STTO, stims, munitions de réserve et objets rouges. Et vends régulièrement : un stockage plein = argent dormir.</p></div></div>
+      </div>
+
+      <p class="source-note"><strong>Sources —</strong> Patch notes officielles MoreFun/Steam (Saison 7 Utopia, 16/09/2026) · reddit r/ArenaBreakoutInfinite (Ultimate Tips 2.0/3.0, threads débutants) · topuplive beginner guide · timesaver.gg · aegischeats beginner2026 · 9puz guide. Vérifié le 17 novembre 2026.</p>
+
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Enchaîne avec le guide avancé</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Pénétration post-RNG, sound design, peek angles et économie avancée.</p>
+    <a class="btn btn-primary" href="guide-avance.html">Guide avancé →</a>
+  </div>
+</section>

@@ -1,0 +1,41 @@
+{
+  "meta": {
+    "game": "Arena Breakout Infinite",
+    "patch": "1.0.0.142.19",
+    "updated": "2026-11-17",
+    "total_rounds": 29,
+    "sources": ["arenabreakout-infinite.com/ammo-chart", "qrts.ru ammo DB", "fandom ABI wiki", "topuplive", "Steam Calza's Gun Guide", "abi-helper.com model"],
+    "model": "pierce=floor(pen/10); pierce>classe→100%; pierce==classe→80-100% (dmg×0.8); pierce<classe→1/2^x (dmg×0.6); S7 T5/T6 corps: sous-tier=0% tant que durabilité>seuil (approx 50%)"
+  },
+  "rounds": [
+    { "name": "M80", "caliber": "7.62×51mm", "pen": 42, "flesh": 63, "armdmg": 21, "vel": 833 },
+    { "name": "M61", "caliber": "7.62×51mm", "pen": 68, "flesh": 50, "armdmg": 37, "vel": 849 },
+    { "name": "LPS", "caliber": "7.62×54mmR", "pen": 42, "flesh": 75, "armdmg": 27, "vel": 865 },
+    { "name": "T46M", "caliber": "7.62×54mmR", "pen": 33, "flesh": 77, "armdmg": 16, "vel": 800 },
+    { "name": "7N37", "caliber": "7.62×54mmR", "pen": 71, "flesh": 64, "armdmg": 54, "vel": 785 },
+    { "name": "BP", "caliber": "5.45×39mm", "pen": 41, "flesh": 45, "armdmg": 17, "vel": 890 },
+    { "name": "PP", "caliber": "5.45×39mm", "pen": 41, "flesh": 44, "armdmg": 13, "vel": 890 },
+    { "name": "BS", "caliber": "5.45×39mm", "pen": 52, "flesh": 48, "armdmg": 26, "vel": 890 },
+    { "name": "M855", "caliber": "5.56×45mm", "pen": 34, "flesh": 50, "armdmg": 13, "vel": 922 },
+    { "name": "M855A1", "caliber": "5.56×45mm", "pen": 40, "flesh": 47, "armdmg": 20, "vel": 945 },
+    { "name": "M995", "caliber": "5.56×45mm", "pen": 52, "flesh": 41, "armdmg": 27, "vel": 1013 },
+    { "name": "PS", "caliber": "7.62×39mm", "pen": 33, "flesh": 55, "armdmg": 14, "vel": 700 },
+    { "name": "HP", "caliber": "7.62×39mm", "pen": 16, "flesh": 78, "armdmg": 7, "vel": 754 },
+    { "name": "LP", "caliber": "7.62×39mm", "pen": 13, "flesh": 60, "armdmg": 3, "vel": 720 },
+    { "name": "US", "caliber": "7.62×39mm", "pen": 27, "flesh": 55, "armdmg": 9, "vel": 300 },
+    { "name": "Pst", "caliber": "9×19mm", "pen": 20, "flesh": 50, "armdmg": 7, "vel": 457 },
+    { "name": "7N31", "caliber": "9×19mm", "pen": 40, "flesh": 44, "armdmg": 19, "vel": 600 },
+    { "name": "SP5", "caliber": "9×39mm", "pen": 33, "flesh": 64, "armdmg": 11, "vel": 290 },
+    { "name": "SP6", "caliber": "9×39mm", "pen": 41, "flesh": 53, "armdmg": 18, "vel": 305 },
+    { "name": "L191", "caliber": "5.7×28mm", "pen": 32, "flesh": 55, "armdmg": 13, "vel": 716 },
+    { "name": "SS190", "caliber": "5.7×28mm", "pen": 42, "flesh": 47, "armdmg": 19, "vel": 716 },
+    { "name": "DBP87", "caliber": "5.8×42mm", "pen": 34, "flesh": 52, "armdmg": 13, "vel": 930 },
+    { "name": "FMJ", "caliber": ".45 ACP", "pen": 19, "flesh": 54, "armdmg": 6, "vel": 285 },
+    { "name": "AP", "caliber": ".45 ACP", "pen": 32, "flesh": 48, "armdmg": 11, "vel": 299 },
+    { "name": "Slug AP", "caliber": "12 gauge", "pen": 35, "flesh": 163, "armdmg": 15, "vel": 510 },
+    { "name": "Flechette", "caliber": "12 gauge", "pen": 33, "flesh": 25, "armdmg": 2, "vel": 320 },
+    { "name": "Dual Shell", "caliber": "12 gauge", "pen": 19, "flesh": 86, "armdmg": 3, "vel": 415 },
+    { "name": "SJHP", "caliber": ".44", "pen": 35, "flesh": 76, "armdmg": 13, "vel": 434 },
+    { "name": "Pst 7.62", "caliber": "7.62×25mm", "pen": 22, "flesh": 51, "armdmg": 10, "vel": 430 }
+  ]
+}

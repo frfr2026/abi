@@ -1,0 +1,10 @@
+# ABI NEXUS — Guide Ultime Arena Breakout Infinite
+# Robots.txt S16 · 2026-11-17
+User-agent: *
+Allow: /
+
+# Ressources non indexables
+Disallow: /404.html
+
+# Sitemap
+Sitemap: https://abi-nexus.fr/sitemap.xml

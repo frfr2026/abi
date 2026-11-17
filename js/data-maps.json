@@ -1,0 +1,444 @@
+{
+ "farm": {
+  "title": "Farm",
+  "img": "../img/maps/map-farm.jpg",
+  "markers": [
+   {
+    "type": "hot",
+    "name": "Motel",
+    "x": 0.45,
+    "y": 0.57,
+    "note": "Hotspot central — Room 201 safe, PvP constant"
+   },
+   {
+    "type": "hot",
+    "name": "Stables",
+    "x": 0.5,
+    "y": 0.14,
+    "note": "2F safe + routes nord"
+   },
+   {
+    "type": "hot",
+    "name": "Grain Trade Center",
+    "x": 0.36,
+    "y": 0.39,
+    "note": "Office safe 15-25k, Barn Office key"
+   },
+   {
+    "type": "hot",
+    "name": "Villa",
+    "x": 0.81,
+    "y": 0.24,
+    "note": "Master Bedroom (rouges) + boss zone"
+   },
+   {
+    "type": "key",
+    "name": "Motel 201 Key",
+    "x": 0.46,
+    "y": 0.56,
+    "note": "~8k — safe du couloir 2ᵉ étage, ROI 1 ouverture"
+   },
+   {
+    "type": "key",
+    "name": "Barn Office Key",
+    "x": 0.37,
+    "y": 0.41,
+    "note": "Salle forte Grain Trade"
+   },
+   {
+    "type": "exfil",
+    "name": "Outpost",
+    "x": 0.44,
+    "y": 0.05,
+    "note": "Exfil fixe nord"
+   },
+   {
+    "type": "exfil",
+    "name": "Highway",
+    "x": 0.96,
+    "y": 0.44,
+    "note": "Exfil fixe est (route)"
+   },
+   {
+    "type": "exfil",
+    "name": "Path to Restricted",
+    "x": 0.51,
+    "y": 0.97,
+    "note": "Exfil fixe sud"
+   },
+   {
+    "type": "exfil",
+    "name": "Southern Blockade",
+    "x": 0.12,
+    "y": 0.86,
+    "note": "Payant 2k-30k, 10 min"
+   },
+   {
+    "type": "boss",
+    "name": "Ajax",
+    "x": 0.8,
+    "y": 0.27,
+    "note": "Boss Farm — armor A-tier + munitions rares"
+   }
+  ]
+ },
+ "valley": {
+  "title": "Valley",
+  "img": "../img/maps/map-valley.jpg",
+  "markers": [
+   {
+    "type": "hot",
+    "name": "Villa (Antonio)",
+    "x": 0.51,
+    "y": 0.14,
+    "note": "Fief Doss — Master Bedroom safe"
+   },
+   {
+    "type": "hot",
+    "name": "Small Factory",
+    "x": 0.33,
+    "y": 0.78,
+    "note": "Hotspot loot + duels mid"
+   },
+   {
+    "type": "hot",
+    "name": "Courtyard",
+    "x": 0.57,
+    "y": 0.29,
+    "note": "Locked Basement (rouges)"
+   },
+   {
+    "type": "hot",
+    "name": "Beach Villa",
+    "x": 0.67,
+    "y": 0.71,
+    "note": "Route côtière 300-500k"
+   },
+   {
+    "type": "exfil",
+    "name": "NE Road",
+    "x": 0.92,
+    "y": 0.3,
+    "note": "Exfil fixe nord-est"
+   },
+   {
+    "type": "exfil",
+    "name": "NW Road",
+    "x": 0.14,
+    "y": 0.42,
+    "note": "Exfil fixe nord-ouest"
+   },
+   {
+    "type": "exfil",
+    "name": "Port",
+    "x": 0.54,
+    "y": 0.75,
+    "note": "Chance-based"
+   },
+   {
+    "type": "exfil",
+    "name": "Helipad",
+    "x": 0.78,
+    "y": 0.54,
+    "note": "2 dogtags requis"
+   },
+   {
+    "type": "exfil",
+    "name": "Beachhead",
+    "x": 0.6,
+    "y": 0.88,
+    "note": "Chance-based (plage)"
+   }
+  ]
+ },
+ "northridge": {
+  "title": "Northridge",
+  "img": "../img/maps/map-northridge.jpg",
+  "markers": [
+   {
+    "type": "hot",
+    "name": "Hotel",
+    "x": 0.53,
+    "y": 0.56,
+    "note": "8 safes / 4 buildings — le cœur du loot"
+   },
+   {
+    "type": "hot",
+    "name": "Cable Car Station",
+    "x": 0.65,
+    "y": 0.3,
+    "note": "Lounge ~700k de contenu + exfil payant 7500"
+   },
+   {
+    "type": "hot",
+    "name": "Sewage Plant",
+    "x": 0.46,
+    "y": 0.62,
+    "note": "3+ safes + Workshop key ~350k"
+   },
+   {
+    "type": "hot",
+    "name": "Camp Services",
+    "x": 0.37,
+    "y": 0.2,
+    "note": "2 safes"
+   },
+   {
+    "type": "key",
+    "name": "Waiting Area Lounge Key",
+    "x": 0.53,
+    "y": 0.55,
+    "note": "Contenu ~700k — clé la plus rentable du jeu"
+   },
+   {
+    "type": "exfil",
+    "name": "Armored Vehicle",
+    "x": 0.27,
+    "y": 0.6,
+    "note": "2 dogtags + 30 s"
+   },
+   {
+    "type": "exfil",
+    "name": "Dam",
+    "x": 0.54,
+    "y": 0.16,
+    "note": "Console 90 s"
+   },
+   {
+    "type": "exfil",
+    "name": "Cable Car",
+    "x": 0.67,
+    "y": 0.28,
+    "note": "~7500 Koen"
+   },
+   {
+    "type": "exfil",
+    "name": "Bus Terminal",
+    "x": 0.72,
+    "y": 0.5,
+    "note": "Bannit la caisse lingot d'or"
+   },
+   {
+    "type": "exfil",
+    "name": "Access Bridge",
+    "x": 0.55,
+    "y": 0.12,
+    "note": "25 min requis"
+   },
+   {
+    "type": "exfil",
+    "name": "Lifeboat",
+    "x": 0.57,
+    "y": 0.48,
+    "note": "15000 Koen, ~60 %"
+   }
+  ]
+ },
+ "armory": {
+  "title": "Armory",
+  "img": "../img/maps/map-armory.jpg",
+  "markers": [
+   {
+    "type": "hot",
+    "name": "Bunker (Renoir)",
+    "x": 0.76,
+    "y": 0.22,
+    "note": "3 entrées + alarmes — boss T5 Renoir"
+   },
+   {
+    "type": "hot",
+    "name": "Hole in Wall",
+    "x": 0.44,
+    "y": 0.63,
+    "note": "Entrée bunker 1/3"
+   },
+   {
+    "type": "hot",
+    "name": "Tank Entrance",
+    "x": 0.5,
+    "y": 0.58,
+    "note": "Entrée bunker 3/3"
+   },
+   {
+    "type": "hot",
+    "name": "Weapons Room",
+    "x": 0.61,
+    "y": 0.71,
+    "note": "Salle armes verrouillée + safes"
+   },
+   {
+    "type": "key",
+    "name": "Armory safes",
+    "x": 0.25,
+    "y": 0.25,
+    "note": "Densité de rouges la plus haute — « found 4, extracted 0 »"
+   },
+   {
+    "type": "boss",
+    "name": "Elite Rors",
+    "x": 0.5,
+    "y": 0.67,
+    "note": "Elite en extérieur"
+   },
+   {
+    "type": "exfil",
+    "name": "Canal",
+    "x": 0.86,
+    "y": 0.36,
+    "note": "Exfil classique"
+   },
+   {
+    "type": "exfil",
+    "name": "Radar Station Tunnel",
+    "x": 0.13,
+    "y": 0.31,
+    "note": "Exfil classique"
+   },
+   {
+    "type": "exfil",
+    "name": "Underground Mine",
+    "x": 0.73,
+    "y": 0.44,
+    "note": "Levier près de l'entrée centrale"
+   }
+  ]
+ },
+ "tv-station": {
+  "title": "TV Station",
+  "img": "../img/maps/map-tv-station.jpg",
+  "markers": [
+   {
+    "type": "hot",
+    "name": "Central Control",
+    "x": 0.71,
+    "y": 0.31,
+    "note": "2 safes — loot principal"
+   },
+   {
+    "type": "hot",
+    "name": "Director's Office",
+    "x": 0.66,
+    "y": 0.18,
+    "note": "Bureau directeur"
+   },
+   {
+    "type": "hot",
+    "name": "General Office",
+    "x": 0.61,
+    "y": 0.7,
+    "note": "Open office"
+   },
+   {
+    "type": "hot",
+    "name": "Equipment Storage",
+    "x": 0.44,
+    "y": 0.36,
+    "note": "Clé ~600k — la plus chère de la carte"
+   },
+   {
+    "type": "key",
+    "name": "Planning Office Key",
+    "x": 0.15,
+    "y": 0.66,
+    "note": "11+ clés TV Station au catalogue"
+   },
+   {
+    "type": "exfil",
+    "name": "Elevator (2F)",
+    "x": 0.67,
+    "y": 0.64,
+    "note": "Appel 2F — 5-10 min"
+   },
+   {
+    "type": "exfil",
+    "name": "Loading Dock",
+    "x": 0.46,
+    "y": 0.47,
+    "note": "Switch ventilation-stairs, 10-15 min, 20 s"
+   },
+   {
+    "type": "exfil",
+    "name": "Main Entrance",
+    "x": 0.28,
+    "y": 0.76,
+    "note": "Switch requis"
+   }
+  ]
+ },
+ "airport": {
+  "title": "Airport (Guoyapo)",
+  "img": "../img/maps/map-airport.jpg",
+  "markers": [
+   {
+    "type": "hot",
+    "name": "Control Tower",
+    "x": 0.48,
+    "y": 0.62,
+    "note": "2 switches → Central Elevator"
+   },
+   {
+    "type": "hot",
+    "name": "Terminal",
+    "x": 0.49,
+    "y": 0.77,
+    "note": "Centre névralgique"
+   },
+   {
+    "type": "hot",
+    "name": "Parking Lot",
+    "x": 0.49,
+    "y": 0.85,
+    "note": "Hélico exfil (1 min, 2 dogtags)"
+   },
+   {
+    "type": "exfil",
+    "name": "Destination",
+    "x": 0.5,
+    "y": 0.97,
+    "note": "Fixe ~15 min"
+   },
+   {
+    "type": "exfil",
+    "name": "Road to the Port",
+    "x": 0.94,
+    "y": 0.52,
+    "note": "Fixe ~15 min"
+   },
+   {
+    "type": "exfil",
+    "name": "Northern Outpost",
+    "x": 0.34,
+    "y": 0.05,
+    "note": "EXFIL AVEC ennemi opérateur — 2 max"
+   },
+   {
+    "type": "exfil",
+    "name": "Drainage Pipe",
+    "x": 0.14,
+    "y": 0.9,
+    "note": "10 min, sans sac"
+   },
+   {
+    "type": "exfil",
+    "name": "Central Elevator",
+    "x": 0.5,
+    "y": 0.55,
+    "note": "2 switches Control Tower"
+   },
+   {
+    "type": "exfil",
+    "name": "Recycling Truck",
+    "x": 0.75,
+    "y": 0.24,
+    "note": "Fixe ~15 min"
+   },
+   {
+    "type": "boss",
+    "name": "Zone Infected S7",
+    "x": 0.53,
+    "y": 0.46,
+    "note": "Infected Zone + Zombie Endless actifs sur Airport"
+   }
+  ]
+ }
+}

@@ -1,0 +1,122 @@
+<!--META
+{
+  "file": "map-airport.html",
+  "title": "Carte Guoyapo Airport ABI — 9 exfils & routes 40 min | NEXUS",
+  "description": "Guide complet de l'aéroport Guoyapo d'Arena Breakout Infinite : plus grande carte (40 min, 12 joueurs), 9 extractions (ascenseur central, drainage sans sac, hélico 2 dogtags) et hotspots.",
+  "keywords": "carte Airport Arena Breakout, Guoyapo airport, central elevator extraction, drainage pipe, aeroport loot",
+  "og_image": "img/maps/map-airport.jpg",
+  "ambiance": "maps",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Cartes","map-airport.html"],["Airport","map-airport.html"]],
+  "faq": [
+    ["Quelles sont les extractions de l'Airport ?","4 fixes — Destination Extract, Recycling Station Truck, Road Meet-Up Point, Road to the Port (tous actifs ~15 min, 20 s) — et 5 conditionnels : Central Elevator (2 interrupteurs dans la Control Tower), Drainage Pipe (10 min, sans sac), Northern Outpost (10-20 min, extraction AVEC un opérateur ennemi — 2 max), Parking Lot Meet-Up (hélico après 1 min, 2 dogtags), Western Path (15 min, 20 s)."],
+    ["Pourquoi 40 minutes de raid ?","Airport est « the largest operational area and the longest raid timer » du jeu (secteur Extreme) : 12 opérateurs, déblocage ~niveau 25. Le temps long favorise les routes périphériques — contourner le centre (Control Tower) est un choix de route autant qu'un choix de combat."],
+    ["C'est quoi l'exfil Northern Outpost à deux ?","Le cas le plus original d'ABI : tu dois extraire <strong>avec un opérateur ennemi</strong> — seulement 2 peuvent sortir. Des alliances de circonstance naissent (signaux vocaux, non-agression), mais la confiance tue : beaucoup de joueurs ont fini leur raid dans ce zone."],
+    ["Quel rapport avec les modes zombies S7 ?","La Saison 7 a ajouté des variantes <strong>Infected Zone sur Farm, Valley et Airport</strong>, plus le <strong>Zombie Endless sur Airport</strong>. Même carte, menaces différentes — vérifie les règles d'extraction spécifiques du mode avant de queue (voir <a href=\"map-no-mans-land.html\">No Man's Land</a>)."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/maps/hero-map-airport.jpg')" role="img" aria-label="Vue de la carte Airport"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Cartes › <span class="text-gold">Airport</span></p>
+    <span class="badge badge-s7">Carte · Extrême</span>
+    <h1 class="hero-title" style="margin-top:14px">Guoyapo<br><span class="accent">Airport</span></h1>
+    <p class="hero-sub">La plus vaste zone de Kamona : 40 minutes de raid, 9 exfils, une tour de contrôle à maîtriser — et un exfil à deux qui négocie la vie.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">9</span><span class="c-label">Extractions</span></div>
+      <div class="hero-counter"><span class="counter">40 min</span><span class="c-label">Durée de raid</span></div>
+      <div class="hero-counter"><span class="counter">12</span><span class="c-label">Opérateurs</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#apercu">Aperçu & stratégie de route</a>
+      <a href="#exfils">Les 9 extractions</a>
+      <a href="#zones">Zones clés</a>
+      <a href="#tactique">Tactique & stats</a>
+      <a href="#zombie">Variantes zombies S7</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+            <div class="callout tip" style="margin-top:16px">
+        <p class="co-title">🗺️ Cartes interactives de référence (communauté)</p>
+        Planifie tes routes avec les outils live : <a href="https://maps.tcno.co/abi" target="_blank" rel="noopener">maps.tcno.co/abi</a> ·
+        <a href="https://abibuilder.com/maps" target="_blank" rel="noopener">abibuilder.com/maps</a> ·
+        <a href="https://arena-breakout-infinite.fandom.com/wiki/Special:AllMaps" target="_blank" rel="noopener">fandom — toutes les cartes</a> ·
+        <a href="https://arenabreakout-infinite.com/fr/maps/" target="_blank" rel="noopener">arenabreakout-infinite.com — cartes interactives</a>.
+        <span class="text-muted">(Spawns, exfils et clés vérifiés en direct — les calques de cette page sont un instantané du 17/11/2026.)</span>
+      </div>
+      <h2 id="apercu">Aperçu & stratégie de route</h2>
+      <p>Aéroport civil décommissionné — <strong>la plus grande zone opérationnelle du jeu</strong>, raids de 40 minutes, secteur « Extreme », 12 opérateurs, déblocage ~niveau 25. La structure : la <strong>Control Tower</strong> au centre (point de contrôle et d'exfil), des terrains d'aviation ouverts autour, des zones cargo et fuel disséminées.</p>
+      <div class="callout tip"><p class="co-title">🧭 Contourner ou contester ?</p>
+        La décision de route de l'Airport : <strong>contester le centre</strong> (Control Tower, loot + exfil élite) ou <strong>tenir la route extérieure</strong> (plus long, plus safe, loot correct). Les deux extrémités du raid — spawn et exfil — sont généralement opposées : la carte te force à traverser.</div>
+
+      <h2 id="exfils">Les 9 extractions</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Exfil</th><th>Type</th><th>Condition / timing</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Destination Extract</strong></td><td>Fixe</td><td>Actif après 15 min · 20 s</td></tr>
+            <tr><td><strong>Recycling Station Truck</strong></td><td>Fixe</td><td>Actif après 15 min</td></tr>
+            <tr><td><strong>Road Meet-Up Point</strong></td><td>Fixe</td><td>Actif après 15 min</td></tr>
+            <tr><td><strong>Road to the Port</strong></td><td>Fixe</td><td>Actif après 15 min · 20 s</td></tr>
+            <tr><td><strong>Central Elevator</strong></td><td>Conditionnel</td><td><strong>2 interrupteurs</strong> dans la Control Tower (l'ascenseur est sans électricité) · rapide mais <strong>annonce ta position par le bruit</strong></td></tr>
+            <tr><td><strong>Drainage Pipe</strong></td><td>Conditionnel</td><td>Actif après 10 min · <strong>sans sac à dos</strong></td></tr>
+            <tr><td><strong>Northern Outpost</strong></td><td>Conditionnel</td><td>10-20 min · <strong>extraire AVEC un opérateur ennemi</strong> (2 max)</td></tr>
+            <tr><td><strong>Parking Lot Meet-Up</strong></td><td>Conditionnel</td><td>Hélico appelé après 1 min · <strong>2 dogtags</strong></td></tr>
+            <tr><td><strong>Western Path</strong></td><td>Conditionnel</td><td>Actif après 15 min · 20 s</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="zones">Zones clés</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Zone</th><th>Intérêt</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Control Tower</strong></td><td>Le pivot de la carte : interrupteurs de l'exfil Central Elevator, loot, dominance centrale</td></tr>
+            <tr><td>Fuel Station / routes nord</td><td>Fuel Station Intersection — exfil ouest fréquenté (ouvre ~15 min) → piège d'embuscade populaire</td></tr>
+            <tr><td>Cargo & Inspection</td><td>Cargo Inspection Area Key, containers de valeur</td></tr>
+            <tr><td>Lounges & Archives</td><td>Executive Lounge Key, VIP Reception Keycard, AOC Secret Archives Keycard — loot élite verrouillé</td></tr>
+            <tr><td>Zone de stationnement</td><td>Parking Lot Meet-Up (hélico) + containers</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Statistique à garder en tête (communauté) : <strong>60-70 % des morts surviennent près des exfils</strong>, surtout entre 15 et 20 min quand tout le monde sort en même temps. Patiente, observe à distance, approche par des angles imprévus.</p>
+
+      <h2 id="tactique">Tactique & kits</h2>
+      <ol>
+        <li><strong>Route intérieure vs périphérique</strong> décide de ton arme : centre → CQB (SMG/visière) ; périphérie → DMR/fusil polyvalent.</li>
+        <li><strong>Le Drainage Pipe est ta soupape de sécurité</strong> : sans sac = sortie d'urgence, emporte donc un sac roulé dans le rig si tu le crains.</li>
+        <li><strong>Hélico Parking Lot</strong> : 2 dogtags dès le début = sortie premium planifiable — chasse tôt les cibles légères.</li>
+        <li><strong>40 min = discipline</strong> : planifie 3 jalons (mid-raid check, position d'exfil à 30 min, approche finale) — les joueurs meurent d'impatience plus que de tirs.</li>
+      </ol>
+
+      <h2 id="zombie">Variantes zombies S7 (Infected Zone / Endless)</h2>
+      <div class="callout s7"><p class="co-title">🧟 Utopia sur l'Airport</p>
+        La S7 a ajouté le <strong>Zombie Endless (PvE) sur Airport</strong> et des variantes <strong>Infected Zone (PvPvE)</strong> sur Farm, Valley et Airport. Même terrain, règles et extractions à revérifier selon le mode — détails sur la page <a href="map-no-mans-land.html">No Man's Land</a>.</div>
+
+      <h2 id="faq">FAQ Airport</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Central Elevator ou route extérieure ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>L'ascenseur est le plus rapide mais le plus bruyant : nettoie la tour, garde un coéquipier en garde, et sors vite. Seul, préfère un exfil fixe de périphérie (Western Path, Road to the Port) — approché par des angles inattendus.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Le Northern Outpost est jouable en solo ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Théoriquement oui (tu peux « convaincre » un ennemi), pratiquement c'est une arme à double tranchant : la zone force la coopération puis la trahison. Solos : considère-le comme un fight 1v1 garanti de 20 s — si tu veux jouer le bluff, garde tes munitions pour le dernier seconde.</p></div></div></div>
+      <p class="source-note"><strong>Sources —</strong> arenabreakout-infinite.com Guoyapo Airport (9 exfils, 35-40 min) · gametruth maps guide · mmoexp extraction guide (stats) · qrts exits list · patch notes S7 (zombie variants). Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">La zone interdite</h2>
+    <p class="section-sub" style="margin:16px auto 24px">No Man's Land & les modes zombies de la Saison 7.</p>
+    <a class="btn btn-primary" href="map-no-mans-land.html">No Man's Land →</a>
+    <a class="btn btn-ghost" href="map-tv-station.html">TV Station</a>
+  </div>
+</section>

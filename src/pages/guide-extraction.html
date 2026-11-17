@@ -1,0 +1,170 @@
+<!--META
+{
+  "file": "guide-extraction.html",
+  "title": "Guide de l'Extraction : Points d'Exfil, Routes & Survie | ABI NEXUS",
+  "description": "Maîtrisez l'extraction dans Arena Breakout Infinite : types de points d'exfil, routes, timers, extract payants, strategies anti-camp et extraction sous pression S7.",
+  "keywords": "Arena Breakout Infinite extraction, ABI points exfil, guide extraction, sortir d'une raid, exfil Farm Northridge TV",
+  "og_image": "img/hero/hero-guide-extraction.jpg",
+  "ambiance": "guides",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Guides","guide-extraction.html"],["Extraction","guide-extraction.html"]],
+  "faq": [
+    ["Comment trouver les points d'extraction ?","Ouvre la carte avec M dès l'écran de chargement pour voir ton spawn et les exfil disponibles. Mémorise 2 extractions proches de ton spawn avant même d'apparaître : lire les noms en plein raid te coûte la vie."],
+    ["Pourquoi mon extraction est fermée ?","Certains exfil ont des conditions : le no-backpack de Farm est fermé les 10 premières minutes, certains nécessitent un paiement (7 500 Koens), une clé (lifeboat) ou un interrupteur (câble-car, TV). Vérifie les conditions sur la carte avant de courir dessus."],
+    ["Quel est le meilleur moment pour extraire ?","Dès que ton sac est rentable par slot et que l'objectif de raid est atteint. N'attends pas les dernières minutes : les derniers joueurs convergent vers les exfil et les camps se multiplient."],
+    ["Comment éviter les campeurs d'extraction ?","Approche par des angles différents, jette une grenade de fumée ou une stun avant d'entrer, utilise des exfil secondaires/payants moins fréquentés, et surveille les signes récents (portes ouvertes, corps, loot abandonné)."],
+    ["Comment extraire en Infected Zone (S7) ?","Les hordes ferment certaines routes : garde toujours une voie de secours, utilise les grenades phéromone pour dégager un couloir, et le marchand in-raid pour alléger ton sac avant l'approche finale."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-guide-extraction.jpg')" role="img" aria-label="Extraction en hélicoptère à l'aube"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Guides › <span class="text-gold">Extraction</span></p>
+    <span class="badge badge-gold">Guide · Extraction</span>
+    <h1 class="hero-title" style="margin-top:14px">Sortir<br><span class="accent">vivant</span></h1>
+    <p class="hero-sub">Le loot ne t'appartient que passé l'exfil. Types d'extractions, conditions, routes et rituels anti-camp — la fin de raid maîtrisée.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">~15 min</span><span class="c-label">Lecture</span></div>
+      <div class="hero-counter"><span class="counter">6-8</span><span class="c-label">Exfil / carte</span></div>
+      <div class="hero-counter"><span class="counter">100%</span><span class="c-label">Du loot en jeu</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#pourquoi">Pourquoi l'extraction décide de tout</a>
+      <a href="#types">Les types de points d'exfil</a>
+      <a href="#conditions">Conditions & pièges par carte</a>
+      <a href="#planning">Planifier : la touche M</a>
+      <a href="#approche">Rituels d'approche</a>
+      <a href="#timers">Timers & dernières minutes</a>
+      <a href="#s7">Extraction en Infected Zone (S7)</a>
+      <a href="#squads">Extraction en escouade</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+
+      <h2 id="pourquoi">Pourquoi l'extraction décide de tout</h2>
+      <p>Dans ABI, <strong>le butin n'existe que si tu extractions</strong>. Un sac à 3 millions qui reste sur le sol de la Farm = 0 Koen, un kit perdu, et une leçon. À l'inverse, une raid « ratée » en kills mais propre à l'exfil est une <strong>raid gagnée</strong>. La communauté résume la philosophie :</p>
+      <div class="callout tip">
+        <p class="co-title">🎯 La règle des 40-60 %</p>
+        Un bon joueur extrait dans <strong>40 à 60 % de ses raids</strong>. En dessous de 40 %, ce n'est pas l'aim qui pose problème — c'est la <strong>discipline de fin de raid</strong> : trop looté trop longtemps, mauvais timing, route non préparée.
+      </div>
+
+      <h2 id="types">Les types de points d'exfil</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Type</th><th>Fonctionnement</th><th>Risque</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Gratuit / permanent</strong></td><td>Toujours actif, quelques secondes de canalisations</td><td>Le plus campé — tout le monde le connaît</td></tr>
+            <tr><td><strong>Payant</strong></td><td>Activation contre Koens (ex. 7 500)</td><td>Faible fréquentation si les gens ignorent le prix</td></tr>
+            <tr><td><strong>À interrupteur</strong></td><td>Tire un levier/câble puis attends</td><td>Le bruit de l'activation prévient les proches</td></tr>
+            <tr><td><strong>Timer / canalisé</strong></td><td>Fenêtre de temps (ex. ascenseur TV)</td><td>S' joue aux dernières secondes — très tendu</td></tr>
+            <tr><td><strong>Conditionnel</strong></td><td>Sans sac à dos, avec clé (lifeboat), etc.</td><td>Conditions vérifiées à l'arrivée = panique</td></tr>
+            <tr><td><strong>Fermé en début de raid</strong></td><td>Ex. Farm no-backpack : fermé ~10 min</td><td>Trop tôt = on te tue pendant l'attente</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="conditions">Conditions & pièges connus (cartes populaires)</h2>
+      <ul>
+        <li><strong>Farm :</strong> l'extraction « sans sac à dos » est <strong>fermée les 10 premières minutes</strong> — vérifie l'état avant de la viser. Le Motel reste un hotspot de rotation.</li>
+        <li><strong>Northridge :</strong> le <strong>câble-car</strong> s'active par interrupteur (paiement ~7 500) ; le <strong>dam</strong> est une sortie classique ; le <strong>lifeboat</strong> nécessitait une clé — la clé a été retirée, il suffit désormais de payer en Lockdown. Carte énorme (~20 joueurs) = rotations longues.</li>
+        <li><strong>TV Station :</strong> l'<strong>ascenseur</strong> est l'exfil « dernier souffle » — <strong>90 secondes en Forbidden contre 40 en Normal</strong>. Technique avancée : tire le level, attends le dernier 10 s, écoute les pas avant d'engager — ou contourne par le 1<sup>er</sup> étage et le saut par la vitre du centre (casse la vitre !).</li>
+        <li><strong>Armory :</strong> exfil « sans sac » disponible — idéal pour un quick loot, piège si tu arrives trop tôt.</li>
+        <li><strong>Valley / Airport :</strong> attention aux lignes ouvertes sur les exfil extérieurs — un sniper sur la crête existe toujours.</li>
+      </ul>
+      <div class="callout warning">
+        <p class="co-title">⚠️ Le check d'approche</p>
+        Portes ouvertes · corps au sol · loot abandonné · silhouettes au loin · bruit de pas récent = <strong>exfil probablement occupé</strong>. Change d'angle, jette une fumée/stun, ou pivote vers un exfil secondaire.
+      </div>
+
+      <h2 id="planning">Planifier : la touche M dès le chargement</h2>
+      <ol>
+        <li><strong>Appuie sur M dès l'écran de chargement</strong> — tu vois où tu vas apparaître par rapport aux autres spawns (astuce reddit massivement adoptée).</li>
+        <li>Repère <strong>2 extractions</strong> : ton exfil primaire (le plus sûr depuis ton spawn) + une alternative.</li>
+        <li>Traçage mental du corridor spawn → loot → exfil, avec <strong>1 crossing dangereux identifié</strong> et 1 plan B.</li>
+        <li>Choisis ta route en fonction du bruit : les coups de feu des 2 premières minutes indiquent où NE PAS aller.</li>
+      </ol>
+
+      <figure>
+        <img src="../img/maps/crop-extraction.jpg" alt="Vue de Northridge, carte avec extractions payantes" loading="lazy" width="1200" height="675">
+        <figcaption>Northridge : grosse carte, exfil payants (câble-car 7 500) — les options payantes sont souvent les moins campées.</figcaption>
+      </figure>
+
+      <h2 id="approche">Rituels d'approche d'extraction</h2>
+      <ol>
+        <li><strong>Timer check :</strong> la route doit rentrer dans le temps avec <strong>marge généreuse</strong>. Un exfil à 40 s du bout = suicide.</li>
+        <li><strong>Alège-toi :</strong> si tu es en surpoids, lâche les objets lourds à faible valeur. Mouvement &gt; butin douteux.</li>
+        <li><strong>Écoute avant d'entrer</strong> : 10 secondes d'observation valent mieux qu'un rush.</li>
+        <li><strong>Fumée / stun</strong> si le doute existe. Une grenade dans l'exfil coûte 3k, un kit en vaut 300k.</li>
+        <li><strong>Entre et sors</strong> : ne reste pas debout dans la zone à « finir le loot du sol ». Canalyse, reste mobile, tourne.</li>
+        <li><strong>Ne sursors pas</strong> pour un dernier container à 15 m de l'exfil. Jamais.</li>
+      </ol>
+
+      <h2 id="timers">Timers & dernières minutes</h2>
+      <ul>
+        <li>Les <strong>dernières minutes sont l'enfer</strong> : tout le monde converge, les rats sortent de terrier, les squads bloquent les axes.</li>
+        <li>Un bon extracteur <strong>part tôt avec un sac moyen</strong> plutôt que tard avec un sac légendaire — et il rejoue immédiatement (les Player Scavs spawn en continu en Normal : le loot « gratuit » existe toujours).</li>
+        <li>Sur exfil timer (TV) : décider <strong>tôt</strong> vaut mieux qu'un clutch héroïque. Si tu entends des pas pendant l'attente, évalue : fight (si angle bon) vs relâcher et repartir.</li>
+        <li>« Extract early if you are heavy » — la densité d'IA augmente avec le temps et les timers de revive s'allongent : ne prolonge pas une raid pleine.</li>
+      </ul>
+
+      <h2 id="s7">Extraction en Infected Zone (Saison 7)</h2>
+      <ul>
+        <li>Les <strong>hordes ferment naturellement les routes</strong> : un raccourci habituel peut devenir un couloir de mutants.</li>
+        <li>Garde <strong>toujours une voie de secours</strong> identifiée avant d'engager le point chaud final.</li>
+        <li><strong>Grenades phéromone</strong> : attirent les mutants — utilises-en une pour dégager un axe ou retourner une horde contre un groupe d'ennemis.</li>
+        <li>Le <strong>marchand in-raid</strong> (apparaît ~5 min après le début) permet de vendre une partie du loot : allège ton sac <strong>avant</strong> l'approche finale, tu seras plus rapide.</li>
+        <li>Les <strong>missions d'urgence</strong> et conteneurs spéciaux créent des points de convergence — évite-les dans les 5 dernières minutes.</li>
+        <li>Nuit + pluie = spawns accrus : le meilleur moment pour le loot, le pire pour une exfil non préparée.</li>
+      </ul>
+
+      <h2 id="squads">Extraction en escouade</h2>
+      <ul>
+        <li><strong>Pace, ordre, plan de contact</strong> : qui entre en premier, qui couvre, que faire si contact pendant l'attente.</li>
+        <li>Personne ne s'arrête pour un <strong>corps imprévu</strong> sur l'approche finale — le loot du wipe se récupère à la prochaine raid.</li>
+        <li>Un membre en surpoids ralentit tout le monde : <strong>partagez la charge</strong> (les rigs qui portent plus qu'ils ne prennent sont l'ami du squad).</li>
+        <li>En cas de wipe parti : le survivant avec le sac plein <strong>sort seul</strong> — 50 % du loot extrait &gt; 0 %.</li>
+      </ul>
+
+      <div class="callout s7">
+        <p class="co-title">🧟 Rappel Utopia</p>
+        En Infected Zone, mourir = perdre ton équipement comme en Tactical Ops. La discipline d'exfil devient encore plus critique : un kit dédié anti-horde (A545 + munitions chair pour les mutants + T4/T5 pour les joueurs) ne doit JAMAIS rester dans le nuage de gaz final.
+      </div>
+
+      <h2 id="faq">FAQ extraction</h2>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Combien d'extractions par carte ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Environ <strong>6 à 8 exfil par carte</strong> selon les modes et conditions. Farm en compte une quinzaine de variantes selon la configuration — vérifie ta carte actuelle dans l'UI de sélection (elle montre les exfil, zones de loot et objectifs).</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Que faire si toutes les extractions sont bloquées/camées ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Alterne : exfil secondaire → fumée + stun sur l'exfil primaire → option payante (7 500 est un prix dérisoire face à un sac à 2M) → temporise 60-90 s pour laisser partir le camp. Les campeurs ont eux-mêmes un timer.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Peut-on extraire sans combattre toute la raid ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>C'est même <strong>le profil « fringe looting »</strong> : rester sur les bords, looter les conteneurs calmes, éviter les bruits. Très efficace en Northridge et pour les quêtes de valeur par slot.</p></div></div>
+      </div>
+
+      <p class="source-note"><strong>Sources —</strong> reddit r/ArenaBreakoutInfinite (threads extraction, TV elevator, Northridge cable car, tips 3.0) · timesaver.gg · topuplive · guides communautaires S7 (Infected Zone). Vérifié le 17 novembre 2026.</p>
+
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Tu sors vivant — maintenant, enrichis-toi</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Le guide économie transforme chaque extraction en salaire.</p>
+    <a class="btn btn-primary" data-sfx="sfx-extraction" href="guide-economie.html">Guide économie →</a>
+  </div>
+</section>

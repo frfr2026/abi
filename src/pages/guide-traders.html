@@ -1,0 +1,208 @@
+<!--META
+{
+  "file": "guide-traders.html",
+  "title": "Guide des Marchands (Contacts) — Deke, Barters & Réputation | ABI NEXUS",
+  "description": "Tous les contacts d'Arena Breakout Infinite : Joel, Evita, Deke, Vladlen, Thomas, Randall, Rodriguez. Offres limitées, barters rentables, réputation et commissions. Guide S7.",
+  "keywords": "Arena Breakout Infinite marchands, ABI contacts, Deke Vinson, barter, réputation contact, traders guide",
+  "og_image": "img/hero/hero-guide-traders.jpg",
+  "ambiance": "dark",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Guides","guide-traders.html"],["Marchands","guide-traders.html"]],
+  "faq": [
+    ["Qui est Deke Vinson et pourquoi est-il central ?","Débloqué au niveau 3, Deke est l'unique contact qui propose de racheter ton gear à prix fixe et le seul avec des offres limitées rafraîchies (~6 h/12 h, 3 sets de 12 items/jour). C'est la pierre angulaire du flipping et du barter arbitrage."],
+    ["Comment fonctionne un barter ?","Tu remets un ensemble précis de matériaux looteés (ou achetés marché) contre un objet fini, au lieu de payer des Koens. Les barters débloquent souvent le gear 1 niveau de loyauté plus tôt que l'achat direct, parfois avec une arme entièrement moddée."],
+    ["À quoi sert la réputation de contact ?","Compléter les missions d'un contact augmente ta réputation : commission de vente réduite, meilleur stock et meilleurs niveaux de barters. C'est un investissement rentable, pas une quête cosmétique."],
+    ["Quels contacts débloquent quoi ?","Joel (niv.1, missions hebdo), Evita (niv.1, meds + extensions de stockage/keychain), Deke (niv.3, offres limitées + sell), Vladlen (niv.6, armures T5), Thomas (niv.9, armes moddées), Randall (niv.12, barters haut de gamme Blackgold), Rodriguez (spécial, missions de l'histoire, sans boutique). Le total fait 8 contacts."],
+    ["Quels barters sont rentables en S7 ?","Les plus rapportés : casque O3 Heavy Tactical, armure 926 Composite, rigs Warrior / H-Tac A8 / H-Tac A9 / Defender M4 — ~20k de marge pièce, vendus en piles de 5 (~100k par slot de vente). Vérifie toujours la loupe : les prix bougent."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-guide-traders.jpg')" role="img" aria-label="Comptoir de marchand clandestin"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Guides › <span class="text-gold">Marchands</span></p>
+    <span class="badge badge-gold">Guide · Contacts</span>
+    <h1 class="hero-title" style="margin-top:14px">Les<br><span class="accent">marchands</span></h1>
+    <p class="hero-sub">Huit contacts, un réseau : offres limitées, barters, réputation et commissions. Transforme ta liste d'amis NPC en machine à Koens.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">8</span><span class="c-label">Contacts</span></div>
+      <div class="hero-counter"><span class="counter">6h/12h</span><span class="c-label">Restocks Deke</span></div>
+      <div class="hero-counter"><span class="counter">-1 niv.</span><span class="c-label">Gain des barters</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#systeme">Le système de contacts</a>
+      <a href="#tableau">Les 7 contacts (tableau)</a>
+      <a href="#deke">Deke Vinson, l'architecte</a>
+      <a href="#barters">Les barters, mode d'emploi</a>
+      <a href="#flips">La boucle de flip rentable</a>
+      <a href="#reputation">Réputation & commissions</a>
+      <a href="#evita">Evita & les upgrades de stockage</a>
+      <a href="#tips">Checklist d'efficacité</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+
+      <h2 id="systeme">Le système de contacts</h2>
+      <p>Les <strong>Contacts</strong> sont les PNJ marchands d'ABI : ils vendent du gear, proposent des <strong>barters</strong> (troc matière → objet), donnent des <strong>missions</strong> (XP + Koens + réputation), et pour certains rachètent ton butin. Ils se débloquent par <strong>niveau de personnage</strong> et évoluent avec ta <strong>réputation</strong>.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Pilier économique</th><th>Fonction</th><th>À ne pas faire</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Contacts</strong></td><td>Achat direct, barters, missions, sell à Deke</td><td>Ignorer les restocks</td></tr>
+            <tr><td><strong>Marché (Market)</strong></td><td>Vente/achat entre joueurs, arbitrage</td><td>Vendre 1 par 1 tes slots de vente</td></tr>
+            <tr><td><strong>Cash Koen</strong></td><td>Paiement universel, entrées, repairs</td><td>Tout dépenser en kits sans bankroll</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="tableau">Les contacts débloqués par niveau</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Contact</th><th>Niv.</th><th>Catalogue</th><th>Particularité</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Joel Garrison</strong></td><td>1</td>
+              <td>Armes, chargeurs, munitions, accessoires, pièces</td>
+              <td>Ancien capitaine Blackgold — <strong>missions hebdomadaires</strong> (XP ~100k de chaîne, réputation = commission réduite)</td>
+            </tr>
+            <tr>
+              <td><strong>Evita</strong></td><td>1</td>
+              <td>Médicaments, traitements, stims, nourriture, clés, outils, électronique</td>
+              <td><strong>Seule</strong> à proposer les <strong>extensions de Stockage et de Keychain</strong> — priorité débutant</td>
+            </tr>
+            <tr>
+              <td><strong>Deke Vinson</strong></td><td>3</td>
+              <td>Casques, armures, rigs, sacs + <strong>offres limitées</strong></td>
+              <td><strong>Seul « Sell » à prix fixe</strong> · restocks ~6 h/12 h (3×12 items/jour) · cœur du flipping</td>
+            </tr>
+            <tr>
+              <td><strong>Vladlen</strong></td><td>6</td>
+              <td>Armes, chargeurs, munitions, accessoires</td>
+              <td>Ancien renseignement Nord — <strong>armures T5</strong> en boutique (barters Northern faction)</td>
+            </tr>
+            <tr>
+              <td><strong>Thomas Edward</strong></td><td>9</td>
+              <td>Armes, chargeurs, munitions, accessoires</td>
+              <td>Officier renseignement Colom — <strong>armes moddées</strong> (MP5 modifiée en récompense), attachments rares</td>
+            </tr>
+            <tr>
+              <td><strong>Randall Fisher</strong></td><td>12</td>
+              <td>Gear haut de gamme Blackgold</td>
+              <td>Missions « Collecting Dog Tags » — <strong>barters d'élite</strong> débloqués en réputation max</td>
+            </tr>
+            <tr>
+              <td><strong>Rodriguez</strong></td><td>Spécial</td>
+              <td><strong>Sans boutique</strong></td>
+              <td>Contact de l'histoire (Dark Zone) — missions story & XP uniquement</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.85rem"><em>Le jeu compte 8 contacts au total selon la base communautaire — ce tableau couvre les 7 principaux ; le 8<sup>e</sup> (marchand de la Dark Zone / événements) sera détaillé avec la page complète des contacts.</em></p>
+
+      <figure>
+        <img src="../img/fig/guide-traders.jpg" alt="Table de marchandage avec cartes et équipement" loading="lazy" width="1200" height="675">
+        <figcaption>Une minute de comparaison loupe avant chaque trade = la différence entre un amateur et un commerçant.</figcaption>
+      </figure>
+
+      <h2 id="deke">Deke Vinson, l'architecte du profit</h2>
+      <p>Né à Kamona, Deke a bâti un empire du commerce souterrain — et en jeu, il fait exactement la même chose pour toi :</p>
+      <ul>
+        <li><strong>Offres limitées :</strong> 3 sets de 12 items (36/jour) avec timers de restock (~6 h et 12 h). Catégorie <em>Limited Time Items</em> = barters aléatoires rentables.</li>
+        <li><strong>Sell à prix fixe :</strong> débarrasse-toi d'un kit entier instantanément (prix bas — mais zéro slot de vente, zéro attente).</li>
+        <li><strong>Bonnet de l'équipement :</strong> casques, armures T3-T5, rigs, sacs — souvent moins chers que le marché quand la demande explose (post-patch, post-event).</li>
+        <li><strong>Réputation Deke :</strong> finir ses chaînes de missions (« Militant Money », « Black Market Deal »…) augmente ses offres et réduit ses commissions ailleurs.</li>
+      </ul>
+
+      <h2 id="barters">Les barters, mode d'emploi</h2>
+      <p>Un <strong>barter</strong> = échanger des matériaux précis contre un objet fini. Trois vérités du système :</p>
+      <ol>
+        <li><strong>1 niveau de loyauté plus tôt :</strong> officiellement, les barters donnent accès au gear haut de gamme « usually 1 Loyalty Level earlier », parfois <strong>full moddé</strong>.</li>
+        <li><strong>Limited vs Unlimited :</strong> les barters <em>limited</em> ont un stock global/timer — marges hautes mais opportunistes. Les <em>unlimited</em> sont ton <strong>income floor</strong> répétable.</li>
+        <li><strong>Toujours faire le calcul :</strong> Σ matériaux &lt; prix de revente − taxe → trade rentable. Sinon, passe ton chemin (la loupe de comparaison est ton meilleur ami).</li>
+      </ol>
+
+      <h2 id="flips">La boucle de flip rentable (pas à pas)</h2>
+      <ol>
+        <li><strong>Refresh Deke</strong> à chaque restock (6 h/12 h) — un rappel dans le téléphone, vraiment.</li>
+        <li>Ouvre l'offre → <strong>loupe</strong> = prix marché du produit fini.</li>
+        <li>Calcule le coût des matériaux au marché (pense : matériaux <strong>plus chers en heure de pointe</strong> — shoppe aux heures creuses).</li>
+        <li>Si marge &gt; taxe → <strong>realise le barter</strong>.</li>
+        <li><strong>Stocke 5 exemplaires</strong> → vend en pile ×5 → ~100k par slot de vente (marge ~20k/pièce rapportée).</li>
+        <li>Alternative : <strong>garde et utilise</strong> le gear (rigs T5 = double avantage : économie ET puissance).</li>
+      </ol>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Exemple de trade</th><th>Usage</th><th>Statut</th></tr></thead>
+          <tbody>
+            <tr><td><strong>O3 Heavy Tactical Helmet</strong></td><td>Staple T4/T5 — quasi toujours profit</td><td class="text-green">Rapporté rentable en continu</td></tr>
+            <tr><td><strong>926 Composite</strong></td><td>Armure T5 meta (top set S7)</td><td class="text-green">Forte demande</td></tr>
+            <tr><td><strong>Warrior / H-Tac A8 / A9 / Defender M4</strong></td><td>Rigs T5 budget-friendly</td><td class="text-green">Profit + usage personnel</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="reputation">Réputation & commissions</h2>
+      <ul>
+        <li>Chaque mission de contact accomplie = réputation → <strong>commission de vente réduite</strong> sur le marché + meilleur stock + meilleurs barters.</li>
+        <li>Les chaînes phares : Joel (~100k XP, missions hebdo), Evita (~90k, meds), Deke (~70k, réseau), Vladlen (~80k, T5), Thomas (~85k, intel), Randall (~60k, élite Blackgold).</li>
+        <li><strong>Toujours une mission active</strong> : c'est de l'XP et des Koens gratuits en faisant exactement ce que tu ferais de toute façon.</li>
+      </ul>
+
+      <h2 id="evita">Evita & les upgrades de stockage</h2>
+      <p>Evita est la seule à vendre les <strong>extensions de Stockage</strong> et de <strong>Keychain</strong> — l'investissement le plus rentable du jeu débutant : plus d'espace = plus de loot retenu = bankroll qui grandit plus vite. Elle fournit aussi les <strong>100D Medkits</strong> et kits chirurgicaux rares en boutique.</p>
+
+      <h2 id="tips">Checklist d'efficacité contacts</h2>
+      <ul>
+        <li>☐ Refresh Deke aux 2 reset (matin/soir) — les meilleurs items partent vite.</li>
+        <li>☐ <strong>Magnifying glass</strong> systématique : prix marché vs coût barter.</li>
+        <li>☐ Matériaux achetés <strong>heure creuse</strong>, produits vendus <strong>heure de pointe</strong>.</li>
+        <li>☐ Empiler ×5 avant de toucher à un slot de vente.</li>
+        <li>☐ « Less than 2000 → contact » activé pour ne pas gâcher les slots.</li>
+        <li>☐ Les missions de contacts avant les farms — la réputation compound.</li>
+        <li>☐ Un <strong>Titanium Case</strong> dédié aux matériaux de barter en attente.</li>
+        <li>☐ Vérifier l'usage (S7) : certains misc valent plus en formule qu'en vente directe.</li>
+      </ul>
+
+      <div class="callout s7">
+        <p class="co-title">🧟 Contacts × Utopia</p>
+        En S7, les <strong>marchands in-raid</strong> (Infected Zone) s'ajoutent au réseau : vendre une partie du loot en raid = capital immédiat + place dans le sac avant l'exfil. Et la nouvelle fonction <strong>« Vérifier l'usage »</strong> rend enfin visible la valeur réelle de chaque misc item — utilise-la avant chaque session de vente.
+      </div>
+
+      <h2 id="faq">FAQ marchands</h2>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Combien de contacts au total ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p><strong>8 contacts</strong> selon la base de données communautaire. Les 7 principaux : Joel (1), Evita (1), Deke (3), Vladlen (6), Thomas (9), Randall (12) et Rodriguez (spécial, sans boutique) — le 8<sup>e</sup> est couvert avec les pages dédiées des marchands.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Vendre à Deke ou au marché ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Marché pour la valeur maximale (si tu as des slots et empiles ×5) ; Deke pour la <strong>vitesse</strong> et les lots complets de kit. Le bon réflexe : trier « vendable en pile » vs « liquidable immédiatement ».</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Les barters changent-ils avec la réputation ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Oui — meilleur accès au stock et meilleures conditions avec la loyauté/réputation. C'est pourquoi finir les chaînes de Joel et Deke en priorité est un investissement : chaque niveau te rend plus riche à chaque trade.</p></div></div>
+      </div>
+
+      <p class="source-note"><strong>Sources —</strong> arena-breakout-infinite.fandom.com/wiki/Contacts · timesaver.gg barter S7 guide (29/09/2026) · abibuilder season-5 economy guide (flip Deke, stacks of 5) · overgear money guide · patch notes S7 (Vérifier l'usage, marchands in-raid). Vérifié le 17 novembre 2026.</p>
+
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">De l'argent à la maîtrise</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Niveaux, Masteries, Core Masteries S7 et Battle Pass.</p>
+    <a class="btn btn-primary" href="guide-progression.html">Guide progression →</a>
+  </div>
+</section>

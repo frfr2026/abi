@@ -1,0 +1,239 @@
+<!--META
+{
+  "file": "guide-avance.html",
+  "title": "Guide du Joueur Avancé & Stratégies Expertes — ABI Saison 7 | ABI NEXUS",
+  "description": "Maîtrisez Arena Breakout Infinite : pénétration post-RNG, sound design, peek angles, économie avancée, craft, Dark Zone et contre-stratégies. Guide expert Saison 7.",
+  "keywords": "Arena Breakout Infinite guide avancé, ABI techniques, sound design, pénétration armure, strategies expertes S7",
+  "og_image": "img/ui/content-guide-avance.jpg",
+  "ambiance": "guides",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Guides","guide-avance.html"],["Guide avancé","guide-avance.html"]],
+  "faq": [
+    ["Comment fonctionne la pénétration d'armure en Saison 7 ?","Le RNG de pénétration T5/T6 a été supprimé : il faut désormais réduire la durabilité de l'armure sous un seuil avant d'obtenir une pénétration fiable. Tirer en continu sur la même plaque est ce qui fait gagner. Le ricochet des casques/masques a aussi été supprimé."],
+    ["Quel est le taux d'extraction d'un bon joueur ?","40 à 60 % selon la communauté (Ultimate Tips 3.0). En dessous de 40 %, il y a du travail à faire sur la discipline de loot et le positionnement."],
+    ["Quelle est la meilleure main pour peeker ?","Le peek droit : il expose environ 5 à 10 % de ton corps contre plus de 25 % pour un peek gauche. Associe-le au jiggle-peek pour l'info puis au swing avec prefire."],
+    ["Faut-il jouer Lockdown ou rester en Normal ?","Les fondamentaux maîtrisés (taux d'extraction >40 %), le Lockdown devient intéressant : entrée payante, joueurs plus forts, mais plafond T5 et 900 000 Koens de valeur d'équipement en S7. En Normal reste T4 maximum."],
+    ["Quelle est la règle d'or du loot en fin de raid ?","La gourmandise est la première cause de perte. Avec 1-2 millions de valeur dans le sac, ignore les coups de feu distants et extrais. Le meilleur joueur est celui qui extrait, pas celui qui wipe la lobby."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-guide-avance.jpg')" role="img" aria-label="Escouade d'élite en action nocturne"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Guides › <span class="text-gold">Guide avancé</span></p>
+    <span class="badge badge-gold">Guide · Expert</span>
+    <h1 class="hero-title" style="margin-top:14px">Stratégies<br><span class="accent">avancées</span></h1>
+    <p class="hero-sub">Au-delà des bases : la mécanique profonde du combat S7, l'oreille, les angles, l'argent et la discipline qui séparent un vétéran d'un touriste en Kamona.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">~25 min</span><span class="c-label">Lecture</span></div>
+      <div class="hero-counter"><span class="counter">S7</span><span class="c-label">Meta à jour</span></div>
+      <div class="hero-counter"><span class="counter">40-60%</span><span class="c-label">Cible d'extraction</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#penetration">Pénétration post-RNG (S7)</a>
+      <a href="#headshots">Headshots & casques</a>
+      <a href="#audio">Le sound design comme arme</a>
+      <a href="#peek">Peek, crosshair & info</a>
+      <a href="#nades">Grenades & pression</a>
+      <a href="#risque">Risk/reward par mode</a>
+      <a href="#economie">Économie avancée</a>
+      <a href="#craft">Craft & Recherche S7</a>
+      <a href="#roles">Rôles d'escouade</a>
+      <a href="#darkzone">Dark Zone & extraction</a>
+      <a href="#settings">Réglages & performance</a>
+      <a href="#faq">FAQ expert</a>
+    </aside>
+
+    <article class="guide-content">
+
+      <h2 id="penetration">La pénétration d'armure post-RNG (S7)</h2>
+      <p>Le changement le plus important de la <strong>Saison 7 : Utopia</strong> : MoreFun a <strong>supprimé l'effet de pénétration à faible probabilité contre les armures T5/T6</strong>. Avant, une munition sous-tier avait une chance « lottery » de traverser. Désormais :</p>
+      <ul>
+        <li>Il faut <strong>réduire la durabilité de l'armure sous un seuil</strong> avant d'obtenir une pénétration fiable et constante.</li>
+        <li>La <strong>durabilité devient une stat de combat vivante</strong> : une plaque T6 à 20 % ne protège pas comme neuve.</li>
+        <li>Conséquence tactique : <strong>tir en continu sur la MÊME plaque</strong> l'emporte sur les sprays dispersés. La connaissance armure/munition prime sur le hasard.</li>
+        <li>Les caps par mode durcissent la logique : <strong>Normal = T4 max · Lockdown = T5 max (valeur max 900 000 Koen)</strong> — le T6 est réservé aux zones sans plafond.</li>
+      </ul>
+      <div class="callout">
+        <p class="co-title">🎯 Réflexe pro</p>
+        Contre un casque haut de gamme, arrête de chasser la tête aveuglément : le patch S7 a <strong>augmenté le taux de perte de durabilité des casques T5/T6</strong>. Trois impacts T5 au même endroit (casque OU masque) suffisent à le faire céder — sinon <strong>décharge-toi dans le torse</strong> ou cherche les membres non protégés (leg-meta).
+      </div>
+
+      <h2 id="headshots">Headshots : la fin du ricochet</h2>
+      <p>« To ensure more consistent rewards for headshots, removed ricochet mechanics from all helmets and masks. » (patch notes S7). Autrefois, un headshot propre pouvait <strong>rebondir</strong> sur un casque — un dé à côté de ton aim. Ce n'est plus. Ajoute à cela :</p>
+      <ul>
+        <li>Une <strong>efficacité des headshots augmentée</strong> relative aux tirs au corps (TTK global légèrement allongé, headshots plus récompensateurs).</li>
+        <li>Le <strong>fix de l'exploit de lean inverse</strong> qui masquait la hitbox de tête.</li>
+        <li>Une <strong>portée effective augmentée pour la plupart des armes</strong> : les duels moyens sont plus constants.</li>
+      </ul>
+      <p>En bref : <strong>ton aim récompense ton skill, plus ton chance</strong>. La pré-arme du crosshair à hauteur de tête n'a jamais autant payé.</p>
+
+      <h2 id="audio">Le sound design comme arme</h2>
+      <p>« Sound is your radar. » Les distances d'audition communautaires (Ultimate Tips) :</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Action</th><th>Portée approximative</th><th>Contre-mesure</th></tr></thead>
+          <tbody>
+            <tr><td>Marche accroupie (crouch)</td><td>Silencieuse*</td><td>Default pour les approches</td></tr>
+            <tr><td>Marche lente (slow walk)</td><td>~5 m</td><td>Quasi inaudible — utile pour percer un couvert serré</td></tr>
+            <tr><td>Marche</td><td>~15-20 m</td><td>Utile pour repositionner sans sprint</td></tr>
+            <tr><td>Sprint</td><td>~30 m+</td><td>Réservé aux rotations sûres</td></tr>
+            <tr><td>Ouverture de sac / loot</td><td>Forte, localisable</td><td>Swing sur les sons de loot = kills gratuits</td></tr>
+            <tr><td>ADS / changement de mode</td><td>Courte portée</td><td>Préparer son ADS avant le peek</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:0.85rem">*sauf adversaire équipé d'un bon headset (GS2, Commander…).</p>
+      <ul>
+        <li><strong>Intérieur (TV, Armory) :</strong> les <strong>Commander</strong> excellent — basses claires, pas de bruit de météo.</li>
+        <li><strong>Extérieur (Valley, Northridge) :</strong> les <strong>GS2</strong> amplifient les hautes fréquences (pas dans l'herbe, tirs lointains).</li>
+        <li><strong>S7 :</strong> la mastery <em>Acoustic Earpads</em> réduit l'assourdissement des casques non-audio : +10-15 m de portée perçue.</li>
+        <li>Active le <strong>HRTF</strong> : l'audio directionnel est un wallhack légal.</li>
+      </ul>
+
+      <figure>
+        <img src="../img/ui/content-guide-avance.jpg" alt="Opérateur d'élite écoutant dans un couloir sombre" loading="lazy" width="1200" height="675">
+        <figcaption>Écouter 30-40 % du temps : l'information précède le contact. Ceux qui entendent premier choisissent l'angle.</figcaption>
+      </figure>
+
+      <h2 id="peek">Peek, crosshair & gestion de l'information</h2>
+      <ul>
+        <li><strong>Crosshair toujours à hauteur de tête/torse</strong> — active le point blanc central pour ancrer le muscle memory (l'exception : les builds leg-meta visent les jambes, consciemment).</li>
+        <li><strong>Peek droit &gt; peek gauche</strong> (~5-10 % vs ~25 % du corps exposé). Enchaîne le lean en HOLD pour des jiggles rapides.</li>
+        <li><strong>Jiggle pour l'info, swing + prefire</strong> là où l'ennemi tenait l'angle. Ce n'est pas de la science rocket : c'est de la séquence.</li>
+        <li><strong>Baiting shots :</strong> montre seulement le canon d'un angle, recule — l'ennemi tire, révèle sa position, tu swings sur le rechargement.</li>
+        <li><strong>Ne peek jamais deux fois le même angle</strong> : le muzzle flash + le son + le kill feed ont déjà raconté ton histoire.</li>
+        <li><strong>Sous pression :</strong> communiquer (positions, calibres, HP) — un callout vaut mieux qu'un spray paniqué.</li>
+      </ul>
+
+      <h2 id="nades">Grenades : la pression gratuite</h2>
+      <ul>
+        <li><strong>MK2 (ananas) :</strong> mèche la plus courte — l'arme du plein combat (dégâts armure + membres).</li>
+        <li><strong>M67 (« bleeder ») :</strong> mèche longue — lob vertical (« sky-nade ») pour détoner à l'arrivée ; saignements sévères.</li>
+        <li><strong>Stuns :</strong> meta utility — écran noir, réduction de sensibilité, <strong>ping audio à travers les murs</strong> pour confirmer un rat.</li>
+        <li><strong>Usage offensif sous-utilisé :</strong> lance une grenade non cuite dans un couloir pour forcer l'ennemi hors de son angle, puis <strong>pousse derrière la détonation</strong> (l'audio l'assourdit et masque tes pas).</li>
+        <li><strong>S7 :</strong> la M290 stun est craftable au workbench — testée « top-tier breach utility » par la communauté.</li>
+      </ul>
+
+      <h2 id="risque">Risk/reward par mode et par carte</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Mode</th><th>Cap S7</th><th>Profil</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Normal</strong></td><td>Munitions/équipement <strong>T4 max</strong></td><td>Progression, économie, répétition des fondamentaux — reste jusqu'à ~niv. 25 si tu apprends</td></tr>
+            <tr><td><strong>Lockdown</strong></td><td><strong>T5 max</strong> · valeur max <strong>900k</strong></td><td>Le vrai test : entrée payante, joueurs engagés, meilleur loot. Sors ton A545/H416 avec du BS/7N39</td></tr>
+            <tr><td><strong>Forbidden</strong></td><td>Sans plafond (T6 autorisé)</td><td>High roller : tout ou rien. Ne t'y aventure qu'avec un bankroll et un plan d'exfil</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li><strong>TV/Armory :</strong> kits CQB (P90, PCC-9 full-auto, AK-15SC) — jamais une SMG comme seule arme sur Farm/Armory mixtes.</li>
+        <li><strong>Valley/Northridge :</strong> contrôle de vision (M24, M110, U191) — les SMG courtes y meurent.</li>
+        <li><strong>Airport :</strong> plan secondaire CQB obligatoire — la carte joue toutes les distances.</li>
+        <li><strong>Rat vs chad :</strong> en S7, les caps rendent les « budget rats » compétitifs en Normal/Lockdown — le chad full T6 n'y entre plus.</li>
+      </ul>
+
+      <h2 id="economie">Économie avancée : penser comme un banquier</h2>
+      <ul>
+        <li><strong>Objectif valeur/slot :</strong> ≥5k en Normal, ≥10k en Lockdown, au-delà en Forbidden. Un sac rempli de pacotille est une faillite silencieuse.</li>
+        <li><strong>Sous-cotation instantanée :</strong> dans l'UI de vente, tape <strong>« – » puis « + »</strong> : ton prix passe ~1 % sous le marché, sans saisie manuelle.</li>
+        <li><strong>Vente en masse :</strong> onglet Vente → bouton <em>bulk sale</em> en bas à droite. Empile <strong>par 5</strong> pour rentabiliser chaque emplacement de vente hebdo.</li>
+        <li><strong>Réputation contact :</strong> finir les missions d'un contact <strong>baisse sa commission</strong> et débloque de meilleurs stocks/barters — c'est un investissement, pas une quête optionnelle.</li>
+        <li><strong>Arbitrage barter :</strong> acheter les matériaux &lt; prix de revente du produit final (après taxe) = marge garantie. Les barters débloquent souvent le gear <strong>1 niveau de loyauté plus tôt</strong>, parfois full moddé.</li>
+        <li><strong>Flipping Deke :</strong> 3 sets de 12 items/jour en restock limité (6 h/12 h). Exemples communautaires constamment profitables : casque O3 Heavy, 926 Composite, rigs Warrior/H-Tac A8/A9/Defender M4 (~20k/pièce, empilés ×5 ≈ 100k par slot de vente).</li>
+        <li><strong>Démontage d'armes :</strong> optiques, poignées et chargeurs se vendent souvent mieux séparés que l'arme entière.</li>
+        <li><strong>Règle des 10M :</strong> l'expérimentation « vrai gear » commence confortablement vers <strong>10 millions de Koens</strong>. En dessous, joue lean, vends tout.</li>
+        <li><strong>⚠️ Zéro RMT :</strong> acheter des Koens de site tiers = perdre Koens, gear, Merit Score et probablement le compte (DMA Guard déploiement depuis août 2026).</li>
+      </ul>
+
+      <h2 id="craft">Craft & Recherche de formules (Workbench S7)</h2>
+      <ul>
+        <li>Les <strong>formules sont au niveau max dès l'unlock</strong> (fini l'upgrade de bench) et les matériaux ont été rééquilibrés.</li>
+        <li>Nouveau : <strong>Recherche d'amélioration</strong> — loote des <em>Blueprints d'amélioration</em> (boîtes à documents, vêtements, tiroirs, missions), investis-les sur UNE formule, choisis <strong>2 résultats</strong> parmi les candidats (le reste est perdu).</li>
+        <li>Stratégie : <strong>concentre-toi sur une seule formule</strong> pour atteindre les garantis or/rouge ; les résultats (ex. <em>Unexpected Surplus IV</em> = 30 % de remboursement) valent jusqu'à <strong>~535k/craft</strong> sur un IND70 à 1,78M.</li>
+        <li>Vérifie les <strong>caps</strong> avant de crafter : une .338 AP pen 6 est inutile en Normal/Lockdown (interdite).</li>
+        <li>Les misc items ont de nouveaux usages : montres, journaux d'ouvriers, analyseurs de gaz → craft de munitions. Utilise « <strong>Vérifier l'usage</strong> » dans le stockage.</li>
+        <li>Les résultats de recherche <strong>réinitialisent chaque saison</strong> — les formules, elles, restent.</li>
+      </ul>
+
+      <h2 id="roles">Rôles d'escouade & callouts</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Rôle</th><th>Armes S7</th><th>Mission</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Entry</strong></td><td>AK-15SC · PCC-9 full-auto · P90</td><td>Clearer les pièces en premier, créer l'espace</td></tr>
+            <tr><td><strong>Flex AR</strong></td><td>H416 · A545 · AK-12</td><td>Couvrir le milieu, faire les trades</td></tr>
+            <tr><td><strong>Marksman</strong></td><td>M110 double détente · M24 · U191</td><td>Tenir les lignes de visée, caller les peeks</td></tr>
+            <tr><td><strong>Anchor</strong></td><td>FAL kit recul · RPK-16 · MK14</td><td>Tenir les angles, punir les pushes</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <ul>
+        <li>Crée un <strong>squad channel</strong> : points de recherche partagés et récompenses communes.</li>
+        <li>Callouts simples et standardisés : <em>« joueur à 120, derrière le grange, 1 casque »</em>.</li>
+        <li><strong>Post-kill :</strong> attends. Check les coéquipiers, écoute avant de looter le corps — les « free kills » sur looteurs pressés sont la monnaie du jeu.</li>
+      </ul>
+
+      <h2 id="darkzone">Dark Zone, carry & exfil sous pression</h2>
+      <ul>
+        <li><strong>Planifie l'exfil AVANT</strong> d'engager un fight looté : route qui rentre dans le timer avec marge de sécurité.</li>
+        <li>Laisse derrière toi les objets lourds à faible valeur si ils te ralentissent (poids &gt; mouvement &gt; survie).</li>
+        <li><strong>Container sécurisée 3×3</strong> : récompense de mission de saison — remplis-la d'abord, le reste est du bonus.</li>
+        <li>Items verrouillés <em>Tactical Ops</em> : non containerables tant qu'indéséquilibrés — extrait-les une première fois.</li>
+        <li>En <strong>Infected Zone (S7)</strong>, garde une sortie de secours : les hordes ferment les routes. Le marchand in-raid peut décharger ton sac — utilise-le avant le point chaud final.</li>
+        <li>Ne reste jamais au dernier extract « par principe » : sur TV par ex., l'ascenseur (90 s en Forbidden vs 40 s) se joue aux dernières secondes — une bonne décision précoce vaut mieux qu'un clutch héroïque.</li>
+      </ul>
+
+      <h2 id="settings">Réglages & performance</h2>
+      <ul>
+        <li><strong>Visibilité &gt; joliesse :</strong> réglages Vidéo <em>Basic/Low</em> pour que les joueurs « popent » partout. La beauté ne tue personne ; les pixels si.</li>
+        <li><strong>FOV max</strong>, sensibilité 40-50 de base, <strong>HRTF ON</strong>, V-Sync OFF, cap FPS aligné sur ton écran.</li>
+        <li>Lean en <strong>HOLD</strong> pour des jiggles plus rapides (toggle si c'est ton muscle memory — mais pratique le).</li>
+        <li>FPS &gt; graphiques : un 144 stable bat un 90 saccadé en duel.</li>
+      </ul>
+
+      <div class="callout tip">
+        <p class="co-title">🧠 État d'esprit vétéran</p>
+        Tu ne survivras pas chaque raid. <strong>40-60 % d'extraction</strong> est le standard des bons joueurs. Chaque mort est une donnée : quelle info tu n'avais pas ? Quel bruit tu as ignoré ? Quel moment tu as looté trop longtemps ? Le skill dans ABI n'est pas l'aim — c'est la <strong>décision sous incertitude</strong>.
+      </div>
+
+      <h2 id="faq">FAQ expert</h2>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Le RNG de pénétration a vraiment disparu ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Oui pour T5/T6 : la pénétration est désormais <strong>liée au seuil de durabilité</strong> de l'armure. Une plaque bien entretenu résiste ; une fois fatiguée, elle cède de façon prévisible. Plus de « dé gâté ».</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">A545 ou H416 en Lockdown ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Les deux sont tier S. <strong>A545</strong> : cadence 900 RPM, concurrent direct du H416, excellent avec du BS (T4) sous le cap Lockdown. <strong>H416</strong> : plus stable en long, plus polyvalent en solo flex. L'<strong>AK-12</strong> reste le meilleur rapport perf/budget T5-capable.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Comment progresser vite en Mastery ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Les 12 points (6 de base + 3 au niv.19 + 3 au niv.26) se réallouent <strong>gratuitement et sans cooldown</strong> hors raid. Pour du loot : Survival/Support (recherche rapide, Porter…). Pour le PvP : Combat (Last Stand, Focus Puller…). Équipe 1 Core Mastery S7 selon la mission de la saison.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Quand stopper une raid « gagnée » ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Dès que l'objectif de raid est atteint et que le sac est <strong>rentable par slot</strong> (règle 5k/10k). Tout combat supplémentaire est une mise : le EV positif ne se joue que si la mise est justifiée — pas par ennui.</p></div></div>
+      </div>
+
+      <p class="source-note"> <strong>Voir aussi :</strong> <a href="univers-factions.html">les factions de la Dark Zone</a> · <strong>Voir aussi :</strong> <a href="univers-dark-zone.html">la Dark Zone</a> ·<strong>Sources —</strong> Patch notes Saison 7 MoreFun/Steam (ricochet, durabilité, caps, buffs portée) · timesaver.gg (headshot/helmet S7, mastery, workbench, barter, economy) · reddit r/ArenaBreakoutInfinite Ultimate Tips 2.0/3.0 · abibuilder.com S7 loot & economy guides · bittopup/mmoexp tier lists S7. Vérifié le 17 novembre 2026.</p>
+
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Passer à la pratique</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Maîtrise chaque point d'extraction et chaque rotation.</p>
+    <a class="btn btn-primary" href="guide-extraction.html">Guide extraction →</a>
+  </div>
+</section>

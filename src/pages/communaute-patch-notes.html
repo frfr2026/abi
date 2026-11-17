@@ -1,0 +1,124 @@
+<!--META
+{
+  "file": "communaute-patch-notes.html",
+  "title": "Patch notes S7 ABI — archives des mises à jour 2026 | NEXUS",
+  "description": "Archives des patch notes d'Arena Breakout Infinite Saison 7 : update 27 octobre (Halloween, Warlord III, Supplies 2.0), update 10 novembre (Dim Dou Duk, fixes Warlord), et comment suivre les prochains patches.",
+  "keywords": "patch notes Arena Breakout, mise à jour S7, update 27 octobre, fix warlord, saison 8 patch",
+  "og_image": "img/fig/communaute-patch-notes.jpg",
+  "ambiance": "home",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Communauté","communaute-patch-notes.html"],["Patch notes","communaute-patch-notes.html"]],
+  "faq": [
+    ["Où lire les patch notes officielles ?","Steam (annonces MoreFun), arenabreakout.com, et X @ArenaBreakoutPC. Cette page archive les mises à jour datées de S7 avec l'essentiel traduit — la source primaire reste Steam pour le détail complet."],
+    ["Quelles sont les grosses mises à jour de S7 ?","27/10 (03:00 UTC+0) : Halloween Mysterious Night + Warlord Tournament III + Supplies Drops 2.0 + formule Trash to Treasure. 04/11 : notice sécurité — fichiers CDN du launcher Level Infinite tamponnés (victime confirmée : NIKKE) ; <strong>ABI non affecté</strong> (confirmation officielle). 10/11 : Dim Dou Duk (Dim Sum Vouchers 09/11→06/12) + Kamona Investigation Tea Break (→22/11) + 12 correctifs (marché, lancers, Warlord tir accidentel/leaderboard, Cause & Effect ×4, IA Farm, hors-map Farm/Northridge/Airport). Le lancement d'Utopia était le 16/09/2026 (voir <a href=\"saison7-utopia.html\">Utopia</a>)."],
+    ["Quand sort le prochain patch ?","Les updates arrivent par fenêtres d'événement : le prochain gros jalon daté est la fin du Warlord III (07/12) puis le lancement de S8 (date TBA, après 07/12). Les micro-fixes sortent en continu — surveille Steam chaque semaine."],
+    ["Les fixes changent-ils le méta ?","Parfois : le fix du 10/11 (tir accidentel en consultation d'équipement) est QoL, mais les équilibrages d'armes (ex. nerf recul H416 en cours de saison) impactent les tier lists — d'où notre date de vérification sur chaque page (<a href=\"meta-tier-list-globale.html\">méta</a>)."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/fig/communaute-patch-notes.jpg')" role="img" aria-label="Identité de la Saison 7"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="14"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Communauté › <span class="text-gold">Patch notes</span></p>
+    <span class="badge badge-s7">SUIVI · Saison 7</span>
+    <h1 class="hero-title" style="margin-top:14px">Patch notes<br><span class="accent">S7 archivés</span></h1>
+    <p class="hero-sub">Les mises à jour datées d'Utopia, ce qu'elles changent, et où lire les prochaines.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">16/09</span><span class="c-label">Lancement Utopia</span></div>
+      <div class="hero-counter"><span class="counter">27/10</span><span class="c-label">Update Halloween</span></div>
+      <div class="hero-counter"><span class="counter">10/11</span><span class="c-label">Update Dim Sum</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#method">Comment lire un patch</a>
+      <a href="#lancement">16/09 — Lancement Utopia</a>
+      <a href="#oct">27/10 — Halloween & Warlord</a>
+      <a href="#nov">10/11 — Dim Dou Duk & fixes</a>
+      <a href="#suivre">Où suivre les prochains</a>
+    </aside>
+
+    <article class="guide-content">
+      <h2 id="method">Comment lire un patch (méthode NEXUS)</h2>
+      <ol>
+        <li><strong>La première ligne du changelog</strong> = l'intention du patch (event ? balance ? fix ?).</li>
+        <li><strong>Isole ce qui touche ton jeu</strong> : caps, armes que tu mains, deadlines d'événements.</li>
+        <li><strong>Croise avec tes pages</strong> : une nerf d'arme → <a href="meta-tier-list-globale.html">tier list</a> · un event → <a href="events-calendrier.html">calendrier</a> · un item → <a href="items-valeur.html">valeur</a>.</li>
+        <li><strong>Note la date</strong> — le méta a une date de péremption (nos pages affichent la leur).</li>
+      </ol>
+
+      <h2 id="lancement">16/09/2026 — Lancement de la Saison 7 : Utopia</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Bloc</th><th>Contenu</th></tr></thead>
+          <tbody>
+            <tr><td>🧟 Modes</td><td>Infected Zone (Farm/Valley/Airport) · Zombie Endless (Airport) · Zombie Research · 6 mutants</td></tr>
+            <tr><td>🔫 Armement</td><td>A545 · AK-15SC · attachements saisonniers (PCC-9 Auto, M110 Dual-Stage, FAL Recoil, MPX Vulcan)</td></tr>
+            <tr><td>⚖️ Combat</td><td>RNG T5/T6 supprimé · headshots ↑ · ricochet casque out · caps Normal T4/Lockdown T5/900k · portées ↑ · torche −7 ergo</td></tr>
+            <tr><td>📈 Progression</td><td>Core Masteries (3 actives) · Last Stand · Recherche Workbench · Trophy Room</td></tr>
+            <tr><td>📦 Systèmes</td><td>Supplies Drops · Quick Kits · Check Usage · inventaire : 91 armes/70 munitions/1175 attachements</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted">Détail complet : <a href="saison7-utopia.html">page Utopia</a> · analyse : <a href="saison7-balance-changes.html">balance changes</a>.</p>
+
+      <h2 id="oct">27/10/2026 (03:00 UTC+0) — Halloween, Warlord III, Supplies 2.0</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Élément</th><th>Détail</th></tr></thead>
+          <tbody>
+            <tr><td>🎃 Mysterious Pumpkin Night</td><td>6 events simultanés (29/10→25/11) : potirons évolutifs 100k→880k, Pumpkin Heads (F/L), casques Pumpkin, Night of Fear, Miraculous Festive Pumpkin</td></tr>
+            <tr><td>⚔️ Warlord Tournament III</td><td>29/10→07/12 · loadouts révélés · rangs Rookie→Warlord 30☆ · Warlord Trial (IND70, Limitless)</td></tr>
+            <tr><td>📦 Supplies Drops 2.0</td><td>Retour « new mechanics » : crate XP (loot/kills/terminaux), 5 niveaux, Smelter Lv.3, étoiles hebdo</td></tr>
+            <tr><td>🔥 Trash to Treasure</td><td>Formule Smelter (29/10→15/11 — terminé)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="nov">10/11/2026 — Dim Dou Duk & fixes Warlord</h2>
+      <ul>
+        <li>🥟 <strong>Dim Dou Duk</strong> : Dim Sum Vouchers → gear skin, grenade fumée, badge, spray Char Siu, Tacti-Girl vouchers, coupons S7 (fenêtre longue, à prioriser après Halloween).</li>
+        <li>🛠️ <strong>Fixes Warlord</strong> : tir accidentel résolu quand on consulte les infos d'équipement d'un joueur · panneau de leaderboard affiché sur la mauvaise couche (corrigé).</li>
+        <li>📅 Rappel des fins : Trash to Treasure 15/11 ✗ · Lunar Soil 09/11 ✗ · Halloween 25/11 · Warlord 07/12.</li>
+      </ul>
+
+      <figure>
+        <img src="../img/fig/communaute-patch-notes-2.jpg" alt="Calibration du jeu" loading="lazy" width="1200" height="675">
+        <figcaption>Chaque patch réaligne la balance — nos pages méta portent leur date de vérification pour ça.</figcaption>
+      </figure>
+
+      <h2 id="suivre">Où suivre les prochains patches</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Canal</th><th>Cadence</th></tr></thead>
+          <tbody>
+            <tr><td>Steam — MoreFun</td><td>Updates majeurs + notes complètes (la source primaire)</td></tr>
+            <tr><td>X @ArenaBreakoutPC</td><td>Annonces rapides, guides d'événements</td></tr>
+            <tr><td>arenabreakout.com</td><td>Roadmap, dates de saison</td></tr>
+            <tr><td>timesaver / hera / patchbot</td><td>Résumés datés + traductions (nos sources)</td></tr>
+            <tr><td>reddit r/ArenaBreakoutInfinite</td><td>Réactions méta dans l'heure</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout s7"><p class="co-title">🔭 Prochaines jalons attendues</p>
+        <strong>07/12</strong> — fin Warlord III (dernier contenu daté de S7) · <strong>après 07/12</strong> — lancement S8 (date TBA) avec probablement un mode/carte phare (pattern : Airport S4, Distorted Valley S5, Hostile Sector S6, zombies S7). À ce moment-là : checklist <a href="events-calendrier.html">avant S8</a> + mise à jour de toutes nos pages datées.</div>
+
+      <p class="source-note"> <strong>Voir aussi :</strong> <a href="communaute-streamers.html">streamers de la scène ABI</a> ·<strong>Sources —</strong> Steam/patchbot Oct 27 update · timesaver Oct 27-28 · hera.gg · X officiel · timesaver Dim Sum (10/11) · S8 release guide (13/11). Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Retour aux armes</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Communauté maîtrisée — reprends le méta ou les armes.</p>
+    <a class="btn btn-primary" href="meta-tier-list-globale.html">Méta S7 →</a>
+    <a class="btn btn-ghost" href="communaute-ressources.html">Ressources</a>
+  </div>
+</section>

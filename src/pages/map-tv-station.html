@@ -1,0 +1,136 @@
+<!--META
+{
+  "file": "map-tv-station.html",
+  "title": "Carte TV Station ABI — spawns, exfils & routes verticales | NEXUS",
+  "description": "Guide complet de TV Station d'Arena Breakout Infinite : accès Lockdown 100k/Forbidden 300k, 12 opérateurs, exfils Ascenseur/Dock/Main Entrance, spawns et loot (Central Control, Director's Office).",
+  "keywords": "carte TV Station Arena Breakout, TV station extraction, central control room, director office safe",
+  "og_image": "img/maps/map-tv-station.jpg",
+  "ambiance": "maps",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Cartes","map-tv-station.html"],["TV Station","map-tv-station.html"]],
+  "faq": [
+    ["Comment accéder à TV Station ?","Accès réservé au Lockdown (entrée 100 000 Koen) ou Forbidden (300 000 Koen) — la carte n'existe pas en Normal. Elle se débloque autour du niveau 21 selon les données officielles communautaires. C'est un investissement d'entrée : le kit doit être à la hauteur du lobby."],
+    ["Où est le meilleur loot ?","Central Control Room (1ᵉʳ étage) : 2 safes + loot élite + combats garantis. Director's Office (2ᵉ étage) : top loot mais « player-kill bottleneck ». General Office (2ᵉ) : 3 accès, loot dense et embuscades. Equipment Storage Key (~600k) ouvre les secrets les plus chers de la carte."],
+    ["Comment extraire de TV Station ?","3 exfils seulement : Ascenseur (appelé depuis le couloir du 2ᵉ étage, actif après 5-10 min selon les sources) · Loading Dock (interrupteur au escalier de ventilation, actif ~10-15 min, 20 s) · Main Entrance (interrupteur à l'entrée — zone de loot et piège d'ambuscade classique)."],
+    ["Quels spawns privilégier ?","Back Stairwell (départ discret) et Ventilation Stairs (près de l'interrupteur Loading Dock) offrent le contrôle du timing. Central Control et Director's Hallway = PvP immédiat. Loading Dock Entrance = couverture correcte pour arriver tard aux fights."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/maps/hero-map-tv-station.jpg')" role="img" aria-label="Vue de la carte TV Station"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Cartes › <span class="text-gold">TV Station</span></p>
+    <span class="badge badge-s7">Carte · Lockdown/Forbidden</span>
+    <h1 class="hero-title" style="margin-top:14px">TV Station<br><span class="accent">12 enter, ? leave</span></h1>
+    <p class="hero-sub">Le complexe de diffusion : entrée 100k, 12 opérateurs, 3 exfils conditionnels — et le loot électronique le plus dense de Kamona.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">12</span><span class="c-label">Opérateurs</span></div>
+      <div class="hero-counter"><span class="counter">3</span><span class="c-label">Extractions</span></div>
+      <div class="hero-counter"><span class="counter">100k</span><span class="c-label">Entrée Lockdown</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#apercu">Aperçu & accès</a>
+      <a href="#spawns">Les 8 spawns</a>
+      <a href="#loot">Loot par étage</a>
+      <a href="#exfils">Extractions & interrupteurs</a>
+      <a href="#tactique">Tactique verticale</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+            <div class="callout tip" style="margin-top:16px">
+        <p class="co-title">🗺️ Cartes interactives de référence (communauté)</p>
+        Planifie tes routes avec les outils live : <a href="https://maps.tcno.co/abi" target="_blank" rel="noopener">maps.tcno.co/abi</a> ·
+        <a href="https://abibuilder.com/maps" target="_blank" rel="noopener">abibuilder.com/maps</a> ·
+        <a href="https://arena-breakout-infinite.fandom.com/wiki/Special:AllMaps" target="_blank" rel="noopener">fandom — toutes les cartes</a> ·
+        <a href="https://arenabreakout-infinite.com/fr/maps/" target="_blank" rel="noopener">arenabreakout-infinite.com — cartes interactives</a>.
+        <span class="text-muted">(Spawns, exfils et clés vérifiés en direct — les calques de cette page sont un instantané du 17/11/2026.)</span>
+      </div>
+      <h2 id="apercu">Aperçu & accès</h2>
+      <p>TV Station est l'arène <strong>Lockdown/Forbidden</strong> par excellence : un complexe vertical autour d'une tour centrale, de longs couloirs intérieurs, des intérieurs sombres. <strong>Jusqu'à 12 opérateurs</strong>, scavs et boss (Kurt Williams, Bernard Martin selon les sources) — un free-for-all où le son est roi.</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Paramètre</th><th>Valeur</th></tr></thead>
+          <tbody>
+            <tr><td>Entrée Lockdown</td><td><strong>100 000 Koen</strong></td></tr>
+            <tr><td>Entrée Forbidden</td><td><strong>300 000 Koen</strong></td></tr>
+            <tr><td>Durée</td><td>~25-35 min (selon sources)</td></tr>
+            <tr><td>Déblocage</td><td>≈ niveau 21 (données communautaires)</td></tr>
+            <tr><td>Armes de choix</td><td>SMG/CQB (PCC-9, P90, Vector — voir <a href="armes-smg.html">SMG</a>)</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="spawns">Les 8 points d'apparition</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Spawn</th><th>Profil</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Central Control Room</strong></td><td>Loot haut immédiat + PvP swarm dans la 1ʳᵉ minute</td></tr>
+            <tr><td><strong>Director's Office Hallway</strong></td><td>Proche du meilleur loot 2ᵉ étage — et des campers</td></tr>
+            <tr><td><strong>Back Stairwell</strong></td><td>Départ discret, peu de loot nearby — rotate vite</td></tr>
+            <tr><td><strong>Loading Dock Entrance</strong></td><td>Couverture correcte, arrivée tardive aux fights</td></tr>
+            <tr><td><strong>Elevator Corridor</strong></td><td>Proche de l'exfil Ascenseur — et des rushers de safes</td></tr>
+            <tr><td><strong>Broadcast Editing Room</strong></td><td>Low-key, loot minimal — évite… jusqu'à ce que non</td></tr>
+            <tr><td><strong>Main Entrance Lobby</strong></td><td>Zone ouverte, loot correct, risque d'embuscade</td></tr>
+            <tr><td><strong>Ventilation Stairs</strong></td><td>Près de l'interrupteur Loading Dock — pièges & fuites</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="loot">Loot par étage</h2>
+      <ul>
+        <li><strong>1ᵉʳ étage — Central Control Room :</strong> 2 safes, loot élite, « guaranteed firefights ». Le cœur économique et le choke point de la carte.</li>
+        <li><strong>2ᵉ étage — Director's Office :</strong> top loot + « player-kill bottleneck » — le piège à duel vertical.</li>
+        <li><strong>2ᵉ étage — General Office :</strong> 3 points d'accès, loot dense, invitation aux embuscades.</li>
+        <li><strong>Salle serveurs / matériel broadcast :</strong> électroniques de valeur (composants informatiques = gros Koens).</li>
+        <li><strong>Equipment Storage Key :</strong> ~600k la clé — le secret le plus cher de la station.</li>
+      </ul>
+
+      <h2 id="exfils">Extractions & interrupteurs</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Exfil</th><th>Type</th><th>Activation</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Ascenseur</strong></td><td>Fixe / timer</td><td>Appelé depuis le <strong>couloir Ascenseur du 2ᵉ étage</strong> · actif après ~5-10 min (sources divergentes)</td></tr>
+            <tr><td><strong>Loading Dock</strong></td><td>Conditionnel</td><td><strong>Interrupteur de l'escalier de ventilation</strong> · ~10-15 min · 20 s d'extraction</td></tr>
+            <tr><td><strong>Main Entrance</strong></td><td>Conditionnel</td><td><strong>Interrupteur à l'entrée principale</strong> · zone de loot + hotspot d'embuscade</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout warning"><p class="co-title">🚪 « Don't be a hero near exits »</p>
+        Les 3 exfils sont des pièges par conception : l'Ascenseur pousse un 2ᵉ étage dead-match, les interrupteurs font du bruit, Main Entrance est un champ de tirs. Approche par des angles inattendus, scanne avant d'activer.</div>
+
+      <h2 id="tactique">Tactique verticale — la règle du floor</h2>
+      <ol>
+        <li><strong>Sache toujours à quel étage tu es</strong> — les bruits de pas se lisent à travers les planchers : c'est la moitié de l'information (guide gametruth).</li>
+        <li><strong>Construis une route autour d'1 escalier connu</strong> et de 2-3 pièces : après chaque loot, identifie la porte de sortie <em>avant</em> d'entrer.</li>
+        <li><strong>Hug cover</strong> — les couloirs longs tuent ; reste au ras des murs et des encoches.</li>
+        <li><strong>Stealth en intérieur</strong> — le crouch-walk (−60 % de bruit) transforme le Director's Office en piège silencieux.</li>
+        <li><strong>Kit</strong> : point rouge ou 1×/4× max (les distances intérieures sont courtes), silencieux apprécié, visière recommandée (cf. <a href="equipement-casques.html">casques</a>).</li>
+      </ol>
+
+      <h2 id="faq">FAQ TV Station</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Est-ce rentable à 100k d'entrée ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Le frais d'entrée s'amortit en un bon raid (2 safes du Central Control + électroniques), mais la variance est brutal : c'est une carte de skill avancé. Joue-la avec le tier de bankroll qui absorbe 3-4 échecs (cf. <a href="guide-economie.html">économie</a>).</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Ascenseur ou Loading Dock ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Loading Dock si tu contrôles l'escalier de ventilation (timing 20 s, actif plus tôt) ; Ascenseur si le 2ᵉ étage est sous contrôle — mais c'est le fight le plus predictable de la station. Main Entrance = option « late raid » quand le lobby est parti.</p></div></div></div>
+      <p class="source-note"><strong>Sources —</strong> epiccarry TV Station guide (02/11/2026) · arenabreakout-infinite.com TV map (183 marqueurs, 3 exfils, 17 spawns) · gametruth maps guide. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">La plus grande zone</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Guoyapo Airport : 40 minutes, 9 exfils, le terrain de chasse final.</p>
+    <a class="btn btn-primary" href="map-airport.html">Airport →</a>
+    <a class="btn btn-ghost" href="map-armory.html">Armory</a>
+  </div>
+</section>

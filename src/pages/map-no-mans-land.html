@@ -1,0 +1,146 @@
+<!--META
+{
+  "file": "map-no-mans-land.html",
+  "title": "No Man's Land & Modes Zombies ABI — Infected Zone, Endless | NEXUS",
+  "description": "Guide No Man's Land / modes zombies d'Arena Breakout Infinite S7 : Infected Zone PvPvE (Farm, Valley, Airport), Zombie Endless, 6 mutants, passes NML et stratégies.",
+  "keywords": "No Man's Land Arena Breakout, Infected Zone, Zombie Endless, mutants ABI, passes zombie S7",
+  "og_image": "img/fig/map-no-mans-land.jpg",
+  "ambiance": "maps",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Cartes","map-no-mans-land.html"],["No Man's Land","map-no-mans-land.html"]],
+  "faq": [
+    ["C'est quoi exactement No Man's Land ?","L'écosystème zombie de la Saison 7 Utopia : l'Infected Zone (PvPvE — opérateurs + hordes) ajoutée sur Farm, Valley et Airport, et le Zombie Endless (PvE pur) sur Airport. Les passes No Man's Land (NML) s'obtiennent via missions d'activité et le Battle Pass — le mode éphémère le plus joué de la saison."],
+    ["Quels sont les 6 mutants ?","Six types de mutants avec attques et comportements uniques — positionnement et arme d'adaptation obligatoires : tanks à charge, grégeurs rapides, lanceurs à distance… Apprends-les en Zombie Endless (Airport, PvE sans risque de gear) avant de plonger en Infected Zone."],
+    ["Quel kit minimal pour l'Infected Zone ?","120-180 munitions T3 minimum (conseil abibuilder), armure T3-T4, une arme anti-armure (A545, AK-15SC) pour les rivaux opérateurs, et un secondaire polyvalent pour les hordes. Perks Zombie Research prioritaires : Acoustic Earpads, Sleight of Hand, Porter (+10 kg), Effective Looting."],
+    ["Comment farm les passes NML ?","Le pass zombie NML se complète via les missions d'activité du Battle Pass (reset hebdo lundi 05:00 UTC) et les drops en Infected Zone. Les passes inutilisées valent 5 000 Koen à la conversion. En plus : Biohazard Endless Merit hebdo = ×3 Koen, jusqu'à 3M/semaine pour le meilleur mérite."],
+    ["Quel kit pour le Zombies No Man's Land ?","Kit fixe imposé, mais la meta communautaire : munitions <strong>peu chères à haut dégâts de chair</strong> et en grand volume (le Pierce ne sert à rien contre zombies/IA non blindés), armure légère, et le plus gros sac possible. Spamme le melee pour farmer sans brûler de munitions (les échantillons tombent aussi des Zombie Bags). Loot large : boîtes à outils, tiroirs, conteneurs de factory — pas seulement les coffres. Extrais tôt si ton sac est lourd : la densité d'IA augmente avec la durée de raid."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/fig/map-no-mans-land.jpg')" role="img" aria-label="Zone infectée de la ferme"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="20"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Cartes › <span class="text-gold">No Man's Land</span></p>
+    <span class="badge badge-s7">Mode · Saison 7 Utopia</span>
+    <h1 class="hero-title" style="margin-top:14px">No Man's Land<br><span class="accent">la zone infectée</span></h1>
+    <p class="hero-sub">Infected Zone & Zombie Endless : 6 mutants, hordes infinies et opérateurs hostiles — le mode signature d'Utopia.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">6</span><span class="c-label">Types de mutants</span></div>
+      <div class="hero-counter"><span class="counter">3</span><span class="c-label">Cartes concernées</span></div>
+      <div class="hero-counter"><span class="counter">3M/sem</span><span class="c-label">Merite Endless max</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#modes">Les deux modes</a>
+      <a href="#mutants">Les 6 mutants</a>
+      <a href="#kit">Kit & perks</a>
+      <a href="#passes">Passes NML & économie</a>
+      <a href="#events">Événements en cours</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+            <div class="callout tip" style="margin-top:16px">
+        <p class="co-title">🗺️ Cartes interactives de référence (communauté)</p>
+        Planifie tes routes avec les outils live : <a href="https://maps.tcno.co/abi" target="_blank" rel="noopener">maps.tcno.co/abi</a> ·
+        <a href="https://abibuilder.com/maps" target="_blank" rel="noopener">abibuilder.com/maps</a> ·
+        <a href="https://arena-breakout-infinite.fandom.com/wiki/Special:AllMaps" target="_blank" rel="noopener">fandom — toutes les cartes</a> ·
+        <a href="https://arenabreakout-infinite.com/fr/maps/" target="_blank" rel="noopener">arenabreakout-infinite.com — cartes interactives</a>.
+        <span class="text-muted">(Spawns, exfils et clés vérifiés en direct — les calques de cette page sont un instantané du 17/11/2026.)</span>
+      </div>
+      <h2 id="modes">Les deux modes de la Saison 7</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Mode</th><th>Type</th><th>Cartes</th><th>Philosophie</th></tr></thead>
+          <tbody>
+            <tr>
+              <td><strong>Infected Zone</strong></td>
+              <td><strong>PvPvE</strong></td>
+              <td>Farm · Valley · Airport</td>
+              <td>Recherche biochimique sous pression : les hordes <em>et</em> les opérateurs veulent ta place</td>
+            </tr>
+            <tr>
+              <td><strong>Zombie Endless</strong></td>
+              <td><strong>PvE pur</strong></td>
+              <td>Airport</td>
+              <td>Vagues infinies sans risquer ton gear PvP — terrain d'entraînement et farm de mérite</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Thématique « Search, Combat and Extract » biohazard : loots tactiques exclusifs (grenades phéromones d'appel, fumée de traitement, fusil de signal — 4 items tactiques dédiés) et matériel de recherche unique.</p>
+
+      <h2 id="mutants">Les 6 mutants</h2>
+      <p>Utopia ajoute <strong>6 types de mutants</strong>, chacun avec attaques et comportements distincts — le briefing communautaire :</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Menace</th><th>Contre-mesure</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Chargers / tanks</strong></td><td>Strafe + munitions de zone ; ne jamais rester dos à un mur</td></tr>
+            <tr><td><strong>Rapides / grégeurs</strong></td><td>Cadence et recul maîtrisés — le Melee Mastery (perk) les traite sans brûler de munitions T5</td></tr>
+            <tr><td><strong>À distance</strong></td><td>Couvertures hautes + audio (Acoustic Earpads) avant d'engager</td></tr>
+            <tr><td><strong>Élites / boss de vague</strong></td><td>Focal fire équipe · stash les bleus dans la container sécurisée immédiatement</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout s7"><p class="co-title">🎯 La règle NML</p>
+        <strong>« NML bring 120-180 rounds T3 »</strong> — le mode consomme des munitions comme aucun autre : le T3 fait le travail sur l'IA non blindée, garde le T4+ pour les opérateurs rivaux.</div>
+
+      <h2 id="kit">Kit & perks de recherche</h2>
+      <ul>
+        <li><strong>Kit de base :</strong> armure T3-T4 (pas de gaspillage T5), arme polyvalente anti-armure (A545 / AK-15SC / AK-12), 120-180 rds T3 + charge de T4, meds larges.</li>
+        <li><strong>Perks Zombie Research prioritaires :</strong> Acoustic Earpads (+10-15 m audio) · Sleight of Hand (+27 % reload) · Heavy Motor (−35 % poids) · Porter (+10 kg) · Effective Looting (20 %) · Vinson's Friend (10 % récupération d'arme).</li>
+        <li><strong>Progression :</strong> les points d'échantillons alimentent la Recherche — voir le <a href="guide-progression.html">guide de progression</a> (les perks restent actifs hors Arena/Covert).</li>
+        <li><strong>Extraction :</strong> mêmes règles que la carte hôte — vérifie ta liste d'exfils en raid, la pression zombie double le coût de chaque traversée (cf. <a href="guide-extraction.html">guide d'extraction</a>).</li>
+      </ul>
+
+      <figure>
+        <img src="../img/fig/map-no-mans-land.jpg" alt="Infected Zone sur la ferme" loading="lazy" width="1200" height="675">
+        <figcaption>Infected Zone — Farm : la PvPvE biochimique où les hordes font office d'alarme mobile.</figcaption>
+      </figure>
+
+      <h2 id="passes">Passes NML & économie zombie</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Source</th><th>Rendement</th><th>Reset</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Passes NML (missions d'activité)</strong></td><td>Passes zombie complètes (+3 en login) · conversion <strong>5 000 Koen</strong> par passe inutilisée</td><td>Hebdo — lundi 05:00 UTC (non réclamé = perdu)</td></tr>
+            <tr><td><strong>Extermination Mission</strong></td><td>Étoiles → passes Hazmat (loterie cosmétique)</td><td>Lundi 05:00 UTC</td></tr>
+            <tr><td><strong>Biohazard Endless Merit</strong></td><td>Meilleur mérite hebdo : <strong>×3 Koen, jusqu'à 3M/semaine</strong></td><td>Hebdo</td></tr>
+            <tr><td><strong>Zombie Research</strong></td><td>Perks permanents + matériau biochimique revendable</td><td>Progression persistante</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="events">Événements en cours (au 17/11/2026)</h2>
+      <ul>
+        <li>🎃 <strong>Mysterious Pumpkin Night</strong> — jusqu'au 25/11/2026 (potirons évolutifs, skins Night of Fear).</li>
+        <li>⚔️ <strong>Warlord Tournament III</strong> — jusqu'au 07/12/2026 (IND70 helmet, skin Limitless, suit Velocity Protocol).</li>
+        <li>✅ Finis : Lunar Soil (09/11), Trash to Treasure (15/11).</li>
+        <li>📅 S8 : date TBA — consomme tes passes et tokens avant le reset.</li>
+      </ul>
+
+      <h2 id="faq">FAQ No Man's Land</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Infected Zone ou Endless pour commencer ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p><strong>Zombie Endless (Airport)</strong> d'abord : PvE pur, zéro risque de perdre ton gear PvP, idéal pour apprendre les 6 mutations et grinder le mérite. Enchaîne sur l'Infected Zone quand ton audio et tes kits sont en place.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Vaut-il d'apporter un T5 en Infected Zone ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Pour les mutants, non — le T3 suffit (dégâts anti-chair du mode). Garde un chargeur T4+ <em>que</em> pour les opérateurs : l'erreur classique est de brûler son stock anti-armure sur des hordes.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Les passes NML ont une date de péremption ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Elles sont liées à la saison : conversion en Koen possible (5k l'unité) et les systèmes saisonniers repartent proprement au S8. Consomme-les pendant Utopia — voir <a href="guide-progression.html">progression</a> et <a href="guide-economie.html">économie</a>.</p></div></div></div>
+      <p class="source-note"><strong>Sources —</strong> Patch notes S7 MoreFun (Infected Zone, Endless, 6 mutants) · timesaver events (reddit 1whs6e0) · abibuilder S7 loot guide (ammo/perks) · topuplive S7. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Toutes les cartes maîtrisées</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Étape suivante : les outils interactifs — loadout builder, comparateur et plus.</p>
+    <a class="btn btn-primary" href="../index.html">Retour accueil →</a>
+    <a class="btn btn-ghost" href="map-farm.html">Farm</a>
+  </div>
+</section>

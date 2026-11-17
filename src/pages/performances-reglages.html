@@ -1,0 +1,155 @@
+<!--META
+{
+  "file": "performances-reglages.html",
+  "title": "Optimiser ses FPS ABI — meilleurs réglages 2026 | NEXUS",
+  "description": "Meilleurs réglages Arena Breakout Infinite 2026 : +60% FPS avec DLSS Balanced, Scope Balanced +41% à l'ADS, presets compétitifs, V-Sync off, Reflex on — testé par la communauté.",
+  "keywords": "réglages Arena Breakout, FPS ABI, optimiser performances ABI, DLSS ABI, meilleurs réglages extraction shooter",
+  "og_image": "img/hero/hero-performances.jpg",
+  "ambiance": "guides",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Guides","guide-debutant.html"],["Performances","performances-reglages.html"]],
+  "faq": [
+    ["Quels réglages donnent le plus de FPS dans ABI ?","Le preset Optimized Balanced rapporte +32,6% de FPS vs tout au maximum, et jusqu'à +60,5% avec DLSS Balanced (tests communautaires r/OptimizedGaming). Le réglage le plus rentable à l'ADS : Scope Quality à Balanced (+41% de FPS en visant). Ombres, post-traitement et World Detail sont les suivants les plus rentables."],
+    ["DLSS, FSR ou TSR ?","DLSS est le seul upscaling recommandé par les tests : l'image est même plus propre que le natif, sans pénalité de latence notable. FSR et TSR dégradent visiblement l'image selon les testeurs — à éviter. Active NVIDIA Reflex si ta carte le gère."],
+    ["Faut-il couper le V-Sync ?","Oui — c'est l'erreur la plus commune : le V-Sync augmente la latence d'input et casse le frame pacing. Préfère G-Sync/VRR ON + un plafond FPS 3 sous le taux de rafraîchissement de ton écran (ex. 226 FPS sur un 240 Hz) avec Reflex ON pour un signal stable sans tearing."],
+    ["Quel preset pour du compétitif ?","Textures Maximum (le jeu n'est pas gourmand en VRAM), Scope Balanced, Ombres Performance, Végétation Basic (meilleure visibilité des ennemis), World Detail Balanced, Post-traitement Balanced (conserve l'AO), Lumières Balanced (plus bas = image plus sombre), Shader Maximum (ne pas descendre : assombrit). Voir le tableau détaillé ci-dessous."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-performances.jpg')" role="img" aria-label="Station de commande tactique avec moniteurs affichant les performances"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="14"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Guides › <span class="text-gold">Performances</span></p>
+    <span class="badge badge-s7">TESTÉ COMMUNAUTÉ · 17/11/2026</span>
+    <h1 class="hero-title" style="margin-top:14px">Performances<br><span class="accent">&amp; réglages</span></h1>
+    <p class="hero-sub">Chaque réglage mesuré, chaque gain chiffré — la config qui transforme ton PC en machine de guerre.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">+60,5%</span><span class="c-label">FPS · Balanced + DLSS</span></div>
+      <div class="hero-counter"><span class="counter">+41%</span><span class="c-label">FPS · Scope à l'ADS</span></div>
+      <div class="hero-counter"><span class="counter">72</span><span class="c-label">Tick-rate serveur</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#gains">Gains mesurés</a>
+      <a href="#preset">Preset compétitif</a>
+      <a href="#upscaling">DLSS &amp; latence</a>
+      <a href="#systeme">NVIDIA &amp; Windows</a>
+      <a href="#checklist">Checklist rapide</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+    <div class="guide-content">
+      <div class="callout tip">
+        <strong>Principe directeur :</strong> en extraction shooter, les réglages ne servent pas seulement à « avoir joli » — ils servent à <strong>voir l'ennemi plus vite</strong> (moins de végétation, moins de clutter) et à <strong>réduire la latence</strong> (V-Sync off, Reflex on). Les chiffres ci-dessous viennent de tests communautaires détaillés (r/OptimizedGaming, tests individuels par réglage), vérifiés le 17/11/2026.
+      </div>
+
+      <h2 id="gains" class="section-title">Gains de FPS mesurés <span class="accent">par réglage</span></h2>
+      <p>Test réalisé en baissant un réglage à la fois depuis le preset Maximum — les pourcentages sont le gain FPS observé :</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Réglage</th><th>Valeur testée</th><th>Gain FPS</th><th>Note compétitive</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Scope Quality</strong></td><td>Balanced</td><td><span class="tier-badge tier-s">+41% ADS</span></td><td>Le plus gros gain du jeu à l'ADS (jusqu'à +45% mesurés). Aucun gain supplémentaire en dessous de Balanced.</td></tr>
+            <tr><td><strong>Preset global</strong></td><td>Optimized Balanced</td><td><span class="tier-badge tier-s">+32,6%</span></td><td>+60,5% avec DLSS Balanced par rapport à tout au Maximum.</td></tr>
+            <tr><td><strong>Résolution (échelle)</strong></td><td>Basic</td><td><span class="tier-badge tier-a">jusqu'à +17%</span></td><td>Gain énorme, changement visuel surprenamment faible selon les tests.</td></tr>
+            <tr><td><strong>Ombres</strong></td><td>Basic</td><td><span class="tier-badge tier-a">+14%</span></td><td>Performance = +13% (supprime les ombres portées des optiques). Balanced = +10%.</td></tr>
+            <tr><td><strong>Post-traitement</strong></td><td>Basic</td><td><span class="tier-badge tier-a">+14%</span></td><td>Performance = +8%. En dessous de Balanced : AO et DOF d'arme disparaissent.</td></tr>
+            <tr><td><strong>World Detail</strong></td><td>Balanced</td><td><span class="tier-badge tier-b">+11%</span></td><td>Supprime le clutter (briques, débris) — meilleur ratio visibilité/gain.</td></tr>
+            <tr><td><strong>Lumières</strong></td><td>Basic</td><td><span class="tier-badge tier-b">+10%</span></td><td>Balanced = +6%. Attention : Performance et moins assombrit certaines zones.</td></tr>
+            <tr><td><strong>Effets</strong></td><td>Balanced</td><td><span class="tier-badge tier-b">+7%</span></td><td>⚠️ À Performance et moins, les FPS <em>baisseront</em> selon les tests — rester Balanced.</td></tr>
+            <tr><td><strong>Végétation</strong></td><td>Basic</td><td><span class="tier-badge tier-c">+2% max</span></td><td>Gain faible mais <strong>visibilité énorme</strong> : moins d'herbe = ennemis plus visibles.</td></tr>
+            <tr><td><strong>Textures</strong></td><td>Maximum</td><td><span class="tier-badge tier-c">—</span></td><td>ABI n'est pas gourmand en VRAM : on garde Maximum, le gain n'est pas là.</td></tr>
+            <tr><td><strong>Shader</strong></td><td>Maximum</td><td><span class="tier-badge tier-c">—</span></td><td>Ne pas descendre : l'image devient étrange et plus sombre (et saute le niveau « Quality »).</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="preset" class="section-title">Preset compétitif <span class="accent">recommandé</span></h2>
+      <p>La config « on voit tout, on vise haut » utilisée par la communauté PC (testeur 7800X3D + 5070 Ti 1440p 240 Hz comme référence) :</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Réglage</th><th>Compétitif</th><th>Équilibré (visuel + perf)</th></tr></thead>
+          <tbody>
+            <tr><td>Textures</td><td><strong>Maximum</strong></td><td>Maximum</td></tr>
+            <tr><td>Scope Quality</td><td><strong>Balanced</strong></td><td>Balanced</td></tr>
+            <tr><td>Ombres</td><td><strong>Performance</strong></td><td>Balanced</td></tr>
+            <tr><td>Végétation</td><td><strong>Basic</strong></td><td>Basic</td></tr>
+            <tr><td>World Detail</td><td><strong>Balanced</strong></td><td>Balanced</td></tr>
+            <tr><td>Post-traitement</td><td><strong>Balanced</strong> (AO conservée)</td><td>Balanced</td></tr>
+            <tr><td>Effets</td><td><strong>Balanced</strong></td><td>Balanced</td></tr>
+            <tr><td>Lumières</td><td><strong>Balanced</strong></td><td>Balanced</td></tr>
+            <tr><td>Shader</td><td><strong>Maximum</strong></td><td>Maximum</td></tr>
+            <tr><td>Résolution / échelle</td><td><strong>Basic→Balanced</strong> si besoin de FPS</td><td>Native + DLSS Quality</td></tr>
+            <tr><td>V-Sync</td><td><strong>OFF</strong></td><td>OFF</td></tr>
+            <tr><td>Upscaling</td><td><strong>DLSS Quality/Balanced</strong></td><td>DLSS Quality</td></tr>
+            <tr><td>NVIDIA Reflex</td><td><strong>ON</strong></td><td>ON</td></tr>
+            <tr><td>Plafond FPS</td><td><strong>3 sous le taux écran</strong> (ex. 226 sur 240 Hz)</td><td>idem</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout warning">
+        <strong>⚠️ pièges confirmés :</strong> ne descends <em>jamais</em> les Effets sous Balanced (les FPS chutent), ne descends pas le Shader (image anormale + plus sombre), et saute le niveau « Quality » des ombres si tu testes (particularité signalée par les testeurs). Le Végétation n'a quasial pas d'impact FPS mais un impact visibilité majeur : Basic est un choix compétitif, pas un choix perf.
+      </div>
+
+      <h2 id="upscaling" class="section-title">Upscaling &amp; <span class="accent">latence</span></h2>
+      <ul>
+        <li>🎯 <strong>DLSS</strong> : selon les tests, l'image ressort <em>plus propre</em> que le natif — rare, mais vrai sur ABI. Aucune pénalité de latence notable : ON.</li>
+        <li>🚫 <strong>FSR &amp; TSR</strong> : dégradent visiblement l'image selon les testeurs — à éviter si tu as une carte NVIDIA.</li>
+        <li>⚡ <strong>Reflex ON</strong> + <strong>V-Sync OFF</strong> : le duo latence minimale. Avec VRR/G-Sync, plafonne 3 FPS sous le taux de rafraîchissement pour un frame pacing stable sans tearing.</li>
+        <li>📺 Si tu as des micro-coups avec VRR + Reflex : c'est un réglage de plafond à ajuster, pas un souci matériel (retours communautaires).</li>
+        <li>🧠 <strong>Frame Generation / Interpolation : OFF</strong> — la génération d'images ajoute de la latence, inutile dans un FPS compétitif.</li>
+        <li>📉 <strong>Variable Rate Rendering : OFF</strong> selon la recommandation compétitive communautaire.</li>
+      </ul>
+
+      <h2 id="systeme" class="section-title">NVIDIA Control Panel &amp; <span class="accent">Windows</span></h2>
+      <div class="grid-2">
+        <div class="card">
+          <h3>Panneau de contrôle NVIDIA</h3>
+          <ul>
+            <li>Power management : <strong>Prefer maximum performance</strong></li>
+            <li>Threaded optimization : <strong>ON</strong></li>
+            <li>Preferred refresh rate : <strong>Highest available</strong></li>
+            <li>Image sharpening : OFF (le jeu a son propre auto-sharpen)</li>
+            <li>CUDA GPUs : toutes</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Windows 11</h3>
+          <ul>
+            <li>Gaming → Game Mode : <strong>ON</strong></li>
+            <li>Graphics → exécutable ABI : <strong>Haute performance</strong></li>
+            <li>Priorité processus (Gestionnaire des tâches) : <strong>Haute</strong> pour le jeu, pas le launcher</li>
+            <li>Overlay Steam/Discord : désactivé en raid si tu cherches le max</li>
+          </ul>
+        </div>
+      </div>
+      <p class="source-note">Référence serveur : <strong>72 tick-rate</strong> depuis S6 (upgradé côté Morefun) — les réglages ne changent pas ton hitreg, uniquement ta fluidité et ta lisibilité.</p>
+
+      <div class="callout tip" style="margin-top:18px">
+        <p class="co-title">🔐 Sécurité launcher (avis officiel du 04/11/2026)</p>
+        Level Infinite a confirmé la <strong>compromission de fichiers CDN du launcher PC</strong> (touche NIKKE, pas ABI). L'équipe Arena Breakout : Infinite a officialisé : <strong>« Arena Breakout: Infinite is not affected, and you can continue playing as normal. »</strong> Interface corrigée et fermée. En cas de doute : réinstalle le jeu <strong>uniquement</strong> via Steam, l'Epic Games Store ou le site officiel — tout lien « launcher patché » est une arnaque.
+      </div>
+
+      <h2 id="checklist" class="section-title">Checklist <span class="accent">en 60 secondes</span></h2>
+      <div class="callout s7">
+        <strong>1.</strong> V-Sync OFF · <strong>2.</strong> DLSS Quality ON · <strong>3.</strong> Reflex ON · <strong>4.</strong> Scope Balanced · <strong>5.</strong> Végétation Basic · <strong>6.</strong> Ombres Performance · <strong>7.</strong> World Detail Balanced · <strong>8.</strong> Effets &amp; Post-traitement Balanced · <strong>9.</strong> Shader Maximum · <strong>10.</strong> Plafond FPS = écran −3. Redémarre, fais une raid de test sur <a href="../pages/map-tv-station.html">TV Station</a> (la carte la plus exigeante) et compare ton FPS moyen.
+      </div>
+
+      <section class="section" id="faq" style="padding-top:0">
+        <h2 class="section-title">Questions <span class="accent">fréquentes</span></h2>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Mon FPS est capé quelle que soit la qualité, pourquoi ?</button><div class="faq-a"><p>Souvent un plafond : V-Sync, plafond FPS in-game, ou limitation GPU/CPU. Vérifie le panneau NVIDIA (power = max performance), désactive le V-Sync, et regarde si ton CPU plafonne (ABI est léger CPU mais les raids 5-squads chargeent). Les retours « même FPS en 720p et 1080p » signalent un bottleneck non-GPU.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Les réglages affectent-ils le hitreg ou la portée ?</button><div class="faq-a"><p>Non. Le serveur tourne à 72 tick quel que soit ton setup. Les réglages changent seulement ce que tu vois (visibilité, lisibilité des cibles) et ta latence d'input (Reflex/V-Sync).</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Quels réglages pour un PC d'entrée de gamme ?</button><div class="faq-a"><p>Preset Low/Performance global, textures Low, végétation Basic, ombres Low, FSR Quality si pas de DLSS, V-Sync OFF, plafond 3 sous ton écran. Objectif réaliste : 60–130 FPS en 1080p (borne basse de la communauté). Monte les textures d'abord si tu as de la VRAM.</p></div></div>
+        <div class="faq-item"><button class="faq-q" aria-expanded="false">Où trouver les benchmarks complets ?</button><div class="faq-a"><p>r/OptimizedGaming et r/ArenaBreakoutInfinite publient des feuilles de test détaillées (un réglage à la fois depuis le max). Nos autres pages : <a href="../pages/guide-avance.html">guide avancé</a> · <a href="../pages/meta-strategies-s7.html">stratégies S7</a> · <a href="../pages/communaute-ressources.html">ressources communauté</a>.</p></div></div>
+      </section>
+
+      <p class="source-note">Sources : r/OptimizedGaming « ABI Optimized Settings » · tests individuels par réglage (r/ArenaBreakoutInfinite) · retours 7800X3D/5070 Ti · patch notes S7 (72 tick) — vérifié le 17/11/2026.</p>
+    </div>
+  </div>
+</section>

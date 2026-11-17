@@ -1,0 +1,120 @@
+{
+  "meta": {
+    "game": "Arena Breakout Infinite",
+    "season": "Saison 7 : Utopia",
+    "updated": "2026-11-17",
+    "totals": {
+      "items": 848,
+      "keys": 117,
+      "traders": 8,
+      "medical": 49,
+      "collectibles_note": "Salle des collections +2 niveaux en S7, stockage red drop → 999"
+    },
+    "draft": true,
+    "note": "Données de départ — enrichir en S9 (pages items) : liste complète clés par carte, médical, objets de valeur."
+  },
+  "traders": [
+    { "id": "deke", "name": "Deke", "role": "Offres limitées à durée — casques, armures, rigs, sacs, clés, munitions. Vérifier chaque refresh (3×/jour).", "tip": "Comparer systématiquement prix contact vs marché" },
+    { "id": "rodriguez", "name": "Rodriguez", "role": "Marchand généraliste", "tip": "" },
+    { "id": "others", "name": "6 autres contacts", "role": "Le total fait 8 marchands — détailler chaque contact (rôles, barters) pendant l'état S9.", "tip": "" }
+  ],
+  "economy": {
+    "currency": "Koen",
+    "tips": [
+      "Objectif de valeur par slot : ≥5k en Normal, ≥10k+ en Lockdown, encore plus en Forbidden",
+      "Vente rapide : taper « – » puis « + » dans l'UI de vente pour sous-coter le prix marché instantanément",
+      "Vente en masse : onglet Vente du marché → bouton « bulk sale » en bas à droite",
+      "Vendre les rouges aux contacts sauf si nécessaire pour une upgrade (paiement égal ou meilleur)",
+      "Stocker STL/STTO/stims/rouges/munitions de réserve dans la container sécurisée : une mort n'efface pas tout",
+      "Développer la stash en priorité (upgrades de stockage)",
+      "Les objets avec pastille rouge sur l'écran principal = récompenses gratuites à récupérer"
+    ]
+  },
+  "valuables": [
+    {
+      "id": "elysium",
+      "name": "Elysium",
+      "rarity": "red",
+      "value_koen": 4500000,
+      "s7_new": true,
+      "source": "Mode Infected Zone (PvPvE) — ultra rare ; garantie via la série de missions zombie",
+      "note": "Nouveau red drop S7 — valeur ~4,5 M Koens (parmi les plus chers du jeu)",
+      "verified": true
+    },
+    {
+      "id": "mrid-laptop",
+      "name": "MRID Laptop",
+      "rarity": "red",
+      "collectible": true,
+      "s7_new": true,
+      "source": "Collectibles S7",
+      "verified": false
+    },
+    {
+      "id": "northern-stars",
+      "name": "Northern Stars",
+      "rarity": "red",
+      "collectible": true,
+      "s7_new": true,
+      "source": "Collectibles S7",
+      "verified": false
+    },
+    {
+      "id": "double-neck-lute",
+      "name": "Double-neck Lute",
+      "rarity": "red",
+      "collectible": true,
+      "s7_new": true,
+      "source": "Collectibles S7",
+      "verified": false
+    },
+    {
+      "id": "emerald-jade-flute",
+      "name": "Emerald Jade Flute",
+      "rarity": "red",
+      "collectible": true,
+      "s7_new": true,
+      "source": "Collectibles S7",
+      "verified": false
+    }
+  ],
+  "workbench_s7": {
+    "changes": [
+      "Nouveau mode Recherche de formules : formules au niveau max dès l'unlock (plus besoin d'upgrader)",
+      "Exigences de matériaux réajustées à la baisse pour de nombreuses formules",
+      "Blueprints obtenus en raid, missions, marché ou amis",
+      "Nouveaux usages des misc items : montres de poche, journaux d'ouvriers, analyseurs de gaz → craft de munitions",
+      "Nouvel item tactique craftable : grenade M290 stun"
+    ]
+  },
+  "keys": {
+    "total": 117,
+    "note": "Clés par carte (Armory, Motel, Villa…) — catalogue complet pendant S9 avec emplacements.",
+    "tip": "Tout récipient (vestes, tiroirs) peut dropper des clés — ne pas acheter de clés avant d'avoir un bon capital"
+  },
+  "medical": {
+    "total": 49,
+    "tips": [
+      "100D medkits + liquid painkillers comme standard (tips reddit)",
+      "Painkiller préventif avant un engagement (survie si membre black-out)",
+      "Eviter les painkillers bas de gamme (déshydratation)",
+      "Surg kit pour soigner les membres black-out en raid"
+    ]
+  },
+  "s7_tactical_items": [
+    { "id": "signal-gun", "name": "Signal Gun (Flare Gun)", "effect": "Appelle un airdrop — interactions tactiques spéciales", "mode": "Infected Zone (raid seulement)" },
+    { "id": "pheromone-2", "name": "Grenade phéromone type II", "effect": "Attire les mutants et retourne les hordes contre les ennemis proches", "mode": "Zombie modes" },
+    { "id": "pheromone", "name": "Grenade phéromone (lure)", "effect": " attire les mutants", "mode": "Zombie modes" },
+    { "id": "healing-smoke", "name": "Grenade fumée soignante", "effect": "Écran de fumée avec effet de soutien médical", "mode": "Zombie modes" },
+    { "id": "m290", "name": "Grenade M290 stun", "effect": "Étourdissement — craftable au Workbench (S7)", "mode": "Tous" },
+    { "id": "reagent-pathfinder", "name": "Réactif Pathfinder", "effect": "+PV torse ; les mutants frappent plus fort et vous repèrent mieux", "mode": "Zombie (raid seulement)" },
+    { "id": "reagent-messenger", "name": "Réactif Messenger", "effect": "Vitesse augmentée ; contrepartie mutant accrue", "mode": "Zombie (raid seulement)" },
+    { "id": "reagent-cornered", "name": "Réactif Cornered Beast", "effect": "Mis KO au lieu d'être tué ; contrepartie mutant accrue", "mode": "Zombie (raid seulement)" }
+  ],
+  "grenade_tips": [
+    "MK2 (ananas) : mèche la plus courte — parfait en plein combat (armure + membres)",
+    "M67 (« bleeder ») : mèche longue — parfaite en lob vertical ; saignements sévères",
+    "Stuns : black screen, réduction sensibilité, ping audio à travers les murs (meta utilitaire)",
+    "Combo S7 Endless : grenade phéromone + MK2/molotov pour vider les hordes de base"
+  ]
+}

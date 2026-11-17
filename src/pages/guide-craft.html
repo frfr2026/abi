@@ -1,0 +1,184 @@
+<!--META
+{
+  "file": "guide-craft.html",
+  "title": "Guide Craft & Workbench — Recherche de Formules S7 | ABI NEXUS",
+  "description": "Maîtrisez le Workbench d'Arena Breakout Infinite : formules, Recherche d'amélioration S7, blueprints, buffs saisonniers, craft rentable et astuces d'optimisation.",
+  "keywords": "Arena Breakout Infinite craft, ABI workbench, blueprint amélioration, recherche formules S7, crafting profit",
+  "og_image": "img/hero/hero-guide-craft.jpg",
+  "ambiance": "dark",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Guides","guide-craft.html"],["Craft","guide-craft.html"]],
+  "faq": [
+    ["Comment fonctionne la Recherche de formules en S7 ?","Loote des Blueprints d'amélioration (boîtes à documents, vêtements, tiroirs, missions), ouvre le Workbench, choisis une formule et clique Recherche. Tu reçois plusieurs résultats candidats et tu en équipes 2 maximum dans les slots de la formule (le reste est perdu). Les buffs durent jusqu'à la fin de la saison."],
+    ["Où trouver des blueprints d'amélioration ?","Principalement dans les boîtes à documents, les vêtements (vestes) et les tiroirs, ainsi qu'en récompense de missions actives. Les blueprints « assistance » obtenus en étudiant les formules d'amis sont utilisés en priorité."],
+    ["Les résultats de recherche persistent-ils ?","Non : ils sont réinitialisés à chaque nouvelle saison. En revanche, les formules débloquées, elles, sont conservées — et elles sont désormais au niveau maximum dès l'unlock."],
+    ["Quelle formule rechercher en priorité ?","Concentre-toi sur UNE formule que tu craft en permanence : la recherche individuelle est aléatoire, mais le fait de centrer ses blueprints permet d'atteindre les garantis or/rouge. Les formules bon marché (.45 or, Dragon's Breath) rentabilisent vite ; les gros crafts (IND70) font économiser des centaines de milliers de Koens avec Unexpected Surplus."],
+    ["Peut-on crafter avec la bench d'un ami ?","Non — mais tu peux étudier SES formules depuis sa Trophy Room : une formule test devient utilisable sur TON workbench, et l'ami reçoit des blueprints assistance utilisés en priorité."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-guide-craft.jpg')" role="img" aria-label="Établi d'armurier avec composants d'armes"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Guides › <span class="text-gold">Craft</span></p>
+    <span class="badge badge-gold">Guide · Workbench</span>
+    <h1 class="hero-title" style="margin-top:14px">Craft &<br><span class="accent">Workbench</span></h1>
+    <p class="hero-sub">Formules au max dès l'unlock, Recherche d'amélioration, blueprints et buffs saisonniers : la mine d'or de ta Trophy Room expliquée en détail.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">~15 min</span><span class="c-label">Lecture</span></div>
+      <div class="hero-counter"><span class="counter">2</span><span class="c-label">Slots de recherche</span></div>
+      <div class="hero-counter"><span class="counter">S7</span><span class="c-label">Nouveau système</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#bases">Le Workbench, mode d'emploi</a>
+      <a href="#s7">Les changements S7</a>
+      <a href="#recherche">Recherche d'amélioration</a>
+      <a href="#resultats">Comprendre les résultats</a>
+      <a href="#strategy">Stratégie : quoi rechercher</a>
+      <a href="#rentable">Crafts rentables</a>
+      <a href="#amis">Partage entre amis</a>
+      <a href="#events">Crafts d'événements (fonderie)</a>
+      <a href="#astuces">Checklist d'optimisation</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+
+      <h2 id="bases">Le Workbench, mode d'emploi</h2>
+      <p>Le <strong>Workbench</strong> de ta Trophy Room transforme des matériaux looteés en produits finis : munitions, armures, casques, items tactiques, fragments de collection. Chaque formule consomme des matériaux sur un timer — et depuis la Saison 7, il est devenu <strong>le système de progression horizontal le plus sous-estimé du jeu</strong>.</p>
+      <ul>
+        <li><strong>Matériaux :</strong> looteés en raid, achetés au marché, ou issus des misc items (montres de poche, journaux d'ouvriers, analyseurs de gaz… → désormais craftables en munitions !).</li>
+        <li><strong>Produits :</strong> gardés, utilisés, ou vendus — le craft est une usine à marge si matériau &lt; produit.</li>
+        <li><strong>Vérifier l'usage</strong> (S7) : clic droit sur un item en stockage → les contacts qui l'achètent + les formules qui l'utilisent. Compare les prix avant de vendre n'importe comment.</li>
+      </ul>
+
+      <h2 id="s7">Les changements majeurs de la S7</h2>
+      <ul>
+        <li>✅ <strong>Les formules sont au niveau maximum dès l'unlock</strong> — plus besoin d'upgrader le bench pour les améliorer.</li>
+        <li>✅ <strong>Matériaux rééquilibrés</strong> à la baisse sur de nombreuses formules.</li>
+        <li>✅ <strong>Nouveaux usages des misc items</strong> : la pacotille devient de la monnaie de craft.</li>
+        <li>✅ <strong>Nouvel item craftable :</strong> la grenade tactique <strong>M290 stun</strong>.</li>
+        <li>🆕 <strong>Mode Recherche d'amélioration</strong> : blueprints → research → buffs uniques pour la saison.</li>
+        <li>🆕 <strong>Partage d'amis :</strong> étudier les formules de la Trophy Room d'un ami.</li>
+      </ul>
+
+      <figure>
+        <img src="../img/fig/guide-craft.jpg" alt="Matériaux de craft et objets de valeur" loading="lazy" width="1200" height="675">
+        <figcaption>La règle du craft : ne jamais crafter ce que le marché vend moins cher que la somme des matériaux.</figcaption>
+      </figure>
+
+      <h2 id="recherche">La Recherche d'amélioration, pas à pas</h2>
+      <ol>
+        <li><strong>Loote des Blueprints d'amélioration</strong> (<em>Improved Manufacturing Blueprint</em>) : plus fréquents dans les <strong>boîtes à documents, les vestes et les tiroirs</strong>, et en récompense de <strong>missions actives</strong>.</li>
+        <li>Ouvre la <strong>Trophy Room → Workbench</strong>, sélectionne la formule ciblée, clique <strong>« Recherche d'amélioration »</strong>. Le coût en blueprints dépend de la formule (le résultat <em>Research Expert</em> réduit de 10 % le coût, par ex.).</li>
+        <li>Tu reçois <strong>plusieurs résultats candidats</strong> aléatoires — tu dois <strong>en choisir 2 max</strong> pour équiper les deux slots de la formule.</li>
+        <li>⚠️ <strong>Les résultats non sélectionnés sont perdus</strong>, et quitter la fenêtre avant confirmation détruit les nouveaux résultats. Choisis calmement.</li>
+        <li>Le <strong>2<sup>e</sup> slot</strong> doit d'abord être débloqué. Tu peux <strong>re-rechercher</strong> la même formule autant que tu veux.</li>
+        <li>Les buffs sont <strong>actifs jusqu'à la fin de la saison</strong> — réinitialisés à la suivante (les formules restent).</li>
+      </ol>
+
+      <h2 id="resultats">Comprendre les résultats & le Research Score</h2>
+      <p>Chaque résultat porte un nom et un <strong>score</strong> ; le <em>Season Improvement Research Score</em> d'une formule = somme des scores de ses 2 résultats équipés. Exemples de résultats (datamining communautaire) :</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Résultat</th><th>Score</th><th>Effet (exemples)</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Fast Track I</strong></td><td>30</td><td>Réduction du temps de craft</td></tr>
+            <tr><td><strong>Tactical Synergy II</strong></td><td>40</td><td>Bonus de sortie (ex. +20× sur certaines munitions)</td></tr>
+            <tr><td><strong>Scrap Recovery III</strong></td><td>60</td><td>Chance de récupérer des matériaux</td></tr>
+            <tr><td><strong>Unexpected Surplus IV</strong></td><td>94</td><td>Jusqu'à <strong>30 % de chance de rembourser tous les coûts</strong> du craft</td></tr>
+            <tr><td><strong>First-Rate Provisions</strong></td><td>—</td><td>Chance d'upgrader un casque SH65 en casque IND70 (rapport MoreFun)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Le datamining communautaire recense <strong>25 formules recherchables et ~721 résultats possibles</strong> (non officiel) — d'où la sensation d'aléatoire. Un même nom de résultat donne des effets différents selon la formule.</p>
+
+      <h2 id="strategy">Stratégie : quoi rechercher, dans quel ordre</h2>
+      <div class="callout">
+        <p class="co-title">🧠 La règle « une seule formule »</p>
+        Répartir 10 blueprints sur 5 formules = 5 sets de résultats bleus. Concentrer-les sur <strong>UNE formule</strong> = tu fonces vers les <strong>garantis or/rouge</strong>. Priorité à la formule que tu craft <strong>le plus souvent</strong> : les buffs ne déclenchent qu'au moment du craft.
+      </div>
+      <ul>
+        <li><strong>Cheap & fast :</strong> .45 or, Dragon's Breath — le retour sur investissement est rapide (idéal pour comprendre le système).</li>
+        <li><strong>High volume :</strong> munitions T4/T5 — demande perpétuelle sous les caps S7 (chaque round crafté = argent économisé).</li>
+        <li><strong>High ticket :</strong> IND70, BT201, SH65 — un <em>Unexpected Surplus IV</em> (30 %) sur un IND70 à ~1,78M économise <strong>~535 000 Koens par craft en moyenne</strong> (source : analyse S7).</li>
+        <li><strong>Vérifie les caps AVANT</strong> : une formule .338 AP (pénétration 6) est <strong>inutile en Normal/Lockdown</strong> (interdite) — ne gaspille pas de slot d'équip de recherche là-dessus sauf usage Forbidden.</li>
+      </ul>
+
+      <h2 id="rentable">Crafts rentables — la checklist</h2>
+      <ol>
+        <li>Prix marché du <strong>produit</strong> (après taxe de vente).</li>
+        <li>Prix marché de la <strong>somme des matériaux</strong>.</li>
+        <li>Si matériau &lt; produit → marge. Ajoute les probos de buff (remboursement, sortie bonus) pour le EV réel.</li>
+        <li>Empile les produits ×5 pour la vente (règle des slots).</li>
+        <li>Exemples rapportés : <strong>armure Spartan T5 (~90k → 180k)</strong>, pièces de sniper, casques audio, optiques, munitions T4/T5.</li>
+      </ol>
+
+      <h2 id="amis">Partage entre amis (nouveau S7)</h2>
+      <ul>
+        <li>Visite la <strong>Trophy Room d'un ami</strong> (icône amis) → ouvre son Workbench → <strong>étudie une formule disponible</strong>.</li>
+        <li>Tu reçois une <strong>formule test</strong> utilisable sur <strong>ton propre</strong> workbench (on ne produit jamais sur la bench de l'autre).</li>
+        <li>L'ami reçoit en retour des <strong>blueprints assistance</strong>, utilisés <strong>en priorité</strong> lors de ses recherches.</li>
+        <li>Usage optimal : un groupe qui débloque des formules différentes et les mutualise — la coverage de l'équipe explose.</li>
+      </ul>
+
+      <h2 id="events">Crafts d'événements (Fonderie)</h2>
+      <p>La <strong>fonderie (Smelter)</strong> de raid est le workbench temporaire des événements :</p>
+      <ul>
+        <li><strong>Trash to Treasure :</strong> formule de conversion de loot (ex. PDA + Data Cable + Laptop → Prototype Calculation Module) — fenêtres limitées (ex. 29 oct. → 15 nov. 2026 pour Halloween).</li>
+        <li><strong>Lunar Soil Sample :</strong> desk clock + pocket watch + fragments Gungnir → collectible <strong>Phaethon's Clock</strong> (haute valeur).</li>
+        <li>Règle S7 : la fonderie n'accepte que les <strong>ressources natives de la raid</strong> — plus d'import de l'extérieur.</li>
+        <li>Les consommables inutilisés d'événements (passes) se convertissent en Koens en fin d'événement (ex. 1 passe = 5 000).</li>
+      </ul>
+
+      <h2 id="astuces">Checklist d'optimisation du bench</h2>
+      <ul>
+        <li>☐ Toujours une <strong>formule « staple »</strong> en recherche (munitions T4/T5 ou ton armor du moment).</li>
+        <li>☐ Vérifier <strong>Vérifier l'usage</strong> avant de vendre un misc item.</li>
+        <li>☐ Garder un stock de <strong>matériaux de barter</strong> séparé des matériaux de craft.</li>
+        <li>☐ Craft pendant les timers longs IRL — la bench travaille pendant que tu bosses.</li>
+        <li>☐ Recycler les produits non utilisés en cash ×5 plutôt que de laisser pourrir le stockage.</li>
+        <li>☐ Aux changements de saison : <strong>réinitialise ta stratégie de recherche</strong> (les buffs tombent, les blueprints restent valables).</li>
+      </ul>
+
+      <div class="callout s7">
+        <p class="co-title">🧟 Circuit zombie</p>
+        En Infected Zone, les <strong>sacs d'échantillons bio</strong> et <strong>Flesh Growths</strong> (drop No Man's Land pass) nourrissent autant ton Zombie Research que ton cash : intègre leur valeur dans tes runs avant de décider d'un fight ou d'un exfil rapide.
+      </div>
+
+      <h2 id="faq">FAQ craft</h2>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Combien de résultats puis-je garder par formule ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p><strong>Deux maximum</strong> (les deux slots de la formule, le 2<sup>e</sup> à débloquer d'abord). Tout résultat non choisi est perdu — et sortir de la fenêtre sans confirmer détruit aussi les nouveaux tirages.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Les buffs survivent-ils à la prochaine saison ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Non — <strong>réinitialisation à chaque saison</strong>. Les blueprints, les formules débloquées et leurs niveaux max, eux, sont conservés.</p></div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false">Où farm le plus de blueprints ?<span class="faq-ico">＋</span></button>
+        <div class="faq-a"><div class="faq-a-inner"><p>Les <strong>boîtes à documents, vestes et tiroirs</strong> sont les gisements principaux selon MoreFun — plus les récompenses de <strong>missions actives</strong>. Les raids avec forte densité de bureaux (TV Station, bureaux de Farm/Northridge) sont naturellement productives.</p></div></div>
+      </div>
+
+      <p class="source-note"><strong>Sources —</strong> Patch notes officielles S7 MoreFun/Steam (Workbench Improvement Research) · timesaver.gg workbench guide (24/10/2026) · distruct.info wiki blueprints · topuplive S7 · X @ArenaBreakoutPC (24/09/2026). Vérifié le 17 novembre 2026.</p>
+
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Les 8 contacts qui font l'économie</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Deke, Evita, Joel & co — offres, barters et réputation.</p>
+    <a class="btn btn-primary" href="guide-traders.html">Guide marchands →</a>
+  </div>
+</section>

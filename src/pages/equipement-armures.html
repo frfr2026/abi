@@ -1,0 +1,135 @@
+<!--META
+{
+  "file": "equipement-armures.html",
+  "title": "Armures ABI — T1 à T6, matériaux & meilleur choix S7 | NEXUS",
+  "description": "Guide complet des armures Arena Breakout Infinite : classement T1-T6, matériaux (réparabilité), BT101, 926 Composite, BT6, plafonds par mode et erreurs d'achat.",
+  "keywords": "armure Arena Breakout, BT101 ABI, meilleur armure T5 T6, réparation armure, aramide céramique",
+  "og_image": "img/hero/hero-equipement-armures.jpg",
+  "ambiance": "equipement",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Équipement","equipement-armures.html"],["Armures","equipement-armures.html"]],
+  "faq": [
+    ["Quelle est la meilleure armure du jeu ?","La BT101 (T6, 95 durabilité, ~550k) est la référence absolue selon nos sources — zones torso/bras/ventre. L'alternative T6 titane BT6 (88 dur, 480k) et la 926 Composite T5 (80 dur, pénalités faibles) complètent le trio de tête. En Lockdown (cap T5), la 926 Composite est ton plafond légal."],
+    ["Céramique ou acier trempé ?","Les deux pèsent lourd sur la réparation : la céramique perd ~11,7 % de durabilité par réparation (pire du jeu), l'acier trempé presque autant. À haut niveau, vise l'aluminium ou le titane ; sous T4, l'aramide (2,4 % de perte) et le polyéthylène (3,3 %) sont les matériaux les plus économiques à maintenir."],
+    ["Faut-il du T6 pour jouer ?","Non — et en S7, le plafond T6 n'existe qu'en Forbidden. Le meta communautaire : T3-T4 pour Normal, T5 pour Lockdown, T6 réservé aux grosses parties. Surpayer son armor au-dessus du mode = brûler du Koen (le T5+ est bridé en Normal)."],
+    ["Pourquoi mon armure meurt si vite en S7 ?","Deux changements Utopia : le RNG de pénétration T5/T6 est supprimé — la pénétration fiable vient de la réduction de durabilité sous un seuil — et les taux de perte de durabilité des casques/masques T5-T6 ont augmenté. L'armure n'est plus un « bouclier chanceux », c'est une réserve d'HP à gérer : répare régulièrement, au bon matériau."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-equipement-armures.jpg')" role="img" aria-label="Plaques de protection tactique en lumière dramatique"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="14"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Équipement › <span class="text-gold">Armures</span></p>
+    <span class="badge badge-s7">Équipement · Saison 7 Utopia</span>
+    <h1 class="hero-title" style="margin-top:14px">Armures<br><span class="accent">T1 → T6</span></h1>
+    <p class="hero-sub">45 modèles, 6 paliers, des matériaux qui réagissent différemment — choisir la protection qui tient ton mode et ton budget.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">45</span><span class="c-label">Armures au catalogue</span></div>
+      <div class="hero-counter"><span class="counter">T4/T5</span><span class="c-label">Caps Normal/Lockdown</span></div>
+      <div class="hero-counter"><span class="counter">~9 min</span><span class="c-label">Lecture</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#tiers">Les 6 paliers</a>
+      <a href="#s7">Ce qui change en S7</a>
+      <a href="#materiaux">Matériaux & réparation</a>
+      <a href="#top">Top armures</a>
+      <a href="#loadouts">Choix par budget</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+      <h2 id="tiers">Les 6 paliers de protection</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Palier</th><th>Protection</th><th>Pénalité</th><th>Usage</th></tr></thead>
+          <tbody>
+            <tr><td><strong>T1 — Léger</strong></td><td>Psiens de base, scavs</td><td>Faible</td><td>Éco-runs, Farm</td></tr>
+            <tr><td><strong>T2 — Standard</strong></td><td>Munitions bas de gamme</td><td>Faible</td><td>Débutants</td></tr>
+            <tr><td><strong>T3 — Renforcé</strong></td><td>Contre T3-T4 partiel</td><td>Modéré</td><td>Normal / début Lockdown</td></tr>
+            <tr><td><strong>T4 — Lourd</strong></td><td>Standard Lockdown (cap Normal)</td><td>Modéré</td><td>Lockdown entrée</td></tr>
+            <tr><td><strong>T5 — Elite</strong></td><td>Max légal Lockdown</td><td>Élevé</td><td>Lockdown haut / Forbidden</td></tr>
+            <tr><td><strong>T6 — Légendaire</strong></td><td>Forbidden uniquement (caps S7)</td><td>Très élevé</td><td>Compétition, gros kits</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Le principe <strong>protection ↔ mobilité</strong> structure tout : lourdeur = vitesse, stamina et ergonomie en baisse. La bonne armure est celle qui couvre <em>ton mode</em> sans dépasser le budget — pas la fiche technique la plus élevée.</p>
+
+      <h2 id="s7">Ce qui change en Saison 7</h2>
+      <ul>
+        <li>🎲 <strong>Pénétration T5/T6 déterministe</strong> : plus de RNG — il faut désormais <strong>user la durabilité sous un seuil</strong> avant pénétration fiable. Réparer = se défendre.</li>
+        <li>🎯 <strong>Ricochet casques/masques supprimé</strong> : les headshots passent (voir <a href="equipement-casques.html">casques</a>).</li>
+        <li>📉 <strong>Perte de durabilité T5/T6 augmentée</strong> sur casques et masques — le haut de gamme vieillit plus vite.</li>
+        <li>⚖️ <strong>Caps de mode</strong> : Normal = T4 max · Lockdown = T5 max (valeur max 900 000 Koen d'équipement) · Forbidden = libre.</li>
+        <li>🔦 Lampe tactique : ergonomie −7 (ne plus spammer la torche sur le build).</li>
+      </ul>
+
+      <h2 id="materiaux">Matériaux & réparation — la vérité des chiffres</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Matériau</th><th>Perte à la réparation</th><th>Durabilité</th><th>Verdict</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Aramide</strong></td><td>~2,4 %</td><td>Modérée</td><td>✅ Le meilleur à maintenir (≤ T4)</td></tr>
+            <tr><td><strong>Polyéthylène</strong></td><td>~3,3 %</td><td>Modérée</td><td>✅ Économe, léger</td></tr>
+            <tr><td><strong>Aluminium / Titane</strong></td><td>Faible-moyen</td><td>Élevée</td><td>✅ Le choix haut de gamme réparable</td></tr>
+            <tr><td><strong>Composite</strong></td><td>Moyen</td><td>Élevée</td><td>✔️ Correct si le titane est trop cher</td></tr>
+            <tr><td><strong>Acier trempé</strong></td><td>Élevé</td><td>Très élevée</td><td>⚠️ Protège mais se dégrade mal</td></tr>
+            <tr><td><strong>Céramique</strong></td><td><strong>~11,7 %</strong></td><td>Haute (neuf)</td><td>❌ Pire réparabilité — à éviter en usage répété</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout warning"><p class="co-title">🩹 Règle de réparation S7</p>
+        Avec la pénétration devenue déterministe, une armure à <strong>durabilité basse = perforable</strong>. Répare avant chaque raid si la perte a dépassé ~20 %, et garde à l'esprit que la céramique « coûte » 3-4× plus de durabilité cumulée qu'une aramide à réparations égales.</div>
+
+      <h2 id="top">Top armures (référentiel)</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Armure</th><th>Tier</th><th>Matériau</th><th>Durab.</th><th>Pénalités</th><th>Prix ≈</th><th>Verdict</th></tr></thead>
+          <tbody>
+            <tr><td><img class="item-ico" src="../img/items/bt101.jpg" alt="" width="64" height="64" loading="lazy"><strong>BT101</strong></td><td><strong>T6</strong></td><td>Céramique/composite av.</td><td>95</td><td>−6% vit · −8 ergo</td><td>550k</td><td><span class="tier-badge tier-s">S</span> « Meilleure armure du jeu » — zones étendues (torso/bras/ventre)</td></tr>
+            <tr><td><img class="item-ico" src="../img/items/bt6.jpg" alt="" width="64" height="64" loading="lazy"><strong>BT6</strong></td><td><strong>T6</strong></td><td><strong>Titane</strong></td><td>88</td><td>−5% vit · −7 ergo</td><td>480k</td><td><span class="tier-badge tier-s">S</span> Alternative T6 réparable, citée dans les meilleurs sets</td></tr>
+            <tr><td><img class="item-ico" src="../img/items/926-composite.jpg" alt="" width="64" height="64" loading="lazy"><strong>926 Composite</strong></td><td><strong>T5</strong></td><td>Composite</td><td>80</td><td>−4% vit · −6 ergo</td><td>320k</td><td><span class="tier-badge tier-s">S</span> Le T5 « légal Lockdown » le plus recommandé</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p><strong>Cités par la communauté en alternatives :</strong> M4 Defender (rig blindé T5 — meilleure réparation + gros pool de vie), SEK Composite (T4 économique, 70 dur, 15-25k), 6B23 (acier trempé budget), IND401 (T4 Lockdown), KN Assault Vest (T3 budget).</p>
+
+      <h2 id="loadouts">Choix par budget</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Budget</th><th>Armure</th><th>Mode visé</th></tr></thead>
+          <tbody>
+            <tr><td>💰 <strong>~100k (kit complet)</strong></td><td><img class="item-ico" src="../img/items/6b23.jpg" alt="" width="64" height="64" loading="lazy">6B23 T4 / KN T3</td><td>Normal, Farm, éco-Lockdown</td></tr>
+            <tr><td>⚖️ <strong>~300k</strong></td><td><img class="item-ico" src="../img/items/926-composite.jpg" alt="" width="64" height="64" loading="lazy">926 Composite T5</td><td>Lockdown standard (cap respecté)</td></tr>
+            <tr><td>👑 <strong>700k+</strong></td><td><img class="item-ico" src="../img/items/bt101.jpg" alt="" width="64" height="64" loading="lazy"><img class="item-ico" src="../img/items/bt6.jpg" alt="" width="64" height="64" loading="lazy">BT101 / BT6 T6</td><td>Forbidden, compétition</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout tip"><p class="co-title">💡 L'astère des rigs blindés</p>
+        Le meta communautaire recent privilégie les <strong>armored rigs</strong> (TM2 T4, M4 Defender T5) : protection + stockage dans un seul slot, souvent meilleur rapport valeur/prix qu'une armure seule + rig. Voir <a href="equipement-rigs.html">rigs</a>.</div>
+
+      <h2 id="faq">FAQ armures</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Une T3 suffit-elle en Lockdown ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Elle protège des tirs d'IA et des surprises, mais le Lockdown moyen tire du T4+. La 926 T5 est l'investissement « rentable » du mode ; en T3, tu survis — tu ne contrôles pas l'engagement.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Réparer à chaque raid ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Oui si la perte cumulée est significative : en S7 la pénétration suit la durabilité. Coûte peu (surtout aramide/titane) et retire à l'adversaire l'option « t'ouvrir en deux coups ».</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Les plaques de bras/ventre comptent ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Oui — c'est l'avantage des armures à zones étendues (BT101 : torso+bras+ventre) : elles couvrent les tirs de travers et les dégâts de fragmentation. En Forbidden, cette couverture justifie le prix.</p></div></div></div>
+
+      <p class="source-note"><strong>Sources —</strong> reddit r/ArenaBreakoutInfinite best armors per tier (28/11/2025) + tips 2.0 (chart réparation) · topuplive gear loadouts (16/06/2026) · mmoexp loadouts · patch notes S7 · référentiel interne data-armors.json. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">La tête compte double</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Casques, visières et audios — 51 modèles classés.</p>
+    <a class="btn btn-primary" href="equipement-casques.html">Casques →</a>
+    <a class="btn btn-ghost" href="equipement-rigs.html">Rigs</a>
+  </div>
+</section>

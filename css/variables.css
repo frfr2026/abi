@@ -1,0 +1,148 @@
+/* ═══════════════════════════════════════════════════════════
+   ABI NEXUS — variables.css (Design System Tokens)
+   Palette militaire/tactical/biohazard — Saison 7 : Utopia
+   ═══════════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Fonds ── */
+  --color-bg-primary: #0A0C0F;
+  --color-bg-secondary: #111318;
+  --color-bg-tertiary: #1A1E25;
+  --color-bg-elevated: #20242D;
+  --color-bg-overlay: rgba(10, 12, 15, 0.82);
+
+  /* ── Accents ── */
+  --color-accent-gold: #C8A84B;
+  --color-accent-gold-bright: #E8C965;
+  --color-accent-green: #2EFF8F;
+  --color-accent-red: #FF3B3B;
+  --color-accent-orange: #FF7A1A;
+  --color-accent-blue: #1A9EFF;
+  --color-accent-cyan: #45E0FF;
+
+  /* ── Texte ── */
+  --color-text-primary: #E8E8E8;
+  --color-text-secondary: #9AA3B0;
+  --color-text-muted: #5F6773;
+  --color-text-inverse: #0A0C0F;
+
+  /* ── Bordures ── */
+  --color-border: #2A2F3A;
+  --color-border-bright: #3D4452;
+  --color-border-gold: rgba(200, 168, 75, 0.45);
+
+  /* ── Tiers ── */
+  --color-tier-s: #FF6B35;
+  --color-tier-a: #FFD700;
+  --color-tier-b: #A8D8EA;
+  --color-tier-c: #7FB3A0;
+  --color-tier-d: #8A93A3;
+
+  /* ── Raretés ── */
+  --color-rarity-red: #FF2D2D;
+  --color-rarity-orange: #FF7A1A;
+  --color-rarity-purple: #9B59B6;
+  --color-rarity-blue: #3498DB;
+  --color-rarity-green: #2ECC71;
+  --color-rarity-gray: #7F8C8D;
+
+  /* ── États ── */
+  --color-success: #2EFF8F;
+  --color-warning: #FFC107;
+  --color-danger: #FF3B3B;
+
+  /* ── Typographie ── */
+  --font-title: 'Orbitron', 'Arial Black', sans-serif;
+  --font-body: 'Rajdhani', 'Segoe UI', sans-serif;
+  --font-data: 'Exo 2', 'Roboto', sans-serif;
+
+  --fs-hero: clamp(2.4rem, 6vw, 5rem);
+  --fs-h1: clamp(2rem, 4vw, 3.2rem);
+  --fs-h2: clamp(1.6rem, 3vw, 2.4rem);
+  --fs-h3: clamp(1.25rem, 2vw, 1.7rem);
+  --fs-h4: 1.15rem;
+  --fs-body: 1.05rem;
+  --fs-small: 0.9rem;
+  --fs-tiny: 0.78rem;
+  --fs-stat: 1.4rem;
+
+  --lh-tight: 1.1;
+  --lh-normal: 1.6;
+
+  --fw-title: 700;
+  --fw-title-heavy: 900;
+  --fw-body: 500;
+  --fw-semibold: 600;
+
+  /* ── Espacements ── */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2.5rem;
+  --space-2xl: 4rem;
+  --space-3xl: 6rem;
+
+  /* ── Rayons ── */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+  --radius-pill: 999px;
+
+  /* ── Ombres & glows ── */
+  --shadow-card: 0 8px 28px rgba(0, 0, 0, 0.55);
+  --shadow-card-hover: 0 14px 44px rgba(0, 0, 0, 0.7);
+  --shadow-glow-gold: 0 0 18px rgba(200, 168, 75, 0.35);
+  --shadow-glow-green: 0 0 16px rgba(46, 255, 143, 0.35);
+  --shadow-glow-orange: 0 0 22px rgba(255, 122, 26, 0.4);
+  --shadow-inset-hud: inset 0 0 30px rgba(0, 0, 0, 0.5);
+
+  /* ── Dégradés ── */
+  --gradient-gold: linear-gradient(135deg, #E8C965 0%, #C8A84B 50%, #9A7B2E 100%);
+  --gradient-hero: linear-gradient(180deg, rgba(10,12,15,0.25) 0%, rgba(10,12,15,0.55) 55%, #0A0C0F 100%);
+  --gradient-card: linear-gradient(180deg, rgba(10,12,15,0) 0%, rgba(10,12,15,0.35) 45%, rgba(10,12,15,0.94) 100%);
+  --gradient-s7: linear-gradient(135deg, rgba(255,122,26,0.18) 0%, rgba(10,12,15,0.05) 60%, rgba(46,255,143,0.12) 100%);
+  --gradient-scanline: linear-gradient(180deg, rgba(46,255,143,0) 0%, rgba(46,255,143,0.06) 50%, rgba(46,255,143,0) 100%);
+
+  /* ── Transitions ── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --t-fast: 0.18s;
+  --t-medium: 0.35s;
+  --t-slow: 0.65s;
+
+  /* ── Z-index ── */
+  --z-particles: 1;
+  --z-content: 5;
+  --z-sticky: 100;
+  --z-mega: 200;
+  --z-audio: 300;
+  --z-search: 400;
+  --z-overlay: 500;
+
+  /* ── Layout ── */
+  --container-max: 1280px;
+  --nav-height: 68px;
+  --bp-mobile: 640px;
+  --bp-tablet: 960px;
+  --bp-desktop: 1280px;
+  --bp-wide: 1600px;
+}
+
+/* Thème clair (F06 dark/light mode) */
+[data-theme="light"] {
+  --color-bg-primary: #F2F3F5;
+  --color-bg-secondary: #FFFFFF;
+  --color-bg-tertiary: #E8EAEE;
+  --color-bg-elevated: #FFFFFF;
+  --color-bg-overlay: rgba(242, 243, 245, 0.85);
+  --color-text-primary: #14171C;
+  --color-text-secondary: #4A5260;
+  --color-text-muted: #7A8290;
+  --color-border: #D4D8E0;
+  --color-border-bright: #B9BFCA;
+  --shadow-card: 0 8px 24px rgba(20, 23, 28, 0.12);
+  --shadow-card-hover: 0 14px 36px rgba(20, 23, 28, 0.18);
+  --gradient-hero: linear-gradient(180deg, rgba(242,243,245,0.15) 0%, rgba(242,243,245,0.5) 55%, #F2F3F5 100%);
+  --gradient-card: linear-gradient(180deg, rgba(10,12,15,0) 0%, rgba(10,12,15,0.12) 45%, rgba(10,12,15,0.78) 100%);
+}

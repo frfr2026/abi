@@ -1,0 +1,128 @@
+<!--META
+{
+  "file": "map-armory.html",
+  "title": "Carte Armory ABI — bunker, alarms, boss Renoir & exfils | NEXUS",
+  "description": "Guide complet de la carte Armory d'Arena Breakout Infinite : 3 entrées de bunker avec alarmes, 7 safes, boss Renoir (T5), exfils Canal/Radar/Mine et stratégie d'assaut.",
+  "keywords": "carte Armory Arena Breakout, bunker Armory, boss Renoir, Canal extraction, armes rares",
+  "og_image": "img/maps/map-armory.jpg",
+  "ambiance": "maps",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Cartes","map-armory.html"],["Armory","map-armory.html"]],
+  "faq": [
+    ["Comment fonctionne le bunker d'Armory ?","Trois entrées — Hole in the Wall, Mid, Tank — chacune nécessite un interrupteur, mais activer un interrupteur <strong>déclenche une alarme</strong> entendue par tout le lobby. À l'intérieur : 4 safes gratuits, 3 safes verrouillés et une salle d'armes à matériel rare. Les bots du bunker respawnent en fin de raid."],
+    ["Quels sont les exfils d'Armory ?","Canal (interrupteur de la salle de contrôle du bunker), Underground Mine et Radar Station Tunnel (levier près de l'entrée centrale de l'Armory), plus des exfils sans sac. Chaque activation déclenche des alarmes et peut attirer des bots — garde un œil sur le compte à rebours et la dispo de la sortie."],
+    ["Où est le boss Renoir ?","Renoir — boss en T5 avec garde d'élite — spawn <strong>dans le bunker</strong>. Dehors, des élites Rors patrouillent. Contact PvP quasi immédiat attendu (les sources parlent de combat dans les 2 premières minutes) : Armory est la concentration d'armes/armor la plus dense du jeu."],
+    ["Quel kit pour Armory ?","Minimum Lockdown sérieux : T4-T5, T4+ munitions, optique polyvalente pour les deux environnements (extérieur + couloirs béton). Priorité budget : armure réparée + audio (cf. <a href=\"equipement-tier-list.html\">tier list équipement</a>) — dans le bunker, l'information vaut plus que le 6ᵉ rang de recul."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/maps/hero-map-armory.jpg')" role="img" aria-label="Vue de la carte Armory"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="16"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Cartes › <span class="text-gold">Armory</span></p>
+    <span class="badge badge-s7">Carte · Avancée</span>
+    <h1 class="hero-title" style="margin-top:14px">Armory<br><span class="accent">le bunker</span></h1>
+    <p class="hero-sub">Le plus fort taux d'armes et d'armures du jeu — sous alarme. Entrées, safes, Renoir et sorties : tout se mérite.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">7</span><span class="c-label">Safes (4+3)</span></div>
+      <div class="hero-counter"><span class="counter">3</span><span class="c-label">Entrées bunker</span></div>
+      <div class="hero-counter"><span class="counter">2 min</span><span class="c-label">Avant contact</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#apercu">Aperçu : extérieur & bunker</a>
+      <a href="#alarmes">Le système d'alarmes</a>
+      <a href="#loot">Loot du bunker</a>
+      <a href="#boss">Renoir & les élites</a>
+      <a href="#exfils">Extractions</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+            <div class="callout tip" style="margin-top:16px">
+        <p class="co-title">🗺️ Cartes interactives de référence (communauté)</p>
+        Planifie tes routes avec les outils live : <a href="https://maps.tcno.co/abi" target="_blank" rel="noopener">maps.tcno.co/abi</a> ·
+        <a href="https://abibuilder.com/maps" target="_blank" rel="noopener">abibuilder.com/maps</a> ·
+        <a href="https://arena-breakout-infinite.fandom.com/wiki/Special:AllMaps" target="_blank" rel="noopener">fandom — toutes les cartes</a> ·
+        <a href="https://arenabreakout-infinite.com/fr/maps/" target="_blank" rel="noopener">arenabreakout-infinite.com — cartes interactives</a>.
+        <span class="text-muted">(Spawns, exfils et clés vérifiés en direct — les calques de cette page sont un instantané du 17/11/2026.)</span>
+      </div>
+      <h2 id="apercu">Aperçu : deux cartes en une</h2>
+      <p>Armory combine un <strong>terrain extérieur</strong> (Radar Station, Gas Station, Tunnel, Repair Facility) et un <strong>bunker central</strong> — l'endroit où vient tout le monde, donc où se joue tout le raid. Spawns multiples ; les spawns proches des entrées permettent le rush bunker, avec le risque de spawn-peek associé.</p>
+      <div class="callout warning"><p class="co-title">⏱️ Contact immédiat</p>
+        « Expect contact within the first 2 minutes » — Armory est la carte au <strong>PvP le plus dense</strong> du jeu. Si tu n'es pas prêt à te battre au spawn, choisis une route extérieure d'abord.</div>
+
+      <h2 id="alarmes">Le système d'alarmes — le cœur tactique</h2>
+      <ol>
+        <li><strong>3 entrées de bunker</strong> : Hole in the Wall · Mid · Tank — chacune s'ouvre par un <strong>interrupteur</strong>.</li>
+        <li><strong>Activer = alerter</strong> : chaque interrupteur (entrée <em>ou</em> exfil) déclenche une alarme audible — le lobby entier sait où tu es.</li>
+        <li><strong>La boucle</strong> : atteindre le contrôle → survivre à l'activation → rejoindre la sortie. Quelqu'un d'autre peut activer ou bloquer la même sortie — surveille le statut en permanence.</li>
+        <li><strong>Apprentissage bas risque</strong> : d'abord les points de repère extérieurs + le trajet vers une activation, bunker compris seulement si le timing le permet (guide gametruth).</li>
+      </ol>
+
+      <h2 id="loot">Loot du bunker</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Source</th><th>Contenu</th></tr></thead>
+          <tbody>
+            <tr><td><strong>4 safes gratuits</strong></td><td>Le cœur économique du bunker — accès rapide = tout le monde ici</td></tr>
+            <tr><td><strong>3 safes verrouillés</strong></td><td>Valeur premium (clés — Armory = plus grand pool de clés du jeu avec Northridge)</td></tr>
+            <tr><td><strong>Salle d'armes</strong></td><td>« Rare gear » — coffres et matériel de haut niveau</td></tr>
+            <tr><td>Repair Facility / Tunnel</td><td>Top loot extérieur — points de repère des approches</td></tr>
+            <tr><td>Equipment Storage Key Room</td><td>Salle clé citée parmi les meilleurs spots</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="boss">Renoir & les élites</h2>
+      <ul>
+        <li><strong>Renoir</strong> — boss T5 + garde d'élite, <strong>dans le bunker</strong> : son gear vaut le duel, mais le bruit attire les tiers.</li>
+        <li><strong>Rors d'élite</strong> — patrouillent l'extérieur ; utiles comme « alarmes biologiques » : un feu qui éclate dehors = des positions révélées.</li>
+        <li><strong>Bots du bunker</strong> — respawnent en fin de raid : garde des munitions de rechange (règle des 90-120 rds des guides zombie s'applique aussi ici en kit long).</li>
+      </ul>
+
+      <figure>
+        <img src="../img/maps/crop-tv-related.jpg" alt="Ambiance d'intérieur militaire" loading="lazy" width="1200" height="675">
+        <figcaption>Béton, alarmes et angles morts : Armory récompense la connaissance des couloirs autant que le reflex.</figcaption>
+      </figure>
+
+      <h2 id="exfils">Extractions</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Exfil</th><th>Type</th><th>Activation / notes</th></tr></thead>
+          <tbody>
+            <tr><td><strong>Canal (B1)</strong></td><td>Bunker</td><td>Interrupteur salle de contrôle du bunker — rapide mais <strong>alarme</strong></td></tr>
+            <tr><td><strong>Radar Station Tunnel</strong></td><td>Extérieur</td><td>Levier près de l'entrée centrale de l'Armory · alarme</td></tr>
+            <tr><td><strong>Underground Mine</strong></td><td>Extérieur</td><td>Même levier / mécanique d'activation · alarme</td></tr>
+            <tr><td>Exfils sans sac</td><td>Simples</td><td>Limités mais sans condition de commutateur — sorties de secours</td></tr>
+            <tr><td>Zones à temps / externes</td><td>Selon mode</td><td>Vérifie disponibilité et timer <em>en raid</em> (règle absolue)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout tip"><p class="co-title">🎯 Stratégie de sortie</p>
+        Choisis TROIS choses séparément : l'approche, le point d'activation, la route de fuite (gametruth). L'alarme d'activation transforme ta sortie en combat — pré-aim l'angle le plus probable avant de tirer le levier.</div>
+
+      <h2 id="faq">FAQ Armory</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Rush bunker ou jouer extérieur ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Rush = haut risque/haut rendement, réservé aux kits Lockdown+ et aux spawns proches des entrées. Extérieur (Repair Facility, Tunnel) = loot correct sans l'écorchée du bunker. Apprends d'abord le dehors, puis ajoute une plongée bunker par raid.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Peut-on looter le bunker sans alarme ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Non — les interrupteurs d'entrée déclenchent l'alarme. Le skill consiste à choisir le timing : après un gros fight lointain (le lobby est distrait), ou en fin de raid quand les rushers sont sortis.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Vaut-il l'assurance ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Toujours — l'assurance revient si personne ne sort avec ton équipement. Sur Armory (taux de mort élevé), c'est le coût le plus rentable du jeu. Complète avec le <a href="guide-economie.html">discipline de bankroll</a>.</p></div></div></div>
+      <p class="source-note"><strong>Sources —</strong> epiccarry Armory guide · gametruth maps & extractions (02/11/2026) · arenabreakout-infinite.com map data · earlyguides complete strategy. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">12 opérateurs, 1 tour</h2>
+    <p class="section-sub" style="margin:16px auto 24px">TV Station : le PvP vertical le plus tendu du jeu.</p>
+    <a class="btn btn-primary" href="map-tv-station.html">TV Station →</a>
+    <a class="btn btn-ghost" href="map-northridge.html">Northridge</a>
+  </div>
+</section>

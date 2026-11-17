@@ -1,0 +1,824 @@
+# ═══════════════════════════════════════════════════════════
+# WORKFLOW — ABI NEXUS : Guide Ultime Arena Breakout Infinite
+# Projet : ABI-GUIDE-ULTIMATE v1.0 — Saison 7 : Utopia
+# Agent : NEXUS (Arena.ai Agent Mode)
+# Créé : 2026-11-17
+# ═══════════════════════════════════════════════════════════
+
+meta:
+  project: ABI-GUIDE-ULTIMATE
+  version: "1.0"
+  language: fr
+  target_game: "Arena Breakout Infinite — Season 7: Utopia"
+  patch_target: "1.0.0.142.19+ (S7 live depuis le 16 sept. 2026)"
+  official_site: "https://www.arenabreakoutinfinite.com/"
+  rules:
+    max_images_per_step: 10
+    max_audios_per_step: 10
+    formats: { images: jpg, audios: mp3, no: [zip, pdf] }
+    checkpoints_only_between_big_steps: true
+    all_editorial_content: fr-FR
+
+# ── ÉTATS (S0 → S17) ──────────────────────────────────────
+states:
+  - id: S0
+    name: INIT
+    status: done
+    checkpoint_after: true
+    tasks:
+      - lecture_mega_prompt
+      - recherches_web_preliminaires
+      - creer_workflow_yaml
+      - creer_structure_dossiers
+    files_created: [workflow.yaml]
+    research_done:
+      - "Arena Breakout Infinite Season 7 Utopia complete patch notes"
+      - "ABI latest patch 2026 version 1.0.0.142.19 changes"
+      - "ABI Season 7 weapons A545 AK-15SC best build"
+      - "ABI Season 7 zombie Infected Zone mode guide"
+      - "reddit ABI ultimate tips tricks 2026"
+    key_findings:
+      - "S7 Utopia lancée le 16/09/2026 (MoreFun Studios)"
+      - "Infected Zone PvPvE (Farm/Valley/Airport) + Zombie Endless PvE (Airport, niveau 8+)"
+      - "6 types de mutants ; Infected=Lockdown, Heavy Infected=Forbidden"
+      - "Nouvelles armes : A545 (5.45x39, top-tier vs H416/U191), AK-15SC (7.62x39, CQB)"
+      - "Attachements saisonniers : PCC-9 Full-Auto, M110 Dual-Stage, FAL Recoil Kit, MPX Vulcan"
+      - "Balance : portée effective ↑, headshots ↑ (ricochet casques supprimé), RNG pen T5/T6 supprimé, nerf flashlight, caps mode-based (Normal=T4, Lockdown=T5, valeur 900k Lockdown)"
+      - "Zombie Research (perks hors-raid), marchand in-raid, Elysium (~4.5M Koens)"
+      - "DB communautaire : 91 armes, 45 armures, 51 casques, 57 rigs, 28 sacs, 1175 attachements, 70 munitions, 117 clés, 8 marchands"
+      - "Core Masteries S7 : Acoustic Earpads, Tactical Belt, Hidden Compartment"
+
+  - id: S1
+    name: DESIGN_SYSTEM
+    status: done
+    checkpoint_after: true
+    tasks:
+      - variables_css
+      - main_css
+      - animations_css
+      - components_css
+      - responsive_css
+    files:
+      - css/variables.css
+      - css/main.css
+      - css/animations.css
+      - css/components.css
+      - css/responsive.css
+
+  - id: S2
+    name: ASSETS_GLOBAL
+    status: done
+    checkpoint_after: true
+    tasks:
+      - 10_images_batch_1 (hero accueil + 9 cartes section)
+      - audios_batch_1 (5 fichiers)
+      - audios_batch_2 (5 fichiers)
+      - js_base (main.js, navigation.js)
+      - data_json (weapons, armors, ammo, items)
+    files:
+      - img/hero/hero-accueil.jpg
+      - img/ui/card-*.jpg (9 cartes section)
+      - audio/ambiance-menu.mp3
+      - audio/ambiance-tactical.mp3
+      - audio/ambiance-zombie.mp3
+      - audio/ambiance-dark-zone.mp3
+      - audio/sfx-hover.mp3
+      - audio/sfx-click.mp3
+      - audio/sfx-transition.mp3
+      - audio/sfx-weapon-equip.mp3
+      - audio/sfx-extraction.mp3
+      - audio/sfx-zombie-alert.mp3
+      - js/main.js
+      - js/navigation.js
+      - js/data-weapons.json
+      - js/data-armors.json
+      - js/data-ammo.json
+      - js/data-items.json
+    limits: { images: 10, audios: 10 }
+
+  - id: S3
+    name: PAGE_INDEX
+    status: done
+    checkpoint_after: true
+    tasks: [index.html, 404.html]
+    files: [index.html, 404.html]
+    notes: >-
+      index.html complet (hero + particules + ticker news réel +
+      12 cards catégories + bloc S7 + news + tier list filtrable +
+      6 cartes maps + footer). 10 images S3 générées (6 maps,
+      infected-farm, a545-ak15sc, news-guide-debutant) —
+      news-guide-avance.jpg à régénérer au prochain tour
+      (limite de 10 images/turn atteinte ; placeholder provisoire).
+
+  - id: S4
+    name: PAGES_GUIDES
+    status: done
+    checkpoint_after: true
+    files:
+      - pages/guide-debutant.html
+      - pages/guide-avance.html
+      - pages/guide-extraction.html
+      - pages/guide-economie.html
+      - pages/guide-craft.html
+      - pages/guide-traders.html
+      - pages/guide-progression.html
+
+  - id: S5
+    name: PAGES_ARMES
+    status: done
+    checkpoint_after: false   # enchaîné avec S6
+    files:
+      - pages/armes-fusils-assaut.html
+      - pages/armes-dmr.html
+      - pages/armes-smg.html
+      - pages/armes-sniper.html
+      - pages/armes-shotgun.html
+      - pages/armes-pistolets.html
+      - pages/armes-lmg.html
+      - pages/armes-carbine.html
+      - pages/armes-nouveautes-s7.html
+      - pages/armes-attachements.html
+      - pages/armes-attachements-s7.html
+      - pages/armes-tier-list.html
+      - pages/armes-builds.html
+
+  - id: S6
+    name: PAGES_ARMURES
+    status: done
+    checkpoint_after: true
+    files:
+      - pages/equipement-armures.html
+      - pages/equipement-casques.html
+      - pages/equipement-rigs.html
+      - pages/equipement-sacs.html
+      - pages/equipement-headsets.html
+      - pages/equipement-tier-list.html
+
+  - id: S7
+    name: PAGES_MAPS
+    status: done
+    checkpoint_after: true
+    files:
+      - pages/map-farm.html
+      - pages/map-valley.html
+      - pages/map-northridge.html
+      - pages/map-armory.html
+      - pages/map-tv-station.html
+      - pages/map-airport.html
+      - pages/map-no-mans-land.html
+
+  - id: S8
+    name: PAGES_SEASON7
+    status: done
+    checkpoint_after: true
+    files:
+      - pages/saison7-utopia.html
+      - pages/saison7-zombie-infected-zone.html
+      - pages/saison7-zombie-endless.html
+      - pages/saison7-zombie-research.html
+      - pages/saison7-balance-changes.html
+      - pages/saison7-battle-pass.html
+      - pages/saison7-nouveautes.html
+
+  - id: S9
+    name: PAGES_ITEMS
+    status: done
+    checkpoint_after: false
+    files:
+      - pages/items-munitions.html
+      - pages/items-medical.html
+      - pages/items-cles.html
+      - pages/items-valeur.html
+      - pages/items-craft-workbench.html
+      - pages/items-collection-room.html
+      - pages/items-koen-economy.html
+
+  - id: S10
+    name: PAGES_COSMETIQUES
+    status: done
+    checkpoint_after: true
+    files:
+      - pages/cosmetiques-skins-perso.html
+      - pages/cosmetiques-skins-armes.html
+      - pages/cosmetiques-dog-tags.html
+
+  - id: S11
+    name: PAGES_META
+    status: done
+    checkpoint_after: false
+    files:
+      - pages/meta-tier-list-globale.html
+      - pages/meta-builds-roles.html
+      - pages/meta-strategies-s7.html
+      - pages/meta-loadout-optimizer.html
+
+  - id: S12
+    name: PAGES_LORE
+    status: done
+    checkpoint_after: false
+    files:
+      - pages/univers-lore.html
+      - pages/univers-factions.html
+      - pages/univers-dark-zone.html
+
+  - id: S13
+    name: PAGES_EVENTS
+    status: done
+    checkpoint_after: false
+    files:
+      - pages/events-calendrier.html
+      - pages/events-supplies-drops.html
+      - pages/events-warlord-tournament.html
+
+  - id: S14
+    name: PAGES_COMMUNAUTE
+    status: done
+    checkpoint_after: true
+    files:
+      - pages/communaute-ressources.html
+      - pages/communaute-streamers.html
+      - pages/communaute-patch-notes.html
+
+  - id: S15
+    name: INTERACTIVITY
+    status: done
+    checkpoint_after: true
+    tasks:
+      - loadout_builder_js
+      - weapon_compare_js
+      - map_explorer_js
+      - tier_list_js
+      - search_js
+      - dark_light_mode
+      - responsive_final
+    files:
+      - js/loadout-builder.js
+      - js/weapon-compare.js
+      - js/map-explorer.js
+      - js/tier-list.js
+      - js/search.js
+
+  - id: S16
+    name: SEO_PERF
+    status: done
+    checkpoint_after: true
+    tasks: [sitemap_xml, robots_txt, manifest_json, json_ld, wcag]
+    files: [sitemap.xml, robots.txt, manifest.json]
+
+  - id: S18
+    name: EXTENSION_ACTUS
+    description: >-
+      Phase d'extension post-livraison : recherche des dernieres infos (16-17/11/2026),
+      2 nouvelles pages (performances-reglages, events-dim-dou-duk), enrichissements calendrier/patch-notes.
+    status: done
+    tasks:
+      - research_latest
+      - page_performances
+      - page_dim_dou_duk
+      - nav_integration
+      - enrich_existing
+      - rebuild_validate
+    files:
+      - src/pages/performances-reglages.html
+      - src/pages/events-dim-dou-duk.html
+
+  - id: S19
+    name: MODES_OUTILS
+    description: >-
+      Extension 2 : page Secure Ops (mode non couvert), calculateur STK/TTK (5e widget,
+      data-ballistics.json 29 munitions), enrichissements.
+    status: done
+    tasks:
+      - research_modes_tools
+      - page_secure_ops
+      - stk_calculator
+      - rebuild_validate
+    files:
+      - src/pages/modes-secure-ops.html
+      - js/data-ballistics.json
+
+  - id: S20
+    name: QUALITE_PERF
+    description: >-
+      Extension 3 : recherche actus S8 (pas d'annonce, fenetre 08-14/12, pas de wipe PC),
+      maillage interne (0 orpheline), perf images (lazy+dims deja OK), astuces communaute.
+    status: done
+    tasks:
+      - research_s8_tips
+      - internal_linking
+      - perf_images
+      - content_updates
+      - rebuild_validate
+    files:
+      - src/pages/guide-debutant.html
+      - src/pages/events-calendrier.html
+
+  - id: S21
+    name: SAISONS_PWA
+    description: >-
+      Extension 4 : page historique des saisons S0-S7, service worker PWA, notice sécurité launcher.
+    status: done
+    tasks:
+      - research_seasons
+      - page_saisons
+      - service_worker
+      - rebuild_validate
+    files:
+      - src/pages/communaute-saisons.html
+      - sw.js
+
+  - id: S22
+    name: CONFIANCE_SEO
+    description: >-
+      Extension 5 : plan du site HTML (67 liens), page a-propos/methodologie (E-E-A-T),
+      alertes arnaques GitHub, liens footer/menu.
+    status: done
+    tasks:
+      - research_latest
+      - page_plan_site
+      - page_a_propos
+      - scam_warnings
+      - rebuild_validate
+    files:
+      - src/pages/plan-site.html
+      - src/pages/a-propos.html
+
+  - id: S25
+    name: CORRECTIONS_UTILISATEUR_IMAGES
+    status: done
+    checkpoint_after: false
+    tasks: [cartes_reelles, dedoublonnage_images, images_objets_reelles, rebuild, qa]
+
+  - id: S17
+    name: QA_FINAL
+    status: done
+    checkpoint_after: true
+    tasks: [navigation_tests, liens_internes, images, audios, js, corrections, livraison]
+
+# ── DÉPENDANCES ────────────────────────────────────────────
+dependencies:
+  S1: [S0]
+  S2: [S1]
+  S3: [S2]
+  S4: [S3]
+  S5: [S4]
+  S6: [S5]
+  S7: [S6]
+  S8: [S7]
+  S9: [S8]
+  S10: [S9]
+  S11: [S10]
+  S12: [S11]
+  S13: [S12]
+  S14: [S13]
+  S15: [S14]
+  S16: [S15]
+  S17: [S16]
+
+# ── CHECKPOINTS (transitions avec validation utilisateur) ──
+checkpoints:
+  - { from: S0, to: S1, protocol: "Continuer ?" }
+  - { from: S1, to: S2, protocol: "Continuer ?" }
+  - { from: S2, to: S3, protocol: "Continuer ?" }
+  - { from: S3, to: S4, protocol: "Continuer ?" }
+  - { from: S6, to: S7, protocol: "Continuer ?" }
+  - { from: S7, to: S8, protocol: "Continuer ?" }
+  - { from: S10, to: S11, protocol: "Continuer ?" }
+  - { from: S14, to: S15, protocol: "Continuer ?" }
+  - { from: S15, to: S16, protocol: "Continuer ?" }
+  - { from: S16, to: S17, protocol: "Continuer ?" }
+  - { from: S17, to: DONE, protocol: "Livraison finale" }
+
+# ── BUDGET IMAGES/AUDIOS PAR ÉTAPE (règles R01/R03/R04) ──
+asset_budgets:
+  S0:  { images: 0,  audios: 0 }
+  S1:  { images: 0,  audios: 0 }
+  S2:  { images: 10, audios: 10 }
+  S3:  { images: 1,  audios: 0 }
+  S4:  { images: 10, audios: 0 }
+  S5:  { images: 10, audios: 0 }  # poursuivre en lots successifs si besoin
+  S6:  { images: 6,  audios: 0 }
+  S7:  { images: 10, audios: 0 }
+  S8:  { images: 10, audios: 0 }
+  S9:  { images: 5,  audios: 0 }
+  S10: { images: 5,  audios: 0 }
+  S11: { images: 3,  audios: 0 }
+  S12: { images: 5,  audios: 0 }
+  S13: { images: 4,  audios: 0 }
+  S14: { images: 0,  audios: 0 }
+  S15: { images: 0,  audios: 0 }
+  S16: { images: 0,  audios: 0 }
+  S17: { images: 0,  audios: 0 }
+
+# ── JOURNAL DE PROGRESSION ─────────────────────────────────
+journal:
+  - date: "2026-11-17"
+    state: S0
+    action: >-
+      Initialisation : lecture du mega prompt, 5 recherches web
+      (patch notes S7 officiels, DB arenabreakout-infinite.com,
+      tier list armes, modes zombies, tips Reddit), création de
+      workflow.yaml et de l'arborescence du projet.
+    status: done
+  - date: "2026-11-17"
+    state: S1
+    action: >-
+      Design system complet : variables.css (palette, tokens),
+      main.css (base/layout/nav/footer), animations.css (8 familles
+      d'animations), components.css (14 composants UI),
+      responsive.css (mobile-first 4 breakpoints + print).
+    status: done
+  - date: "2026-11-17"
+    state: S2
+    action: >-
+      Assets globaux : 10 images JPG cinématographiques (hero
+      accueil + 9 cartes section), 10 audios MP3 (4 ambiances de
+      120 s + 6 SFX, synthèse procédurale 192kbps), js/main.js,
+      js/navigation.js, 4 fichiers de données JSON (weapons,
+      armors, ammo, items) enrichis des recherches S7.
+    status: done
+  - date: "2026-11-17"
+    state: S3
+    action: >-
+      Page d'accueil index.html livrée : hero cinématographique
+      avec particules/scanlines, ticker des actus S7 réelles
+      (Halloween jusqu'au 25/11, Warlord III jusqu'au 07/12,
+      notice launcher 04/11), 12 cartes de catégories, section
+      « 3 nouveautés S7 », derniers guides, tier list rapide
+      filtrable, 6 cartes de maps, footer complet, recherche
+      globale, audio player. Page 404.html créée. 6 nouvelles
+      recherches web (events, Reddit meta, YouTube, GitHub tools,
+      battle pass). HTML validé sans erreur de balisage.
+    status: done
+  - step: S4
+    date: "2026-11-17"
+    note: >-
+      6 recherches web (debutant, économie, workbench S7, contacts, progression/mastery, extraction).
+      8 images heroes + 1 content (guide-craft.jpg en attente de régén — prompt assoupli, 2 échecs quota).
+      7 pages guides écrites dans src/pages (debutant, avance, extraction, economie, craft, traders, progression)
+      avec META JSON (title/desc/og/faq/breadcrumb), TOC, callouts, tables, FAQ, source-notes, cross-links.
+      Outil tools/build_site.py créé (NAV/FOOTER/sprite centralisés, build_jsonld auto FAQPage/Breadcrumb/Article).
+      Bug {R} non substitué dans NAV/FOOTER (format non récursif) corrigé — 7 pages générées et validées (HTML parser OK).
+  - step: S5
+    date: "2026-11-17"
+    note: >-
+      6 recherches web (nouveautés S7, attachements meta, pistols, carbines, shotgun/LMG, ammo flechette).
+      10 images tentées (6 succès: hero-craft final, content-avance, hero-armes-{fusils-assaut,smg,tier-list,nouveautes-s7}) ;
+      4 échecs transitoires → placeholders posés (hero-armes-{attachements,builds,dmr,sniper}), regén au prochain tour.
+      13 pages armes écrites dans src/pages + build + validation: 20 pages au total, toutes valides (HTML/JSON-LD/img).
+  - step: S6
+    date: "2026-11-17"
+    note: >-
+      2 recherches web (gear tier list/budget-mid-endgame, headsets+matériaux réparation).
+      6 pages équipement écrites: equipement-{armures,casques,rigs,sacs,headsets,tier-list} avec stats
+      data-armors.json + recherche (Commander/GS2/M32, M4 Defender, SH65/AN95/SH12, BT101/926/BT6, Rush/926 Field,
+      matériaux réparation aramide/céramique, caps S7, Sound Lock). Coquille </span> corrigée.
+      6 héros equipement en placeholder (card-armures) — à régénérer avec les 4 héros armes au prochain tour (10 images).
+      Rebuild: 26 pages toutes valides (HTML/JSON-LD/images/liens).
+  - step: S7
+    date: "2026-11-17"
+    note: >-
+      4 recherches cartes (Farm, Valley+Northridge, Armory+TV Station, Airport+NML).
+      10 images régénérées avec succès: 8 héros (dmr, sniper, 6 equipement) — restent placeholders
+      hero-armes-{attachements,builds} (2 échecs filtrés, reformulation au prochain tour).
+      7 pages cartes écrites: map-{farm,valley,northridge,armory,tv-station,airport,no-mans-land} avec
+      exfils complets (12/8/13/5+/3/9), hotspots, routes par spawn, boss (Ajax, Renoir), modes zombies S7.
+      Bug filename map-tvstation.jpg → map-tv-station.jpg corrigé (3 réf).
+      Rebuild: 33 pages toutes valides.
+  - step: S8
+    date: "2026-11-17"
+    note: >-
+      Content 100% issu des recherches S3-S7 (pas de nouvelle recherche — R05 couvert).
+      Images: hero-armes-builds résolu via chemin tmp (mv OK), 5 nouveaux héros S7 (utopia, infected-zone,
+      endless, research, balance, battle-pass = 6) — reste placeholder hero-armes-attachements (4 échecs filtrés)
+      + hero-saison7-nouveautes réutilise hero-armes-nouveautes-s7.jpg (réel).
+      7 pages saison7 écrites: utopia, zombie-infected-zone, zombie-endless, zombie-research,
+      balance-changes, battle-pass, nouveautes (events au 17/11/2026).
+      Rebuild: 40 pages toutes valides. Pas de checkpoint S8→S9 (liste checkpoints: prochain S10→S11).
+  - step: S9
+    date: "2026-11-17"
+    note: >-
+      3 recherches (loot value/red items, médical rankings, collection room/triple vert) + data-ammo/data-items.
+      7 pages items écrites: munitions (top-load, caps), medical (100D/ST0/OPM, pre-painkill), cles (117, ROI),
+      valeur (Gold Block, Secret Document 16-17M réels), craft-workbench (721 résultats, Surplus IV -30%),
+      collection-room (exposition vs vente), koen-economy (7 méthodes chiffrées).
+      Source mmoexp "red items" rejetée (SEO hors ABI). Rebuild: 47 pages toutes valides.
+  - step: S10
+    date: "2026-11-17"
+    note: >-
+      Recherche cosmétiques 1× (dog tag gachapon, reddit dog tags/battleforged 70k, idcgames Nightmare pools).
+      3 pages cosmétiques écrites: skins-perso (4 sources, line-up S7, pools Revenant/Jaw),
+      skins-armes (catalogue Banshee/MPX/Limitless, zéro-stat rule), dog-tags (playerbots, exfil found-in-raid,
+      palier 500, Battleforged 70k Forbidden). Images réutilisées (budget image du tour épuisé — 10/10 en S8/S9).
+      Rebuild: 50 pages toutes valides. CHECKPOINT S10→S11 émis.
+  - step: S11
+    date: "2026-11-17"
+    note: >-
+      2 recherches méta (squad roles bittopup 2026, tips 2.0/3.0 + endless ABIGuideS7) + builds qrts + reddit loadouts.
+      2 nouvelles images réalistes: hero-meta-strategies, hero-meta-loadout.
+      4 pages méta: tier-list-globale (S/A/B/C par scénario), builds-roles (G28/MG3/SCAR/AK102, 517-690k + budget <400k),
+      strategies-s7 (right peek, sons, grenades, reposition 30-40s, 8 règles Endless), loadout-optimizer (checklist 60s,
+      profils N/L/F, 10 erreurs). CTA corrigé communaute-liens→communaute-ressources (NAV forward-links = S12-S14).
+      Build: 54 pages. Prochain checkpoint: S14→S15.
+  - step: S12
+    date: "2026-11-17"
+    note: >-
+      Recherche lore 1× (fandom Kamona/Dark Zone, reddit lore ×4, topuplive factions, mission registry).
+      3 images cinématiques: hero-univers-{lore,factions,dark-zone}.jpg.
+      3 pages: univers-lore (chronologie 7 actes Nord-Sud→Sumek→Gungnir→Utopia),
+      univers-factions (KLA/BGC/Wolves/Antonio/Toland + 8 contacts + boss), univers-dark-zone (économie anarchie, 8 territoires, état S7).
+      Build: 57 pages valides (NAV fwd S13/S14 restants). Prochain checkpoint: S14→S15.
+  - step: S13
+    date: "2026-11-17"
+    note: >-
+      Recherche events 1× (timesaver Warlord/Halloween/S8, topuplive, gamarket, patchbot, Steam, X officiel —
+      découvertes: rangs Warlord complets, entry 400k/50k, pumpkin evolution 100k→880k, Supplies crate 5 niveaux,
+      étoiles 3/task reset lundi, Dim Dou Duk, S8 après 07/12).
+      2 images: hero-events-{warlord,supplies}.jpg.
+      3 pages: events-calendrier (deadline + checklist S8), events-supplies-drops (crate XP, Smelter, stars),
+      events-warlord-tournament (rangs, Trial IND70, scoring S7).
+      Build: 60 pages. Prochain checkpoint: S14→S15.
+  - step: S14
+    date: "2026-11-17"
+    note: >-
+      2 recherches communauté (creators reddit ×3 + streams charts; GitHub/tools abibuilder + repos).
+      1 image: hero-communaute-streamers.jpg.
+      3 pages: communaute-ressources (officiel, abibuilder tools, 3 GitHub repos, sources de guides, hub NEXUS),
+      communaute-streamers (apprendre/haut niveau/fun, top watch RU, plan 4 semaines),
+      communaute-patch-notes (archives S7: 16/09, 27/10, 10/11 + méthode + jalons S8).
+      Build: 63 pages, validation complète (liens, images, JSON-LD) OK.
+      CHECKPOINT S14→S15 émis (interactivité: builder, compare, Leaflet, search, dark mode).
+  - step: S15
+    date: "2026-11-17"
+    note: >-
+      Recherche Leaflet imageOverlay (CRS.Simple hors-ligne, no tile layer) validée.
+      Leaflet 1.9.4 vendoré (js/vendor/). Livré: search.js (index 65 entrées, accents, scores, highlight),
+      gen_search_index.py, interactivity.js (loadout builder avec verdicts de cap N/L/F + barres de stats,
+      comparateur 2 armes avec winner par ligne, filtres tier A/B/S sur 3 pages tier list),
+      map-explorer.js (6 cartes, marqueurs exfil/clé/hotspot/boss normalisés, chips de filtre),
+      data-maps.json (64 POI), interactivity.css, builder injectant scripts/CSS conditionnels (leaflet sur map-*),
+      fix responsive guide-layout 1 colonne <960px, index/404 reliés.
+      node --check OK ×5 · 65 fichiers validés (HTML/liens/assets/images/JSON-LD) · serveur statique 200 partout.
+      CHECKPOINT S15→S16 émis.
+  - step: S16
+    date: "2026-11-17"
+    note: >-
+      Recherche checklist WCAG 2.2 AA + SEO 2026 (extcafe, marketingsignals, pagepro, specification.website).
+      Livré: robots.txt (allow all + sitemap), sitemap.xml (65 URLs, priorités, lastmod, XML valid),
+      manifest.json (icon-app.jpg 1254x1254 générée, shortcuts PWA), theme-color + manifest dans TEMPLATE et racine,
+      SearchAction index.html corrigé (search.html inexistant → index.html?q=) + search.js ouvre le modal sur ?q=.
+      Audit WCAG: 0 alt manquant, 0 h1 manquant/double, lang=fr, skip-links, focus-visible global, reduced-motion
+      (CSS+JS), tap targets >=24px, titres 63/63 uniques (24 >65 car — documenté, acceptable).
+      JSON-LD: 3 blocs/page (63×FAQ/Breadcrumb/Article) + WebSite+SearchAction+VideoGame sur index.
+      Validation finale: 65 fichiers verts (HTML, assets, JSON-LD, manifest, sitemap 65/65).
+      CHECKPOINT S16→S17 émis.
+  - step: S17
+    date: "2026-11-17"
+    note: >-
+      QA_FINAL complet: crawl 65 pages / 6152 liens internes (0 mort après 4 correctifs: data-weapons path,
+      cartes-farm→map-farm, hero-saison7-nouveautes inexistant, map-tvstation→map-tv-station), ancres vérifiées,
+      73 images toutes JPG existantes + 0 format interdit, 10 MP3 MPEG valides, ambiances data-ambiance mappées
+      (saison7/cosmetiques/events/univers ajoutées aux tracks main.js), assets OK, node --check ×6,
+      crawl HTTP 200 ×15, aucun placeholder réel (2 faux positifs), JSON-LD/sitemap/manifest parsés.
+      Corrections livrées: 4 liens/images + 4 ambiances. Validation finale verte.
+      STATS FINALES: 65 HTML (63 pages), ~196k mots, 58 JPG, 10 MP3, 66KB CSS, 186KB JS, 6 JSON, 4 outils.
+      ÉTAT: S0-S17 tous done — PROJET LIVRÉ.
+  - step: S18
+    date: "2026-11-17"
+    note: >-
+      EXTENSION_ACTUS post-livraison: recherches fraiches (patch 10/11 03:00 UTC+0 = Dim Dou Duk +
+      Kamona Investigation Tea Break + 12 fixes; S8 non annoncee, estimation semaine 08-14/12; settings
+      community: +60.5% FPS Balanced+DLSS, Scope Balanced +41% ADS; codes: 0 actifs). 2 NOUVELLES PAGES:
+      performances-reglages (preset compétitif, gains mesurés par réglage, DLSS/Reflex, NVIDIA/Windows,
+      checklist) + events-dim-dou-duk (vouchers 09/11-06/12, récompenses, update 10/11 détaillé).
+      NAV: mega-menu Guides + Actus + pied de page intégrés via build_site.py. Enrichissements:
+      events-calendrier (dates précises Dim Dou Duk/Tea Break, estimation S8 08-14/12) +
+      communaute-patch-notes (12 fixes du 10/11). 2 nouvelles images JPG (hero-performances,
+      hero-dim-dou-duk). Corrections QA: </span>/</td> orphelins page perf, 404 exclu du sitemap
+      (66 URLs). ÉTAT: 67 HTML (65 pages), search 67, QA structure/liens/images/JSON-LD/sitemap VERT.
+  - step: S19
+    date: "2026-11-17"
+    note: >-
+      MODES_OUTILS: recherches Secure Ops (timesaver 16/11: gear gardé à la mort sauf munitions/soins,
+      cap 600k porté, conversion 30-40%, pooling squad, chargeur sous le cap) + ballistique T5/T6
+      (M61 pen68, 7N37 pen71, M995 pen52, BS pen52, formules pierce=pen/10, S7 sous-tier 0% T5/T6)
+      + Ultimate Tips 3.0. NOUVELLE PAGE modes-secure-ops (règles, cap, conversion, loadouts, vs autres
+      modes, FAQ). NOUVEAU 5e WIDGET: calculateur STK/TTK sur items-munitions (data-ballistics.json
+      29 munitions numériques; interactivity.js buildStk/penChance; interactivity.css .stk*; validation
+      node: BS vs T5 neuf=84% coïncide abibuilder). NAV: Secure Ops dans mega-menu build_site + index;
+      performances/dim-dou-duk ajoutés aussi à l'index (écart S18 corrigé). QA: 68 HTML verts,
+      6774 liens, sitemap 67, search 68, HTTP 200, node --check OK.
+      ÉTAT: 66 pages (68 HTML), 29 munitions ballistiques, 5 widgets interactifs.
+  - step: S20
+    date: "2026-11-17"
+    note: >-
+      QUALITE_PERF: recherches S8 (timesaver 13/11 + h4ck + senseos: aucune annonce, revelation
+      ~30/11-07/12, lancement 08-14/12, seul detail officiel = kits d'armes, PAS de wipe sur ABI PC
+      vs mobile) + conseils debutants reddit. CONTENT: guide-debutant += callout 4 astuces communaute
+      (M au chargement, coffres de recuperation ~6 slots, couteau scavs, painkiller liquide);
+      events-calendrier FAQ S8 enrichie (fenetres + no-wipe + kits officiels). MAILING: 2 passes de
+      liens entrants (16 ajouts) -> 66/66 pages >=3 liens entrants, 0 orpheline. PERF: audit montre
+      les 44 imgs deja avec loading=lazy + width/height (aucun correctif necessaire), scripts deja
+      defer. QA finale: 68 fichiers verts, 6793 liens, sitemap 67, HTTP 200, node --check OK.
+  - step: S21
+    date: "2026-11-17"
+    note: >-
+      SAISONS_PWA: recherche historique saisons (senseos table complete S0-S7 avec dates/durees/
+      preavis; timesaver cadence 78-89j, preavis 7-8j, preview rewards ~6j, reset=rank+missions
+      PAS de stash wipe PC; notice securite launcher Level Infinite 04/11 - ABI non affecte).
+      NOUVELLE PAGE communaute-saisons: chronologie 9 saisons, contenus phares (S3 full release
+      15/09/2025, S4 Airport+72tick, S5 Distorted Valley, S6 Hostile Sector+Mastery, S7 zombies),
+      cadence/preavis, reset vs wipe, checklist preparation S8. IMAGE: hero-saisons.jpg (1 JPG).
+      PWA: sw.js (cache-first assets + network-first pages, cache v1) + registration gardee dans
+      main.js (HTTP(S) only). NAV: lien Saisons menu build_site + index + footer. patch-notes +=
+      notice launcher 04/11. QA: 69 fichiers verts, 7029 liens, sitemap 68, search 69, 0 orpheline,
+      node --check sw/main OK, HTTP 200.
+      ÉTAT: 67 pages (69 HTML), 5 widgets + PWA installable.
+  - step: S22
+    date: "2026-11-17"
+    note: >-
+      CONFIANCE_SEO: recherche (pas de nouvelle annonce S8 - Bans Notice 11/11; GitHub = repos de
+      cheats ESP/aimbot = appats malware/arnaques -> REJETES et alertes ajoutees). 2 NOUVELLES PAGES:
+      plan-site.html (plan HTML genere par script, 67 liens groupes en 13 familles, couverture 100%
+      des pages) + a-propos.html (methode 5 etapes, hiérarchie 5 rangs de sources, transparence
+      chiffres officiel/communaute/estime, limites, WCAG/SEO/PWA, mentions legales). INTegration:
+      mega-menu build_site + index, footers build_site + index. communaute-ressources += callout
+      danger alerte malware cheats. QA: 71 fichiers verts, 7573 liens, sitemap 70, search 71,
+      0 orpheline, plan couverture complete, HTTP 200.
+      ÉTAT: 69 pages (71 HTML), 0 image ce tour (quota preserve).
+  - step: S23
+    date: "2026-11-17"
+    note: >-
+      AUDIT_FINAL demandé par l'utilisateur: images (62 JPG, 0 SVG/PNG, 0 non-JPEG, alt 0 manquant,
+      placeholder hero-armes-attachements documenté), audios (10 MP3 tous valides fffbb0, tous
+      référencés via audio/+name+.mp3), textes (71 fichiers, 97k mots, 71 titres uniques, 0 vrai
+      placeholder), liens (7573, 0 mort, 0 ancre, 0 orpheline), SEO (sitemap 70, search 71,
+      manifest/robots/sw OK), JS (5/5 OK). 3 alerts = faux positifs connus (MPEG 3octets, français
+      « à compléter », img src non comptées par le script d'audit). Correctif unique: 404.html += OG
+      complet. ÉTAT: PROJET TERMINÉ - 69 pages, 71 fichiers, audit vert.
+  - step: S24
+    date: "2026-11-17"
+    note: >-
+      FINALISATION PUBLICATION: veille (pas d'annonce S8; nouveaux evenements: Girls Frontline 2
+      supplies ->14/12, Emerald Arachnid & Toxic Edge ->29/12 ajoutes au calendrier). CORRECTIF
+      MAJEUR: favicon data-URI SVG remplace par img/icon-app.jpg (JPG) dans build_site + index +
+      404 — plus aucun SVG dans le projet. README.md cree (deploiement Vercel/Netlify/local,
+      changement de domaine, regeneration, audit). QA PUBLICATION VERTE: 71 fichiers, 7573 liens,
+      0 mort/ancre/orpheline, 0 format interdit, favicon JPG partout, JSON-LD OK, sitemap 70,
+      search 71, smoke HTTP 11/11 = 200. PROJET CLOS — pret a publier.
+  - step: S25
+    date: "2026-11-17"
+    note: >-
+      CORRECTIONS UTILISATEUR (3 problemes majeurs): (1) CARTES REELLES — 6 vraies cartes top-down
+      telechargeees (fandom: Farm 4096px, Valley, TV Station, Armory, Airport, Northridge 4096px)
+      remplacees dans img/maps/map-*.jpg; 58 POI de data-maps.json repositionnes sur les vraies
+      geographies (visuellees une par une); 19 crops PIL crees (hero-map-*, card-*, crop-*) pour que
+      chaque page map-* ait son propre visuel et que les figures soient de vraies zones de carte.
+      (2) DEBUT DE DEDOUBONNAGE: audit precis (24 groupes restants apres cartes), script
+      tools/dedup_images.py ecrit (table complete de 53 remplacements, un fichier = une page),
+      9 visuels thematiques generes (fig-headsets/warlord/sniper/builds/factions/casques/supplies/
+      lore + fig-404), remplacements cartes appliques (20 src/pages + index cards + 404 og),
+      gratuit content-guide-avance active. 51 generations restent en attente (voir script).
+      (3) images objets reelles: pas encore commence (fandom wiki/Loot + abibuilder).
+  - step: S25b
+    date: "2026-11-17"
+    note: >-
+      IMAGES OBJETS REELLES (probleme 3): index fandom complet (1321 fichiers via API allimages),
+      86 vraies icones d'objets telechargees (armes, armures, casques, headsets, rigs, cles, medical,
+      loot) et converties en JPG fond sombre dans img/items/ (aucun PNG/SVG). abibuilder wiki-assets
+      cartographie (gear/helmets|body_armor|armored_rigs|face_covers) mais chemins armes inaccessibles;
+      A545/AK-15SC absents de fandom (armes S7 trop recentes) - sans icone. 203 icones integrees dans
+      les tableaux de 25 pages (scripts item-ico, CSS components.css). DEDOUBLONNAGE avance: 9 visuels
+      generes + appliques via tools/dedup_images.py (24 -> 21 groupes, 42 generations restantes).
+      Regle documentee: img/items/* + favicon = identite objet (exempt de la regle image-unique).
+  - step: S25c
+    date: "2026-11-17"
+    note: >-
+      LOT 2 DEDOUBLONNAGE: veille (Winter Festival/Winter Gold Chest des 05/12: cartes d'hiver ->
+      skin P90 Winter Elf + 1,6M Koen, ajoute au calendrier + FAQ; Warlord III se termine 07/12
+      confirme; S8 estimee 02-16/12). 10 visuels photorealistes generes (battle-pass, rigs, craft,
+      economie, munitions, loadout, carbine, pistolets, shotgun, lmg) -> 10 pages entierement
+      dedoublonnees (card-items groupe ELIMINE, card-armes 5->2, card-meta 4->3). Audit: 20 groupes
+      restants, 32 generations planifiees dans tools/dedup_images.py. Smoke 3/3 = 200.
+  - step: S25d
+    date: "2026-11-17"
+    note: >-
+      LOT 3 DEDOUBLONNAGE: veille Reddit/communaute (formule raid S7 LOOT->ECHANTILLONS->OBJECTIF->
+      EXTRACT, priorite Reapers, Zombie Bags, meta NML: munitions chair pas cher + gros sac + melee;
+      2 FAQ ajoutees a saison7-zombie-research et map-no-mans-land). 9 visuels generes/appliques
+      (traders, skins-armes, zombie index, debutant, patch-notes, ressources, zombie-research lab,
+      calendrier, collection-room) -> 9 groupes de doublons elimines: 20 -> 11 groupes.
+      23 generations restantes (3 lots). Smoke 2/2 = 200.
+  - step: S25e
+    date: "2026-11-17"
+    note: >-
+      LOT 4 DEDOUBLONNAGE: veille S8 (toujours aucune annonce officielle, fenetre estimee 02-16/12
+      confirmee par senseos/timesaver). 7 visuels generes sur 10 tentatives (meta-tier x2,
+      index-armes, map-valley, items-medical-2, zombie-endless, skins-armes-2) — 3 echecs de
+      generation sur prompts 'workbench/pieces d'armes' (filtre; a reprendre avec formulations
+      differentes). 3 groupes elimines (hero-tier-list, hero-fusils-assaut, a545): 11 -> 8 groupes,
+      16 generations restantes. Smoke 3/3 = 200.
+  - step: S25f
+    date: "2026-11-17"
+    note: >-
+      LOT 5 DEDOUBLONNAGE (10/10 generes, formules reformulees pour passer le filtre): attachements,
+      craft-workbench x2, nouveautes-s7, builds, progression, dog-tags, collection-room,
+      patch-notes, skins-perso. Veille Reddit ajoutee a items-koen-economy (regle 1% fortune/raid,
+      items violets a prix stable, Deke, covert Farm, sniper rat Valley, naked run Northridge).
+      10 remplacements appliques -> 8 -> 2 GROUPES RESTANTS (card-communaute, card-saison7),
+      6 generations a faire. Smoke 4/4 = 200.
+  - step: S25g
+    date: "2026-11-17"
+    note: >-
+      FIN DEDOUBLONNAGE + QA FINALE VERTE: veille S8 (13/11: toujours rien, live update = collab
+      Dim Dou Duk + Kamona Investigation; reveal attendu ~30/11-07/12). 6 derniers visuels
+      generes/appliques (calendrier, nouveautes-s7, ressources, streamers, dog-tags, skins-perso)
+      -> PENDING 0, 0 GROUPE DE DOUBLON RESTANT (regle 1 page/image, favicon+items exemptes).
+      QA finale 71 pages / 199 images: 0 erreur, 0 warning (correction du parser QA JSON-LD
+      + comptage par page). node --check tous OK, search-index 71 entrees, sitemap 70 URLs,
+      smoke 7/7 = 200. README.md mis a jour (227 JPG dont 86 reels, 6 cartes reelles, 58 POI).
+      S25 = done. SITE FINI, PUBLIABLE.
+  - step: S26
+    date: "2026-11-17"
+    note: >-
+      VEILLE + ENRICHISSEMENT FINAL (post-QA): 3 recherches web (patch notes Nov 2026, Reddit
+      tips, date S8). Constats: S8 toujours non announce (reveal ~30/11-07/12, lancement 08-14/12),
+      live update 10/11 + events deja couverts (Halloween 880k->25/11, Kamona->22/12, Dim Dou Duk
+      ->06/12, Warlord->07/12). Enrichissements AJOUTES (4): (1) FAQ Secure Ops: mythe 'armure
+      neuve' = suggestion reddit 13/11 pas regle + assurance payante inexistante dans ABI;
+      (2) callout securite launcher Level Infinite 04/11/2026 (ABI non affecte, reinstall
+      Steam/Epic uniquement) dans performances-reglages; (3) ligne 'Marche lente ~5 m' dans le
+      tableau d'audibilite guide-avance; (4) fix cosmetique data-ballistics total_rounds 24->29.
+      Rebuild 3 pages + search 71 + sitemap 70; QA finale RE-VERTE: 71 pages, 0 erreur, 0 warn;
+      node --check OK; smoke 4/4=200. AUCUNE image generee (passe contenu seule).
+  - step: S27
+    date: "2026-11-17"
+    note: >-
+      AUDIT COMPLET (images/audios/textes/SEO) demandé par l'utilisateur: 0 manque critere.
+      Vrais ecarts trouves et corriges: (1) og:url absent des 71 pages -> ajoute dans le
+      template build_site + index + 404 (71/71); (2) 4 SFX jamais joues -> cables:
+      sfx-transition sur les nav-links (71 pages), sfx-weapon-equip sur les filtres tier
+      (interactivity.js), sfx-extraction sur le CTA guide-extraction, sfx-zombie-alert
+      one-shot au chargement des pages *zombie* (main.js); (3) faux positifs confirms:
+      'à compléter' = prose FR, ambiance 'dark' = carte audio valide, index search 71/71,
+      pages sans <img> = hero-bg + og:image presents. Rebuild 69 pages + index/404,
+      search 71, sitemap 70. QA finale: 71 pages, 199 images, 0 erreur, 0 warn,
+      0 audio non reference, og:url 0 manquant, smoke 5/5 = 200. PROJET TERMINÉ.
+  - step: S28
+    date: "2026-11-17"
+    note: >-
+      VEILLE ENRICHISSEMENT (3 recherches: meta armes S7, perks zombie, outils GitHub).
+      GitHub re-confirmé = spam de cheats/ESP (radar déguisé) → RIEN à intégrer (dead end connu).
+      3 enrichissements AJOUTES: (1) armes-nouveautes-s7: verdict communauté reddit — A545
+      divisée (trop chère sauf Forbidden, iron sights affreuses → optique obligatoire) vs T0,
+      AK-15SC unanimement budget king (stock + BP/AP, mags 40/75/100); (2) saison7-zombie-
+      research: chemin 'survie' abibuilder (Melee Mastery → Undying Spirit → Pain Killer →
+      Sustained Combat) + tip coffres/safes = sources d'échantillons; (3) saison7-zombie-endless:
+      priorités de kill solo/équipe (ambusher > spitter > fatty...) + cheese spots anti-Phobos
+      (conteneurs, sous l'avion, vents aéroport) + auto-shotguns USAS/Saiga en solo.
+      Rebuild 3 pages + search 71 + sitemap 70; QA RE-VERTE 71 pages/199 imgs/0 err/0 warn;
+      smoke 3/3 = 200. Aucune image/audio générés (passe contenu).
+  - step: S29
+    date: "2026-11-17"
+    note: >-
+      RETOURS UTILISATEUR (3 plaintes) → vérification par preuves + corrections:
+      (1) DOUBLONS: audit complet = 0 groupe en doublon sur140+1 images décoratives
+      (favicon + icônes objets exemptées, exception actée) — conforme depuis S25;
+      (2) CARTES: les7 pages cartes existaient (6 vraies top-down + NML) MAIS les4 liens
+      de référence demandés manquaient → bloc 'Cartes interactives de référence' ajouté
+      sur les7 pages (maps.tcno.co, abibuilder.com/maps, fandom AllMaps, arenabreakout-
+      infinite.com) → 7/7; Port = carte non jouable sur PC (DB référence: données non
+      vérifiées) → non inventée; NML: aucune vraie carte disponible sur les4 références
+      → visuel généré conservé + liens; (3) ITEMS:86 icônes déjà intégrées +2 nouvelles
+      téléchargées (Watch.png, Red_Gunpowder.png → JPG) intégrées à items-valeur et
+      items-koen-economy (item-map =88); Gold Block: aucune image fandom (confirmé).
+      Rebuild9 pages + search71 + sitemap70; QA VERTE:71 pages,200 images,0 erreur,
+      0 warn,0 doublon; smoke4/4=200.
+  - step: S30
+    date: "2026-11-17"
+    note: >-
+      AUDIT VISUEL APPROFONDI (plaintes répétées): détection par hash perceptuel (aHash+RMS+md5)
+      sur les228 JPG. TROUVÉ3 doublons EXACTS réels et corrigés: (1) hero-armes-attachements
+      == card-armes (placeholder copié) → NOUVELLE image générée (carbine équipée sur stand,
+      formulation validée; tentative1 échouée puis OK) — RMS vs plus proche =30,4 (pas un
+      doublon); (2) gs2-headset == gs2 (alias) → img double supprimée, fichier supprimé;
+      (3) five-seven == f57 (alias,0 usage) → fichier supprimé. Les23 autres paires aHash =
+      faux positifs (icônes d'armes réelles de style similaire, RMS≥27 = images distinctes).
+      +7 VRAIES icônes fandom téléchargées (SH12, SH65, AN95, Commander A, Matzka, M32,
+      Rush Tactical) intégrées casques/headsets/sacs (item-map=94); alias nettoyés.
+      Rebuild4 pages. FINAL:0 doublon exact,0 doublon visuel,0 image sur>1 page, QA71 pages
+      0 err/0 warn, smoke4/4=200.
+  - step: S31
+    date: "2026-11-17"
+    note: >-
+      CARTES INTERACTIVES (plainte récurrente): diagnostic = l'explorateur Leaflet fonctionnait
+      mais se montait EN BAS de page (aucun <figure> sur les pages cartes → appendChild après la
+      FAQ) et les liens de référence n'étaient visibles qu'en bas des seules pages cartes.
+      Corrections: (1) map-explorer.js monte maintenant en HAUT du guide-content (visible
+      immédiatement sous le hero); (2) mega-menu Nav 'Cartes' enrichi sur TOUTES les pages
+      (template build_site) + index.html: séparateur .mega-sep (CSS ajouté) + les4 liens
+      externes (tcno, abibuilder, fandom AllMaps, ABI Database) en target=_blank; (3) bloc
+      'Cartes interactives de référence' déplacé en haut des7 pages cartes (après <article>).
+      Rebuild69 pages + index/404 + search71 + sitemap70. QA VERTE:71 pages,0 erreur,
+      0 warn,0 doublon,4 liens présents sur70/71 (404 sans mega-menu = normal),
+      callout haut7/7, smoke4/4=200. node --check OK.

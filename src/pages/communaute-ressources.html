@@ -1,0 +1,139 @@
+<!--META
+{
+  "file": "communaute-ressources.html",
+  "title": "Ressources communautaires ABI — outils, wikis, GitHub | NEXUS",
+  "description": "Toutes les ressources Arena Breakout Infinite : abibuilder (partner officiel), fandom wiki, GitHub (abibuilder, interactive maps, offline database), fansites et canaux officiels.",
+  "keywords": "ressources Arena Breakout, abibuilder, ABI wiki, github arena breakout, outils communautaires",
+  "og_image": "img/fig/communaute-ressources.jpg",
+  "ambiance": "home",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Communauté","communaute-ressources.html"],["Ressources","communaute-ressources.html"]],
+  "faq": [
+    ["Quel est le meilleur outil tout-en-un ?","abibuilder.com — partner officiel ABI : builds partageables, wiki vivant, cartes interactives (clés/safes/spawns/exfils/boss par carte), et une boîte à outils complète (Shooting Range, STK/TTK Table, Randomizer, Workbench, Field Merchant, Tier List, Durability, Mastery, ABI Guesser). Notre site le complète avec le méta français : tier list, <a href=\"meta-builds-roles.html\">rôles</a>, <a href=\"meta-loadout-optimizer.html\">optimiseur</a>."],
+    ["Quelles repos GitHub connaître ?","imzleep/abibuilder (MIT, Next.js/TS/Supabase — le front open source d'abibuilder) · nicolasaigner/ABI-InteractiveMaps (Leaflet, PT-BR, filtres de clés, Vercel) · fabiopsyduck/Arena-Breakout-Infinite-Offline-Database + ABIDB-WEB (base de données hors-ligne du jeu). Les trois sont des contributions communautaires vérifiables."],
+    ["Où lire les patch notes officielles ?","Steam (announcements MoreFun), le site officiel arenabreakout.com, et le compte X @ArenaBreakoutPC — notre page <a href=\"communaute-patch-notes.html\">patch notes</a> archive les mises à jour datées S7 avec traduction."],
+    ["Quelles sont les meilleures sources de guides ?","arenebreaout-infinite.com (fansite missions/maps/news), timesaver.gg (events, Warlord, S8), topuplive (loadouts, loot), bittopup (tier lists, squad roles), fandom (lore/base de données) — toutes citées dans nos pages avec dates de vérification."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/fig/communaute-ressources.jpg')" role="img" aria-label="Ressources de la communauté"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="14"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Communauté › <span class="text-gold">Ressources</span></p>
+    <span class="badge badge-gold">COMMUNAUTÉ · HUB</span>
+    <h1 class="hero-title" style="margin-top:14px">Ressources<br><span class="accent">communautaires</span></h1>
+    <p class="hero-sub">Outils, wikis, GitHub et fansites : l'écosystème qui nourrit ce guide — et qui continue de le vérifier.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">10+</span><span class="c-label">Outils listés</span></div>
+      <div class="hero-counter"><span class="counter">3</span><span class="c-label">Repos GitHub</span></div>
+      <div class="hero-counter"><span class="counter">~7 min</span><span class="c-label">Lecture</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#officiel">Canaux officiels</a>
+      <a href="#outils">Outils du jeu</a>
+      <a href="#github">GitHub & open source</a>
+      <a href="#guides">Guides & wikis</a>
+      <a href="#interne">Dans NEXUS</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+      <h2 id="officiel">Canaux officiels — la source primaire</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Canal</th><th>Pourquoi</th></tr></thead>
+          <tbody>
+            <tr><td>🎮 <strong>Steam — MoreFun</strong></td><td>Patch notes, events, dates de saison (S8 annoncera ici)</td></tr>
+            <tr><td>🌐 <strong>arenabreakout.com</strong></td><td>Site officiel : updates, roadmap, téléchargements</td></tr>
+            <tr><td>🐦 <strong>X @ArenaBreakoutPC</strong></td><td>Annonces rapides, guides d'événements (Halloween, Warlord)</td></tr>
+            <tr><td>💬 <strong>Discord officiel</strong></td><td>Codes cadeaux, feedback, annonces communautaires</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="outils">Les outils du jeu — abibuilder en tête</h2>
+      <p><strong>abibuilder.com</strong> — <em>partner officiel d'ABI</em> (« whatever you need to succeed in the Dark Zone ») :</p>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Outil</th><th>Usage</th></tr></thead>
+          <tbody>
+            <tr><td>🔧 <strong>Builds</strong></td><td>Créer/partager des loadouts d'armes (liens directs : A545, PCC-9, FAL…)</td></tr>
+            <tr><td>🗺️ <strong>Interactive Maps</strong></td><td>Clés, safes, spawns, exfils, boss, loot par carte (Armory, Farm, TV…)</td></tr>
+            <tr><td>📚 <strong>Wiki</strong></td><td>Base de données vivante, grandit à chaque patch</td></tr>
+            <tr><td>🎯 <strong>Shooting Range · STK/TTK Table</strong></td><td>Tester les builds, comparer les kills-times</td></tr>
+            <tr><td>🎲 <strong>Randomizer · ABI Guesser</strong></td><td>Fun + entraînement visuel</td></tr>
+            <tr><td>⚙️ <strong>Workbench · Field Merchant · Durability · Mastery</strong></td><td>Simuler crafts, traders, durabilité, maîtrises</td></tr>
+            <tr><td>📊 <strong>Tier List</strong></td><td>Classement communautaire croisé</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted">Autres outils récurrents : tier list d'armes communautaire, calculs de value/slot, spreadsheets de traders (Deke flips) partagés sur reddit.</p>
+
+      <h2 id="github">GitHub & open source</h2>
+      <div class="callout danger"><strong>⚠️ Alerte arnaques (nov. 2026) :</strong> les repos GitHub qui prolifèrent sous les noms « ABI hack / ESP / aimbot / overlay menu » sont des <strong>appâts à malwares</strong> (vol de wallet, stealer) et des pièges à bannissement — aucun n'est légitime. Les seuls projets open source à connaître sont les 3 ci-dessous (+ les outils listés plus haut). Jamais de « téléchargement de cheat » : tu perds ton compte et potentiellement tes affaires.</div>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Repo</th><th>Ce que c'est</th></tr></thead>
+          <tbody>
+            <tr><td>🐙 <strong>imzleep/abibuilder</strong></td><td>Front d'abibuilder en open source — <strong>MIT</strong>, Next.js/TS/Supabase</td></tr>
+            <tr><td>🐙 <strong>nicolasaigner/ABI-InteractiveMaps</strong></td><td>Cartes interactives Leaflet (PT-BR), filtres de clés, déployé sur Vercel — inspiré des maps Fandom</td></tr>
+            <tr><td>🐙 <strong>fabiopsyduck/Arena-Breakout-Infinite-Offline-Database</strong> (+ ABIDB-WEB)</td><td>Base de données hors-ligne du jeu + son front web</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p>Ces repos sont la preuve que l'écosystème ABI est <em>buildable</em> : même notre NEXUS (générateur de pages, data JSON, Leaflet à venir) suit cette philosophie d'outils légers et locaux.</p>
+
+      <figure>
+        <img src="../img/fig/communaute-ressources-2.jpg" alt="Setup de création de contenu" loading="lazy" width="1200" height="675">
+        <figcaption>Contenus, outils, code : la communauté ABI produit en trois langues (EN, RU, ES/PT) — voir les streamers.</figcaption>
+      </figure>
+
+      <h2 id="guides">Guides & wikis — nos sources habituelles</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Source</th><th>Spécialité</th><th>Utilisée pour</th></tr></thead>
+          <tbody>
+            <tr><td>📖 <strong>arena-breakout.fandom.com</strong></td><td>Base de données + lore</td><td>Munitions, Kamona, objets, personnages</td></tr>
+            <tr><td>📰 <strong>arenabreakout-infinite.com</strong></td><td>Fansite missions/maps/news</td><td>Contrats traders, clés par carte, événements</td></tr>
+            <tr><td>⏱️ <strong>timesaver.gg</strong></td><td>Events, S8, économies</td><td>Warlord, Halloween, Secret Document</td></tr>
+            <tr><td>💳 <strong>topuplive</strong></td><td>Loadouts, loot, money</td><td>Médical, red money, Halloween</td></tr>
+            <tr><td>🧷 <strong>bittopup</strong></td><td>Tier lists, squad</td><td>Méta armes S7, rôles 4-man</td></tr>
+            <tr><td>🟠 <strong>reddit r/ArenaBreakoutInfinite</strong></td><td>Tips 3.0, builds, méta vécu</td><td>Stratégies, optimisation, reactions patch</td></tr>
+            <tr><td>🎬 <strong>YouTube</strong></td><td>Gameplay commenté</td><td>Voir les techniques en action — <a href="communaute-streamers.html">streamers</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="interne">Dans NEXUS — tes outils locaux</h2>
+      <ul>
+        <li>🔎 <strong>Recherche globale</strong> (Ctrl+K) — toutes les pages du site.</li>
+        <li>🗺️ <strong>Explorateur de cartes</strong> (Leaflet) — prochaine étape d'interactivité (S15).</li>
+        <li>⚔️ <strong>Comparateur d'armes</strong> & <strong>builder de loadout</strong> — alimentés par nos data JSON (26 armes, 45+ armures).</li>
+        <li>📊 <a href="meta-tier-list-globale.html">Tier list globale</a> · <a href="meta-loadout-optimizer.html">Optimiseur</a> · <a href="events-calendrier.html">Calendrier</a>.</li>
+      </ul>
+
+      <h2 id="faq">FAQ ressources</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Quelle source croire en cas de conflit ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Hiérarchie : patch notes officiels (Steam/site) → datamine/repo → fansites datés → reddit. Nos pages affichent la date de vérification et citent leurs sources en bas — quand deux sources divergent (ex. valeur du Secret Document), on affiche les deux avec leur contexte.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Comment contribuer ou signaler une erreur ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Les repos GitHub ci-dessus acceptent PR/Issues (ABI-InteractiveMaps le mentionne explicitement). Pour NEXUS : chaque page est un fichier source dans <code>src/pages/</code> — signale la page et la donnée à corriger.</p></div></div></div>
+
+      <p class="source-note"><strong>Sources —</strong> abibuilder.com/about · github repos listés · reddit creator threads (1oj7w6j, 1jqe8wv, 1lz4qzx) · streams charts. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Qui regarder ?</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Streamers & YouTubeurs : apprendre, s'amuser, monter en niveau.</p>
+    <a class="btn btn-primary" href="communaute-streamers.html">Streamers →</a>
+    <a class="btn btn-ghost" href="communaute-patch-notes.html">Patch notes</a>
+  </div>
+</section>

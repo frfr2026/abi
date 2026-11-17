@@ -1,0 +1,124 @@
+<!--META
+{
+  "file": "saison7-zombie-research.html",
+  "title": "Zombie Research ABI — perks, échantillons & optimisation S7 | NEXUS",
+  "description": "Guide complet de la Zombie Research d'Arena Breakout Infinite : échantillons biochimiques, perks permanents (Acoustic Earpads, Sleight of Hand, Porter), ordre de déblocage.",
+  "keywords": "Zombie Research ABI, perks zombie, Acoustic Earpads, Sleight of Hand, échantillons biochimiques",
+  "og_image": "img/hero/hero-saison7-zombie-research.jpg",
+  "ambiance": "saison7",
+  "article": true,
+  "breadcrumb": [["Accueil","index.html"],["Saison 7","saison7-zombie-research.html"],["Zombie Research","saison7-zombie-research.html"]],
+  "faq": [
+    ["Comment fonctionne la Zombie Research ?","Tu collectes des échantillons biochimiques en Infected Zone (et activités de la saison), puis les dépenses en Recherche pour débloquer des perks passifs. Les points d'échantillons « te gênant » — dépense-les — les perks actifs sont des avantages permanents en mode zombie."],
+    ["Quels sont les meilleurs perks à débloquer d'abord ?","Ordre communautaire : Acoustic Earpads (+10-15 m de portée audio — sert partout) → Sleight of Hand (+27 % vitesse de recharge) → Heavy Motor (−35 % pénalité de vitesse armure/casque) → Porter (+10 kg) → Effective Looting (20 % de skip de recherche) → Vinson's Friend (10 % de récupérer ton arme après un échec d'extraction)."],
+    ["Les perks fonctionnent-ils partout ?","Ils sont actifs en Infected Zone et les modes concernés de la saison, mais <strong>inactifs en Arena, Covert Ops et Zombie Endless</strong> (à l'exception des Core Masteries qui suivent leurs propres règles). La plupart restent utiles hors raid (Porter en et hors raid, Tactical Belt)."],
+    ["Comment farm les échantillons ?","Jeu régulier en Infected Zone — le matériel biochimique des vagues et de la recherche génère des points. Associe avec Effective Looting (+20 % de recherche) pour accélérer : le perk s'auto-renforce (voir <a href=\"guide-progression.html\">progression</a>)."],
+    ["Quelle est la routine optimale en raid zombie ?","La formule qui marche (Reddit r/ArenaBreakoutInfinite) : <strong>LOOT → ÉCHANTILLONS → OBJECTIF → EXTRACT</strong> — dans cet ordre. Ouvre la carte tôt : les marqueurs de missions biohazard et les Zombie Bags (sacs de bio-échantillons) sont tes meilleures sources. Une fois le loot + les échantillons + l'objectif validés : EXTRAIS. Ne tire pas sur chaque zombie : s'il ne bloque pas ta route, cours — chaque coup de feu attire la horde. Priorité de cible : les <strong>Reapers</strong> (surtout acides en Endless haut niveau)."]
+  ]
+}
+-->
+<section class="hero hero-compact scanlines" aria-label="Introduction">
+  <div class="hero-bg" style="background-image:url('../img/hero/hero-saison7-zombie-research.jpg')" role="img" aria-label="Banc de laboratoire de recherche biochimique"></div>
+  <div class="hero-overlay"></div>
+  <div class="particle-field" data-particles="18"></div>
+  <div class="container hero-content">
+    <p class="hero-breadcrumb"><a href="../index.html">Accueil</a> › Saison 7 › <span class="text-gold">Zombie Research</span></p>
+    <span class="badge badge-s7">Progression · Utopia</span>
+    <h1 class="hero-title" style="margin-top:14px">Zombie<br><span class="accent">Research</span></h1>
+    <p class="hero-sub">Échantillons → perks permanents : l'arbre qui transforme tes raids zombies en avantages permanents.</p>
+    <div class="hero-counters">
+      <div class="hero-counter"><span class="counter">7+</span><span class="c-label">Perks documentés</span></div>
+      <div class="hero-counter"><span class="counter">+10kg</span><span class="c-label">Perk Porter</span></div>
+      <div class="hero-counter"><span class="counter">~7 min</span><span class="c-label">Lecture</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container guide-layout">
+    <aside class="toc" aria-label="Sommaire">
+      <p class="toc-title">Sommaire</p>
+      <a href="#systeme">Le système</a>
+      <a href="#perks">Perks classés</a>
+      <a href="#ordre">Ordre de déblocage</a>
+      <a href="#farm">Farm d'échantillons</a>
+      <a href="#faq">FAQ</a>
+    </aside>
+
+    <article class="guide-content">
+      <h2 id="systeme">Le système en 30 secondes</h2>
+      <ol>
+        <li>🧬 Collecte des <strong>échantillons biochimiques</strong> (Infected Zone, activités S7).</li>
+        <li>🔬 Dépense-les en <strong>Zombie Research</strong> pour débloquer des <strong>perks passifs</strong>.</li>
+        <li>⚡ Les perks actifs modifient ton jeu — « don't hoard the sample points, spend them » (résumé communautaire).</li>
+      </ol>
+      <div class="callout s7"><p class="co-title">📌 Statut des perks</p>
+        Actifs en <strong>Infected Zone</strong> et modes zombie de la saison · <strong>inactifs</strong> en Arena, Covert Ops et Zombie Endless (pour les masteries/zones concernées). Vérifie la ligne d'effet de chaque perk avant de planifier un build autour.</div>
+
+      <h2 id="perks">Les perks classés</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Perk</th><th>Effet</th><th>Valorisation</th></tr></thead>
+          <tbody>
+            <tr><td><strong>🎧 Acoustic Earpads</strong></td><td>Réduit l'assourdissement des casques · <strong>+10-15 m</strong> de portée audio</td><td><span class="tier-badge tier-s">S</span> L'avantage compétitif le plus universel</td></tr>
+            <tr><td><strong>🖐️ Sleight of Hand</strong></td><td><strong>+27 %</strong> vitesse de recharge</td><td><span class="tier-badge tier-s">S</span> Décisif en duel comme contre les hordes</td></tr>
+            <tr><td><strong>🦾 Heavy Motor</strong></td><td><strong>−35 %</strong> pénalité de vitesse armure + casque</td><td><span class="tier-badge tier-a">A</span> Rend le T5-T6 jouable — soldat rapide</td></tr>
+            <tr><td><strong>🎒 Porter</strong></td><td><strong>+10 kg</strong> de capacité</td><td><span class="tier-badge tier-a">A</span> Farm de loot long — synergique sac 40 slots</td></tr>
+            <tr><td><strong>📦 Effective Looting</strong></td><td><strong>20 %</strong> de bonus d'efficacité de recherche</td><td><span class="tier-badge tier-a">A</span> S'auto-renforce : plus tu lootes, plus tu débloques</td></tr>
+            <tr><td><strong>🐕 Vinson's Friend</strong></td><td><strong>10 %</strong> de récupérer ton arme après un échec d'extraction</td><td><span class="tier-badge tier-b">B</span> Assurance psychologique sur les kits chers</td></tr>
+            <tr><td>🪖 Tactical Belt*</td><td>+4 slots de poche 1×1 (Core Mastery S7)</td><td><span class="tier-badge tier-s">S</span> Voir <a href="guide-progression.html">Core Masteries</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted">* Tactical Belt est une Core Mastery (règles distinctes : 1 équipée, saisonnière) — incluse ici car souvent confondue avec les perks Research.</p>
+
+      <h2 id="ordre">Ordre de déblocage recommandé</h2>
+      <div class="table-wrap">
+        <table class="data-table">
+          <thead><tr><th>Phase</th><th>Déblocages</th><th>Logique</th></tr></thead>
+          <tbody>
+            <tr><td>1 — Fondations</td><td>Acoustic Earpads → Sleight of Hand</td><td>Audio + reload : les deux multiplicateurs de duels</td></tr>
+            <tr><td>2 — Confort</td><td>Heavy Motor → Porter</td><td>Mobilité et capacité — le farm devient rentable</td></tr>
+            <tr><td>3 — Boucle</td><td>Effective Looting → Vinson's Friend</td><td>Accélère la suite + sécurise les kits</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="callout s7" style="margin-top:14px">
+        <strong>Alternative « survie » (communauté abibuilder) :</strong> si les hordes te broient, inverse la priorité —
+        <strong>Melee Mastery</strong> (finir les zombies au corps-à-corps, zéro munition gaspillée) →
+        <strong>Undying Spirit</strong> (stamina rendue par kill) → <strong>Pain Killer</strong> (dégâts zombies quasi nuls) →
+        <strong>Sustained Combat</strong> (kill = soin partiel). Deux chemins valables : le notre pour le farm efficient, celui-ci pour survivre plus longtemps en Infected Zone.
+      </div>
+
+      <h2 id="farm">Farm d'échantillons — la boucle Utopia</h2>
+      <p>La boucle vertueuse de la saison : <strong>Infected Zone → matériel biochimique → échantillons → perks → raids plus efficaces → plus de matériel</strong>. Optimisation :</p>
+      <ol>
+        <li><strong>Sonde les coffres</strong> : les safes, mini-safes et key safes droppent des échantillons zombie EN PLUS du loot classique — si ton passage en route passe à côté d'un safe, il n'y a aucune raison de le sauter.</li>
+        <li>Joue les zones que tu connais (tes routes Farm/Valley habituelles > les nouvelles).</li>
+        <li>Equipe Effective Looting dès débloqué (+20 %).</li>
+        <li>Stash la valeur dans la container sécurisée — un raid qui meurt = échantillons perdus.</li>
+        <li>Croise avec le mérite <a href="saison7-zombie-endless.html">Endless</a> (×3 Koen) pour financer les kits pendant que tu progresses.</li>
+      </ol>
+
+      <figure>
+        <img src="../img/fig/saison7-zombie-research.jpg" alt="Zone de collecte contaminée" loading="lazy" width="1200" height="675">
+        <figcaption>Chaque passage en zone infectée paie deux fois : le loot du raid, et les points de recherche.</figcaption>
+      </figure>
+
+      <h2 id="faq">FAQ Zombie Research</h2>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Les perks disparaissent-ils au wipe ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Les systèmes de saison (Recherche, Core Masteries, missions) se réinitialisent à la fin du cycle — profite-en pendant Utopia. En revanche, niveau de personnage et points de Mastery classique ne wipe jamais.</p></div></div></div>
+      <div class="faq-item"><button class="faq-q" aria-expanded="false">Research Workbench = Zombie Research ?<span class="faq-ico">＋</span></button><div class="faq-a"><div class="faq-a-inner"><p>Deux systèmes distincts : la <strong>Recherche Workbench</strong> (résultats de formules, matériels d'artisanat — voir <a href="guide-craft.html">artisanat</a>) et la <strong>Zombie Research</strong> (perks par échantillons). Les deux progressent pendant la saison et se nourrissent de tes raids.</p></div></div></div>
+
+      <p class="source-note"><strong>Sources —</strong> abibuilder S7 loot guide (perks détaillés) · patch notes S7 MoreFun · timesaver progression · reddit S7. Vérifié le 17 novembre 2026.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container text-center reveal">
+    <h2 class="section-title" style="display:inline-block">Les récompenses</h2>
+    <p class="section-sub" style="margin:16px auto 24px">Battle Pass Utopia : missions, skins et la case Titanium 3×3.</p>
+    <a class="btn btn-primary" href="saison7-battle-pass.html">Battle Pass →</a>
+    <a class="btn btn-ghost" href="guide-progression.html">Progression</a>
+  </div>
+</section>
